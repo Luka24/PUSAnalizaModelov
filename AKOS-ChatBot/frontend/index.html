@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AKOS ChatBot - Pogovorni Agent</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            display: flex;
+            flex-direction: column;
+            height: 90vh;
+            max-height: 700px;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 12px 12px 0 0;
+        }
+
+        .header h1 {
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+
+        .header p {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+
+        .chat-area {
+            flex: 1;
+            overflow-y: auto;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .message {
+            display: flex;
+            margin-bottom: 10px;
+            animation: slideIn 0.3s ease-out;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .user-message {
+            justify-content: flex-end;
+        }
+
+        .bot-message {
+            justify-content: flex-start;
+        }
+
+        .message-content {
+            max-width: 70%;
+            padding: 12px 16px;
+            border-radius: 12px;
+            line-height: 1.5;
+            word-wrap: break-word;
+        }
+
+        .user-message .message-content {
+            background: #667eea;
+            color: white;
+            border-bottom-right-radius: 4px;
+        }
+
+        .bot-message .message-content {
+            background: #f0f0f0;
+            color: #333;
+            border-bottom-left-radius: 4px;
+        }
+
+        .sources {
+            max-width: 70%;
+            margin-top: 8px;
+            font-size: 12px;
+            color: #666;
+            margin-left: 10px;
+        }
+
+        .source-item {
+            background: #f9f9f9;
+            padding: 8px;
+            margin: 4px 0;
+            border-left: 3px solid #667eea;
+            border-radius: 4px;
+        }
+
+        .source-title {
+            font-weight: 600;
+            color: #667eea;
+        }
+
+        .loading {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .spinner {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            border: 2px solid #f3f3f3;
+            border-top: 2px solid #667eea;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .input-area {
+            border-top: 1px solid #e0e0e0;
+            padding: 15px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .input-field {
+            flex: 1;
+            display: flex;
+            gap: 10px;
+        }
+
+        input[type="text"] {
+            flex: 1;
+            padding: 12px 16px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 14px;
+            font-family: inherit;
+            transition: border-color 0.3s;
+        }
+
+        input[type="text"]:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+
+        button {
+            padding: 12px 24px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: transform 0.2s, box-shadow 0.2s;
+            font-size: 14px;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        button:active {
+            transform: translateY(0);
+        }
+
+        button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .error {
+            background: #fee;
+            color: #c33;
+            padding: 12px 16px;
+            border-radius: 8px;
+            border-left: 4px solid #c33;
+            margin: 10px 0;
+        }
+
+        .info-box {
+            background: #f0f4ff;
+            padding: 12px;
+            border-radius: 8px;
+            font-size: 12px;
+            color: #666;
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        .welcome {
+            text-align: center;
+            color: #999;
+            padding: 20px;
+            font-size: 14px;
+        }
+
+        .example-questions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .example-btn {
+            padding: 6px 12px;
+            background: #f0f0f0;
+            color: #667eea;
+            border: 1px solid #ddd;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 12px;
+            transition: all 0.2s;
+        }
+
+        .example-btn:hover {
+            background: #667eea;
+            color: white;
+            transform: none;
+        }
+
+        @media (max-width: 600px) {
+            .message-content {
+                max-width: 90%;
+            }
+            .sources {
+                max-width: 90%;
+            }
+            .header h1 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🤖 AKOS ChatBot</h1>
+            <p>Pogovorni agent za odgovore na vprašanja o AKOS</p>
+        </div>
+
+        <div class="chat-area" id="chatArea">
+            <div class="info-box">
+                Pozdravljeni! Sem ChatBot AKOS. Postavljajte vprašanja o storitvah AKOS.
+            </div>
+            <div class="welcome">
+                <p><strong>Primer vprašanj:</strong></p>
+                <div class="example-questions">
+                    <button class="example-btn" onclick="sendMessage('Kako lahko poddam pritožbo?')">Pritožbe</button>
+                    <button class="example-btn" onclick="sendMessage('Kakšne so tarife za storitve?')">Tarife</button>
+                    <button class="example-btn" onclick="sendMessage('Kako deluje internetni dostop?')">Internet</button>
+                    <button class="example-btn" onclick="sendMessage('Kakšne je izboljšanja 5G omrežja?')">5G</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="input-area">
+            <div class="input-field">
+                <input 
+                    type="text" 
+                    id="userInput" 
+                    placeholder="Postavite vaše vprašanje..."
+                    onkeypress="handleKeyPress(event)"
+                    autocomplete="off"
+                >
+                <button onclick="sendMessage()" id="sendBtn">Pošlji</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const API_URL = 'http://localhost:5000/api';
+        const chatArea = document.getElementById('chatArea');
+        const userInput = document.getElementById('userInput');
+        const sendBtn = document.getElementById('sendBtn');
+
+        let isLoading = false;
+
+        function handleKeyPress(event) {
+            if (event.key === 'Enter' && !event.shiftKey) {
+                event.preventDefault();
+                sendMessage();
+            }
+        }
+
+        function sendMessage(text = null) {
+            const message = text || userInput.value.trim();
+
+            if (!message) {
+                alert('Prosim, vnesite vprašanje.');
+                return;
+            }
+
+            if (isLoading) return;
+
+            // Add user message
+            addMessage(message, 'user');
+            userInput.value = '';
+            isLoading = true;
+            sendBtn.disabled = true;
+
+            // Show loading
+            const loadingDiv = document.createElement('div');
+            loadingDiv.className = 'message bot-message';
+            loadingDiv.innerHTML = `
+                <div class="message-content">
+                    <div class="loading">
+                        <span class="spinner"></span>
+                        Pripravljam odgovor...
+                    </div>
+                </div>
+            `;
+            chatArea.appendChild(loadingDiv);
+            scrollToBottom();
+
+            // Send to API
+            fetch(`${API_URL}/chat`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ query: message })
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then(data => {
+                loadingDiv.remove();
+                
+                if (data.error) {
+                    addMessage(`Napaka: ${data.error}`, 'bot');
+                } else {
+                    addMessage(data.answer, 'bot', data.sources);
+                }
+                
+                scrollToBottom();
+            })
+            .catch(error => {
+                loadingDiv.remove();
+                console.error('Error:', error);
+                addMessage(`Napaka pri povezavi z strežnikom: ${error.message}`, 'bot');
+                scrollToBottom();
+            })
+            .finally(() => {
+                isLoading = false;
+                sendBtn.disabled = false;
+                userInput.focus();
+            });
+        }
+
+        function addMessage(text, type, sources = null) {
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `message ${type}-message`;
+
+            const contentDiv = document.createElement('div');
+            contentDiv.className = 'message-content';
+            contentDiv.textContent = text;
+
+            messageDiv.appendChild(contentDiv);
+
+            if (sources && sources.length > 0) {
+                const sourcesDiv = document.createElement('div');
+                sourcesDiv.className = 'sources';
+                
+                sources.forEach(source => {
+                    const sourceItem = document.createElement('div');
+                    sourceItem.className = 'source-item';
+                    sourceItem.innerHTML = `
+                        <div class="source-title">${source.title}</div>
+                        <small>${source.category}</small>
+                    `;
+                    sourcesDiv.appendChild(sourceItem);
+                });
+
+                messageDiv.appendChild(sourcesDiv);
+            }
+
+            chatArea.appendChild(messageDiv);
+        }
+
+        function scrollToBottom() {
+            chatArea.scrollTop = chatArea.scrollHeight;
+        }
+
+        // Focus input on load
+        window.addEventListener('load', () => {
+            userInput.focus();
+        });
+    </script>
+</body>
+</html>

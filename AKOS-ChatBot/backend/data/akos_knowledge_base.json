@@ -1,0 +1,64 @@
+{
+  "documents": [
+    {
+      "id": "doc_001",
+      "title": "O AKOS",
+      "category": "Splošno",
+      "content": "AKOS (Agencija za komunikacijska omrežja in storitve) je független regulatorna agencija Republike Slovenije. Agencija regulira področja elektronskih komunikacijskih omrežij in storitev, pošt in ozemelnih področij, ki jih je pristojna AKOS."
+    },
+    {
+      "id": "doc_002",
+      "title": "Varstvo potrošnikov",
+      "category": "Varstvo potrošnikov",
+      "content": "AKOS je organ za zaščito potrošnikov na področju komunikacijskih in poštnih storitev. Potrošniki se lahko pritožijo na naš portal na spletni strani www.akos.si. Varstvo potrošnikov je brezplačno. Povprečni čas obdelave pritožbe je 30 dni."
+    },
+    {
+      "id": "doc_003",
+      "title": "Radio spekter",
+      "category": "Radiofrekvenčni spekter",
+      "content": "AKOS upravlja radiofrekvenčni spekter v Republiki Sloveniji. Dodelimo dovoljenice za uporabo radiofrekvenčnega spektra telekomunikacijskim operaterjem. Spekter je omejen vir, zato ga moramo učinkovito upravljati."
+    },
+    {
+      "id": "doc_004",
+      "title": "Pogoji za nepristransko dostopnost",
+      "category": "Telekomunikacije",
+      "content": "Vsi operaterji elektronskih komunikacijskih storitev morajo nuditi nepristranske pogoje za dostopnost v skladu z zakonom. To pomeni enake storitve po enakih cenah za vse uporabnike, ne glede na operaterja."
+    },
+    {
+      "id": "doc_005",
+      "title": "Internetni dostop",
+      "category": "Telekomunikacije",
+      "content": "Vsak državljan Slovenije ima pravico do dostopa do interneta. AKOS zagotavlja, da vsi operaterji nudijo dostop do interneta po razumnih cenah in dosledni kakovosti storitve. Minimalna hitrost interneta je 30 Mbps."
+    },
+    {
+      "id": "doc_006",
+      "title": "Pritožbe glede pošte",
+      "category": "Pošta",
+      "content": "Državljani se lahko pritožijo na storitve pošte prek Agencije AKOS. Povprečni čas dostavitve pisma znotraj Slovenije je 3 dni. Pošta mora zagotavljati dostavo najmanj 5 dni v tednu."
+    },
+    {
+      "id": "doc_007",
+      "title": "Javne storitve",
+      "category": "Regulacija",
+      "content": "AKOS zagotavlja, da so univerzalne telekomunikacijske storitve dostopne vsem ljudem v Republiki Sloveniji. To vključuje telefonske storitve, dostop do interneta in dostop do informacij."
+    },
+    {
+      "id": "doc_008",
+      "title": "Tarife in cene",
+      "category": "Tarife",
+      "content": "AKOS nadzira tarife telekomunikacijskih in poštnih operaterjev. Vsi operaterji morajo imeti preverjena cenika in jih morajo objaviti na svojih spletnih straneh. Spremembe cen so dozvoljene samo z 30-dnevnim napovedim."
+    },
+    {
+      "id": "doc_009",
+      "title": "4G in 5G omrežja",
+      "category": "Tehnologija",
+      "content": "AKOS je dodelila dovoljenice za 4G in 5G omrežja v celotni državi. Večji operaterji izgravljajo 5G infrastrukturo. Cilj je, da bi bila 5G dostopna v večini naselij do leta 2027."
+    },
+    {
+      "id": "doc_010",
+      "title": "Dostop do odprtih podatkov",
+      "category": "Podatki",
+      "content": "AKOS objavljuje odpirte podatke o telekomunikacijskih in poštnih storitvah na svojem portalu. Podatki so prosto dostopni za raziskovalne in druge namene. Portal je dostopen na www.akos.si/podatki."
+    }
+  ]
+}
