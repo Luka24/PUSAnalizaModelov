@@ -45,21 +45,7 @@ Izhodi testa:
 - [results/groq_requested_6models_120cases_cases.csv](https://github.com/Luka24/PUSAnalizaModelov/blob/main/results/groq_requested_6models_120cases_cases.csv)
 - [results/sl_benchmark_20260316_222339.md](https://github.com/Luka24/PUSAnalizaModelov/blob/main/results/sl_benchmark_20260316_222339.md)
 
-## 4) Kako sem generiral primere
-
-Uporabil sem dva generatorja:
-
-1. [backend/evaluation/generate_akos_gold_2000.py](https://github.com/Luka24/PUSAnalizaModelov/blob/main/backend/evaluation/generate_akos_gold_2000.py)
-- iz seed dataseta (v1) naredi 2000 variant,
-- menja slog prompta: `standard`, `short`, `detailed`, `journalist`, `frustrated`, `no_diacritics`, `colloquial`, `formal`,
-- isto vsebino tako preverjam v različnih jezikovnih oblikah.
-
-2. [backend/evaluation/generate_internal_proxy_40.py](https://github.com/Luka24/PUSAnalizaModelov/blob/main/backend/evaluation/generate_internal_proxy_40.py)
-- ustvari 40 anonimiziranih “internih proxy” primerov,
-- kategorije: račun, gostovanje, pošta, signal, menjava operaterja, postopek,
-- vsak primer ima več slogov (npr. short/formal/frustrated).
-
-### 4.1 Viri primerov (od kod so)
+## 4) Viri primerov (od kod so)
 
 Primeri so pripravljeni iz javno dostopnih AKOS vsebin. Glavni viri so:
 
