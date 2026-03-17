@@ -1,6 +1,7 @@
 # Poročilo testiranja LLM modelov za slovenščino (AKOS)
 
 Datum: 2026-03-16
+GitHub repozitorij: [https://github.com/Luka24/PUSAnalizaModelov](https://github.com/Luka24/PUSAnalizaModelov)
 
 ## 1) Kaj je bil cilj
 
@@ -27,7 +28,7 @@ Ker lokalni testi za večje modele niso bili stabilni, sem primerjalni test izve
 
 Kako je teklo:
 - backend v skripti je nastavljen na `--backend groq`,
-- uporabljena je OpenAI-kompatibilna pot `https://api.groq.com/openai/v1/chat/completions`,
+- uporabljena je OpenAI-kompatibilna pot [https://api.groq.com/openai/v1/chat/completions](https://api.groq.com/openai/v1/chat/completions),
 - dodan je retry/backoff za `429` in prehodne napake,
 - test je bil izveden na 120 primerih, stratified, seed 42.
 
@@ -40,20 +41,20 @@ Modeli v Groq 120-testu:
 - `llama-3.3-70b-versatile`
 
 Izhodi testa:
-- `results/groq_requested_6models_120cases_summary.csv`
-- `results/groq_requested_6models_120cases_cases.csv`
-- `results/sl_benchmark_20260316_222339.md`
+- [results/groq_requested_6models_120cases_summary.csv](https://github.com/Luka24/PUSAnalizaModelov/blob/main/results/groq_requested_6models_120cases_summary.csv)
+- [results/groq_requested_6models_120cases_cases.csv](https://github.com/Luka24/PUSAnalizaModelov/blob/main/results/groq_requested_6models_120cases_cases.csv)
+- [results/sl_benchmark_20260316_222339.md](https://github.com/Luka24/PUSAnalizaModelov/blob/main/results/sl_benchmark_20260316_222339.md)
 
 ## 4) Kako sem generiral primere
 
 Uporabil sem dva generatorja:
 
-1. `backend/evaluation/generate_akos_gold_2000.py`
+1. [backend/evaluation/generate_akos_gold_2000.py](https://github.com/Luka24/PUSAnalizaModelov/blob/main/backend/evaluation/generate_akos_gold_2000.py)
 - iz seed dataseta (v1) naredi 2000 variant,
 - menja slog prompta: `standard`, `short`, `detailed`, `journalist`, `frustrated`, `no_diacritics`, `colloquial`, `formal`,
 - isto vsebino tako preverjam v različnih jezikovnih oblikah.
 
-2. `backend/evaluation/generate_internal_proxy_40.py`
+2. [backend/evaluation/generate_internal_proxy_40.py](https://github.com/Luka24/PUSAnalizaModelov/blob/main/backend/evaluation/generate_internal_proxy_40.py)
 - ustvari 40 anonimiziranih “internih proxy” primerov,
 - kategorije: račun, gostovanje, pošta, signal, menjava operaterja, postopek,
 - vsak primer ima več slogov (npr. short/formal/frustrated).
@@ -62,15 +63,15 @@ Uporabil sem dva generatorja:
 
 Primeri so pripravljeni iz javno dostopnih AKOS vsebin. Glavni viri so:
 
-- https://www.akos-rs.si/pogosta-vprasanja-in-odgovori
-- https://www.akos-rs.si/pogosta-vprasanja-in-odgovori/postopek-pred-akos
-- https://www.akos-rs.si/pogosta-vprasanja-in-odgovori/o-gostovanju
-- https://www.akos-rs.si/pogosta-vprasanja-in-odgovori/storitev-ne-deluje-ali-ni-ustrezna
-- https://www.akos-rs.si/pogosta-vprasanja-in-odgovori/o-menjavi-operaterja-ali-spremembi-paketa
-- https://www.akos-rs.si/pogosta-vprasanja-in-odgovori/neupravicen-racun
-- https://www.akos-rs.si/uporabniki-storitev/raziscite/spori-med-operaterji-oz-izvajalci-postnih-storitev-in-koncnimi-uporabniki
-- https://www.akos-rs.si/uporabniki-storitev/raziscite/koristni-nasveti-in-opozorila
-- https://www.akos-rs.si/medijsko-sredisce/novinarska-vprasanja-in-odgovori
+- [https://www.akos-rs.si/pogosta-vprasanja-in-odgovori](https://www.akos-rs.si/pogosta-vprasanja-in-odgovori)
+- [https://www.akos-rs.si/pogosta-vprasanja-in-odgovori/postopek-pred-akos](https://www.akos-rs.si/pogosta-vprasanja-in-odgovori/postopek-pred-akos)
+- [https://www.akos-rs.si/pogosta-vprasanja-in-odgovori/o-gostovanju](https://www.akos-rs.si/pogosta-vprasanja-in-odgovori/o-gostovanju)
+- [https://www.akos-rs.si/pogosta-vprasanja-in-odgovori/storitev-ne-deluje-ali-ni-ustrezna](https://www.akos-rs.si/pogosta-vprasanja-in-odgovori/storitev-ne-deluje-ali-ni-ustrezna)
+- [https://www.akos-rs.si/pogosta-vprasanja-in-odgovori/o-menjavi-operaterja-ali-spremembi-paketa](https://www.akos-rs.si/pogosta-vprasanja-in-odgovori/o-menjavi-operaterja-ali-spremembi-paketa)
+- [https://www.akos-rs.si/pogosta-vprasanja-in-odgovori/neupravicen-racun](https://www.akos-rs.si/pogosta-vprasanja-in-odgovori/neupravicen-racun)
+- [https://www.akos-rs.si/uporabniki-storitev/raziscite/spori-med-operaterji-oz-izvajalci-postnih-storitev-in-koncnimi-uporabniki](https://www.akos-rs.si/uporabniki-storitev/raziscite/spori-med-operaterji-oz-izvajalci-postnih-storitev-in-koncnimi-uporabniki)
+- [https://www.akos-rs.si/uporabniki-storitev/raziscite/koristni-nasveti-in-opozorila](https://www.akos-rs.si/uporabniki-storitev/raziscite/koristni-nasveti-in-opozorila)
+- [https://www.akos-rs.si/medijsko-sredisce/novinarska-vprasanja-in-odgovori](https://www.akos-rs.si/medijsko-sredisce/novinarska-vprasanja-in-odgovori)
 
 Zakaj se mi je to zdelo smiselno:
 
@@ -126,7 +127,7 @@ Status modela:
 
 ## 7) Konkretni izpisi odgovorov modelov (slabši + boljši primer za vsak model)
 
-Vir: `results/groq_requested_6models_120cases_examples.json`.
+Vir: [results/groq_requested_6models_120cases_examples.json](https://github.com/Luka24/PUSAnalizaModelov/blob/main/results/groq_requested_6models_120cases_examples.json).
 
 Vsi spodnji primeri so bili testirani na promptih, ki so bili pripravljeni iz zgornjih AKOS virov (FAQ, postopki, uporabniške pravice, medijska pojasnila).
 
@@ -226,6 +227,6 @@ Končna ocena = `1.25`.
 Če je cilj maksimalna kakovost ne glede na velikost:
 - najboljši je `llama-3.3-70b-versatile`.
 
-Za `gemma2:9b` in `mistral-nemo:12b` je moj jasen predlog:
+Za `gemma2:9b` in `mistral-nemo:12b` je moj predlog:
 - test naj se naredi na **Sling/HPC**, ker lokalno okolje ni dalo stabilnih rezultatov (timeouti),
 - potem se rezultate neposredno primerja s tem 120-primerim Groq benchmarkom.
