@@ -1,0 +1,281 @@
+{
+  "llama3.1:8b": {
+    "cases": [
+      {
+        "id": "GOLD2-1479",
+        "category": "Neupravičen račun",
+        "prompt": "Ej, povej mi: Menim, da mi je operater preveč zaracunal prenos podatkov. Kako preverim porabo? A se to da uredit?",
+        "required_keywords": [
+          "razčlenitev",
+          "prenos podatkov",
+          "reklamacija"
+        ],
+        "forbidden_keywords": [
+          "AKOS vidi vašo zasebno zgodovino brskanja"
+        ],
+        "expected_abstain": false,
+        "source_topic": "neupravicen-racun",
+        "source_url": "",
+        "answer": "NAPAKA: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=420)",
+        "latency_sec": 0.0,
+        "tokens": null,
+        "scores": {
+          "slovene_signal": 0.0,
+          "required_coverage": 0.0,
+          "fluency": 0.0,
+          "abstention": 0.0,
+          "forbidden_control": 0.0,
+          "overall": 0.0
+        },
+        "notes": "",
+        "hard_fail": false,
+        "hard_fail_reasons": []
+      },
+      {
+        "id": "GOLD2-0303",
+        "category": "Nedelovanje storitve",
+        "prompt": "Ej, povej mi: Operater mi ne zagotavlja dogovorjene hitrosti interneta. Kaj mi pripada? A se to da uredit?",
+        "required_keywords": [
+          "dogovorjena hitrost",
+          "pravice",
+          "reklamacija"
+        ],
+        "forbidden_keywords": [
+          "nič vam ne pripada"
+        ],
+        "expected_abstain": false,
+        "source_topic": "storitev-ne-deluje-ali-ni-ustrezna",
+        "source_url": "",
+        "answer": "NAPAKA: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=420)",
+        "latency_sec": 0.0,
+        "tokens": null,
+        "scores": {
+          "slovene_signal": 0.0,
+          "required_coverage": 0.0,
+          "fluency": 0.0,
+          "abstention": 0.0,
+          "forbidden_control": 0.0,
+          "overall": 0.0
+        },
+        "notes": "",
+        "hard_fail": false,
+        "hard_fail_reasons": []
+      },
+      {
+        "id": "GOLD2-0826",
+        "category": "Menjava operaterja",
+        "prompt": "Na kratko: Ali mi sme stari operater zaračunati celotno mesečno naročnino, če sem med mesecem odšel drugam? Odgovori v 2 stavkih.",
+        "required_keywords": [
+          "naročnina",
+          "obračunsko obdobje"
+        ],
+        "forbidden_keywords": [
+          "vedno polna naročnina"
+        ],
+        "expected_abstain": false,
+        "source_topic": "o-menjavi-operaterja-ali-spremembi-paketa",
+        "source_url": "",
+        "answer": "Spremenitev operaterja lahko opravite le na začetku ali koncu meseca.",
+        "latency_sec": 295.907,
+        "tokens": 24,
+        "scores": {
+          "slovene_signal": 2.5,
+          "required_coverage": 0.0,
+          "fluency": 5.0,
+          "abstention": 5.0,
+          "forbidden_control": 5.0,
+          "overall": 2.88
+        },
+        "notes": "",
+        "hard_fail": false,
+        "hard_fail_reasons": []
+      }
+    ]
+  },
+  "gemma2:9b": {
+    "cases": [
+      {
+        "id": "GOLD2-1479",
+        "category": "Neupravičen račun",
+        "prompt": "Ej, povej mi: Menim, da mi je operater preveč zaracunal prenos podatkov. Kako preverim porabo? A se to da uredit?",
+        "required_keywords": [
+          "razčlenitev",
+          "prenos podatkov",
+          "reklamacija"
+        ],
+        "forbidden_keywords": [
+          "AKOS vidi vašo zasebno zgodovino brskanja"
+        ],
+        "expected_abstain": false,
+        "source_topic": "neupravicen-racun",
+        "source_url": "",
+        "answer": "NAPAKA: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=420)",
+        "latency_sec": 0.0,
+        "tokens": null,
+        "scores": {
+          "slovene_signal": 0.0,
+          "required_coverage": 0.0,
+          "fluency": 0.0,
+          "abstention": 0.0,
+          "forbidden_control": 0.0,
+          "overall": 0.0
+        },
+        "notes": "",
+        "hard_fail": false,
+        "hard_fail_reasons": []
+      },
+      {
+        "id": "GOLD2-0303",
+        "category": "Nedelovanje storitve",
+        "prompt": "Ej, povej mi: Operater mi ne zagotavlja dogovorjene hitrosti interneta. Kaj mi pripada? A se to da uredit?",
+        "required_keywords": [
+          "dogovorjena hitrost",
+          "pravice",
+          "reklamacija"
+        ],
+        "forbidden_keywords": [
+          "nič vam ne pripada"
+        ],
+        "expected_abstain": false,
+        "source_topic": "storitev-ne-deluje-ali-ni-ustrezna",
+        "source_url": "",
+        "answer": "NAPAKA: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=420)",
+        "latency_sec": 0.0,
+        "tokens": null,
+        "scores": {
+          "slovene_signal": 0.0,
+          "required_coverage": 0.0,
+          "fluency": 0.0,
+          "abstention": 0.0,
+          "forbidden_control": 0.0,
+          "overall": 0.0
+        },
+        "notes": "",
+        "hard_fail": false,
+        "hard_fail_reasons": []
+      },
+      {
+        "id": "GOLD2-0826",
+        "category": "Menjava operaterja",
+        "prompt": "Na kratko: Ali mi sme stari operater zaračunati celotno mesečno naročnino, če sem med mesecem odšel drugam? Odgovori v 2 stavkih.",
+        "required_keywords": [
+          "naročnina",
+          "obračunsko obdobje"
+        ],
+        "forbidden_keywords": [
+          "vedno polna naročnina"
+        ],
+        "expected_abstain": false,
+        "source_topic": "o-menjavi-operaterja-ali-spremembi-paketa",
+        "source_url": "",
+        "answer": "NAPAKA: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=420)",
+        "latency_sec": 0.0,
+        "tokens": null,
+        "scores": {
+          "slovene_signal": 0.0,
+          "required_coverage": 0.0,
+          "fluency": 0.0,
+          "abstention": 0.0,
+          "forbidden_control": 0.0,
+          "overall": 0.0
+        },
+        "notes": "",
+        "hard_fail": false,
+        "hard_fail_reasons": []
+      }
+    ]
+  },
+  "mistral-nemo:12b": {
+    "cases": [
+      {
+        "id": "GOLD2-1479",
+        "category": "Neupravičen račun",
+        "prompt": "Ej, povej mi: Menim, da mi je operater preveč zaracunal prenos podatkov. Kako preverim porabo? A se to da uredit?",
+        "required_keywords": [
+          "razčlenitev",
+          "prenos podatkov",
+          "reklamacija"
+        ],
+        "forbidden_keywords": [
+          "AKOS vidi vašo zasebno zgodovino brskanja"
+        ],
+        "expected_abstain": false,
+        "source_topic": "neupravicen-racun",
+        "source_url": "",
+        "answer": "NAPAKA: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=420)",
+        "latency_sec": 0.0,
+        "tokens": null,
+        "scores": {
+          "slovene_signal": 0.0,
+          "required_coverage": 0.0,
+          "fluency": 0.0,
+          "abstention": 0.0,
+          "forbidden_control": 0.0,
+          "overall": 0.0
+        },
+        "notes": "",
+        "hard_fail": false,
+        "hard_fail_reasons": []
+      },
+      {
+        "id": "GOLD2-0303",
+        "category": "Nedelovanje storitve",
+        "prompt": "Ej, povej mi: Operater mi ne zagotavlja dogovorjene hitrosti interneta. Kaj mi pripada? A se to da uredit?",
+        "required_keywords": [
+          "dogovorjena hitrost",
+          "pravice",
+          "reklamacija"
+        ],
+        "forbidden_keywords": [
+          "nič vam ne pripada"
+        ],
+        "expected_abstain": false,
+        "source_topic": "storitev-ne-deluje-ali-ni-ustrezna",
+        "source_url": "",
+        "answer": "NAPAKA: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=420)",
+        "latency_sec": 0.0,
+        "tokens": null,
+        "scores": {
+          "slovene_signal": 0.0,
+          "required_coverage": 0.0,
+          "fluency": 0.0,
+          "abstention": 0.0,
+          "forbidden_control": 0.0,
+          "overall": 0.0
+        },
+        "notes": "",
+        "hard_fail": false,
+        "hard_fail_reasons": []
+      },
+      {
+        "id": "GOLD2-0826",
+        "category": "Menjava operaterja",
+        "prompt": "Na kratko: Ali mi sme stari operater zaračunati celotno mesečno naročnino, če sem med mesecem odšel drugam? Odgovori v 2 stavkih.",
+        "required_keywords": [
+          "naročnina",
+          "obračunsko obdobje"
+        ],
+        "forbidden_keywords": [
+          "vedno polna naročnina"
+        ],
+        "expected_abstain": false,
+        "source_topic": "o-menjavi-operaterja-ali-spremembi-paketa",
+        "source_url": "",
+        "answer": "NAPAKA: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=420)",
+        "latency_sec": 0.0,
+        "tokens": null,
+        "scores": {
+          "slovene_signal": 0.0,
+          "required_coverage": 0.0,
+          "fluency": 0.0,
+          "abstention": 0.0,
+          "forbidden_control": 0.0,
+          "overall": 0.0
+        },
+        "notes": "",
+        "hard_fail": false,
+        "hard_fail_reasons": []
+      }
+    ]
+  }
+}

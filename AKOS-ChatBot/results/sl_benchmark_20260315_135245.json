@@ -1,0 +1,154 @@
+{
+  "llama3.2:3b": {
+    "cases": [
+      {
+        "id": "GOLD2-1479",
+        "category": "Neupravičen račun",
+        "prompt": "Ej, povej mi: Menim, da mi je operater preveč zaracunal prenos podatkov. Kako preverim porabo? A se to da uredit?",
+        "required_keywords": [
+          "razčlenitev",
+          "prenos podatkov",
+          "reklamacija"
+        ],
+        "forbidden_keywords": [
+          "AKOS vidi vašo zasebno zgodovino brskanja"
+        ],
+        "expected_abstain": false,
+        "source_topic": "neupravicen-racun",
+        "source_url": "",
+        "answer": "Srečno! Zgornji operator se ne udeja za zanesljiv. Za preverjanje porabe in potencialnega napake se lahko posvetujes s operatorjem, ki je že na mesto. Možes se povezati z njim na 0800 60 60 in napovedati prihodno pričakanje.",
+        "latency_sec": 161.794,
+        "tokens": 85,
+        "scores": {
+          "slovene_signal": 5.0,
+          "required_coverage": 0.0,
+          "fluency": 5.0,
+          "abstention": 5.0,
+          "forbidden_control": 5.0,
+          "overall": 3.5
+        },
+        "notes": "",
+        "hard_fail": false,
+        "hard_fail_reasons": []
+      },
+      {
+        "id": "GOLD2-0303",
+        "category": "Nedelovanje storitve",
+        "prompt": "Ej, povej mi: Operater mi ne zagotavlja dogovorjene hitrosti interneta. Kaj mi pripada? A se to da uredit?",
+        "required_keywords": [
+          "dogovorjena hitrost",
+          "pravice",
+          "reklamacija"
+        ],
+        "forbidden_keywords": [
+          "nič vam ne pripada"
+        ],
+        "expected_abstain": false,
+        "source_topic": "storitev-ne-deluje-ali-ni-ustrezna",
+        "source_url": "",
+        "answer": "Srečo! Zbiral sem informacije o tem, da operater ni zvesten za zagotavljanje hitrosti interneta. To pripada operatemu, saj je to njihova odgovornost. Če si zavedal, da si zagotavljal hitrost interneta, lahko si obrnil na operater in mu povedal, da si zavedal, da si zagotavljal hitrost interneta.",
+        "latency_sec": 31.79,
+        "tokens": 104,
+        "scores": {
+          "slovene_signal": 5.0,
+          "required_coverage": 0.0,
+          "fluency": 4.89,
+          "abstention": 5.0,
+          "forbidden_control": 5.0,
+          "overall": 3.48
+        },
+        "notes": "",
+        "hard_fail": false,
+        "hard_fail_reasons": []
+      },
+      {
+        "id": "GOLD2-0826",
+        "category": "Menjava operaterja",
+        "prompt": "Na kratko: Ali mi sme stari operater zaračunati celotno mesečno naročnino, če sem med mesecem odšel drugam? Odgovori v 2 stavkih.",
+        "required_keywords": [
+          "naročnina",
+          "obračunsko obdobje"
+        ],
+        "forbidden_keywords": [
+          "vedno polna naročnina"
+        ],
+        "expected_abstain": false,
+        "source_topic": "o-menjavi-operaterja-ali-spremembi-paketa",
+        "source_url": "",
+        "answer": "Zdaj se lahko vprašati o zaračunavanju naročnine za stari operater, ki je odšel drugam. Zaračunavanje naročnine se izviješča v zapisu o naročni, ki se izdeluje v primeru, ko je operater zaposlen pri AKOS.",
+        "latency_sec": 28.95,
+        "tokens": 82,
+        "scores": {
+          "slovene_signal": 4.0,
+          "required_coverage": 0.0,
+          "fluency": 5.0,
+          "abstention": 5.0,
+          "forbidden_control": 5.0,
+          "overall": 3.25
+        },
+        "notes": "",
+        "hard_fail": false,
+        "hard_fail_reasons": []
+      },
+      {
+        "id": "GOLD2-0362",
+        "category": "Postopek pred AKOS",
+        "prompt": "Na kratko: Ali lahko vlogo za začetek postopka pred AKOS zame odda pooblaščenec? Odgovori v 2 stavkih.",
+        "required_keywords": [
+          "vloga",
+          "pooblaščenec"
+        ],
+        "forbidden_keywords": [
+          "samo osebno"
+        ],
+        "expected_abstain": false,
+        "source_topic": "postopek-pred-akos",
+        "source_url": "",
+        "answer": "Da, vlogo za začetek postopka pred AKOS lahko prepoorabite pooblaščenec.",
+        "latency_sec": 15.463,
+        "tokens": 29,
+        "scores": {
+          "slovene_signal": 3.5,
+          "required_coverage": 2.5,
+          "fluency": 5.0,
+          "abstention": 5.0,
+          "forbidden_control": 5.0,
+          "overall": 3.88
+        },
+        "notes": "",
+        "hard_fail": false,
+        "hard_fail_reasons": []
+      },
+      {
+        "id": "GOLD2-0841",
+        "category": "Novinarska vprašanja",
+        "prompt": "[Novinar] Kako AKOS sodeluje v javnih posvetovanjih pri pripravi regulacije in kako lahko javnost poda pripombe?",
+        "required_keywords": [
+          "AKOS",
+          "javna posvetovanja",
+          "pripombe"
+        ],
+        "forbidden_keywords": [
+          "zaprti postopek brez javnosti"
+        ],
+        "expected_abstain": false,
+        "source_topic": "javna-posvetovanja-in-razpisi",
+        "source_url": "",
+        "answer": "Sodje, novinar! AKOS deluje v javnih posvetovanjih pri pripravi regulacije prek spletne strani AKOS, kjer se lahko javnost zaposljuje in poda pripombe. Na strani se lahko tudi zaposljuje v zvezi z javnimi posvetovanji in se ustanavi zanesljivost podatkov.",
+        "latency_sec": 31.317,
+        "tokens": 96,
+        "scores": {
+          "slovene_signal": 2.0,
+          "required_coverage": 3.33,
+          "fluency": 5.0,
+          "abstention": 5.0,
+          "forbidden_control": 5.0,
+          "overall": 3.75
+        },
+        "notes": "",
+        "hard_fail": false,
+        "hard_fail_reasons": []
+      }
+    ]
+  }
+}

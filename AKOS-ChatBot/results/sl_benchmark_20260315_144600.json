@@ -1,0 +1,601 @@
+{
+  "llama3.2:3b": {
+    "cases": [
+      {
+        "id": "GOLD2-0713",
+        "category": "Gostovanje",
+        "prompt": "Operater mi grozi z onemogočitvijo storitev za 14 dni zaradi pretežno nacionalnega gostovanja. Je to dovoljeno?",
+        "required_keywords": [
+          "pretežno nacionalno gostovanje",
+          "14 dni",
+          "pogoji"
+        ],
+        "forbidden_keywords": [
+          "brez pravil lahko kadarkoli"
+        ],
+        "expected_abstain": false,
+        "source_topic": "o-gostovanju",
+        "source_url": "",
+        "answer": "NAPAKA: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=180)",
+        "latency_sec": 0.0,
+        "tokens": null,
+        "scores": {
+          "slovene_signal": 0.0,
+          "required_coverage": 0.0,
+          "fluency": 0.0,
+          "abstention": 0.0,
+          "forbidden_control": 0.0,
+          "overall": 0.0
+        },
+        "notes": "",
+        "hard_fail": false,
+        "hard_fail_reasons": []
+      },
+      {
+        "id": "GOLD2-1596",
+        "category": "Gostovanje",
+        "prompt": "[Novinar] Prosim za uradno pojasnilo: Operater mi grozi z onemogočitvijo storitev za 14 dni zaradi pretežno nacionalnega gostovanja. Je to dovoljeno? Odgovor naj bo dejstven in nevtralen.",
+        "required_keywords": [
+          "pogoji",
+          "14 dni",
+          "pretežno nacionalno gostovanje"
+        ],
+        "forbidden_keywords": [
+          "brez pravil lahko kadarkoli"
+        ],
+        "expected_abstain": false,
+        "source_topic": "o-gostovanju",
+        "source_url": "",
+        "answer": "Sporo, ki ga je posebej podal [Novinar], je pod temo za naslednje uradne kanale:\n\n- Uradni kanali AKOS: https://akos.gov.si/\n- Telefonska mnozica AKOS: +386 2 20 20 200\n- E-pošta AKOS: info@akos.gov.si",
+        "latency_sec": 40.122,
+        "tokens": 85,
+        "scores": {
+          "slovene_signal": 2.0,
+          "required_coverage": 0.0,
+          "fluency": 4.97,
+          "abstention": 5.0,
+          "forbidden_control": 5.0,
+          "overall": 2.74
+        },
+        "notes": "",
+        "hard_fail": false,
+        "hard_fail_reasons": []
+      },
+      {
+        "id": "GOLD2-0255",
+        "category": "Gostovanje",
+        "prompt": "Ej, povej mi: V ZDA so mi zaracunali tudi neodgovorjene klice. Ali je to normalno? A se to da uredit?",
+        "required_keywords": [
+          "zaračunavanje",
+          "gostovanje",
+          "ZDA"
+        ],
+        "forbidden_keywords": [
+          "AKOS določa tarife izven EU"
+        ],
+        "expected_abstain": false,
+        "source_topic": "o-gostovanju",
+        "source_url": "",
+        "answer": "Srečo! Zgornje približno povezamo z vprašanjem. V ZDA so zaceljene klice normalno, tudi če so zaceljene klice normalno. Zaceljene klice so normalno, zato, ker so zaceljene klice normalno.",
+        "latency_sec": 33.441,
+        "tokens": 79,
+        "scores": {
+          "slovene_signal": 2.0,
+          "required_coverage": 1.67,
+          "fluency": 4.85,
+          "abstention": 5.0,
+          "forbidden_control": 5.0,
+          "overall": 3.22
+        },
+        "notes": "",
+        "hard_fail": false,
+        "hard_fail_reasons": []
+      },
+      {
+        "id": "GOLD2-0826",
+        "category": "Menjava operaterja",
+        "prompt": "Na kratko: Ali mi sme stari operater zaračunati celotno mesečno naročnino, če sem med mesecem odšel drugam? Odgovori v 2 stavkih.",
+        "required_keywords": [
+          "naročnina",
+          "obračunsko obdobje"
+        ],
+        "forbidden_keywords": [
+          "vedno polna naročnina"
+        ],
+        "expected_abstain": false,
+        "source_topic": "o-menjavi-operaterja-ali-spremembi-paketa",
+        "source_url": "",
+        "answer": "Zaracunajščina za stari operater se izvede v zvezi z njihovo prejšnjim delovnim razmerjem in njihovo trenutno zaposlitevjo. Če si odšel drugam, je treba se obrati prihodnosti in zaposlitev pri novem delovnem razmerju.",
+        "latency_sec": 36.505,
+        "tokens": 82,
+        "scores": {
+          "slovene_signal": 4.0,
+          "required_coverage": 0.0,
+          "fluency": 5.0,
+          "abstention": 5.0,
+          "forbidden_control": 5.0,
+          "overall": 3.25
+        },
+        "notes": "",
+        "hard_fail": false,
+        "hard_fail_reasons": []
+      },
+      {
+        "id": "GOLD2-1792",
+        "category": "Menjava operaterja",
+        "prompt": "Spoštovani, prosim za pojasnilo: Ali mi sme stari operater zaračunati celotno mesečno naročnino, če sem med mesecem odšel drugam? Hvala za pomoč.",
+        "required_keywords": [
+          "naročnina",
+          "obračunsko obdobje"
+        ],
+        "forbidden_keywords": [
+          "vedno polna naročnina"
+        ],
+        "expected_abstain": false,
+        "source_topic": "o-menjavi-operaterja-ali-spremembi-paketa",
+        "source_url": "",
+        "answer": "Srečaj, prosim za vprašanje. Zaračunajte se lahko z naslednjimi koraki:\n\n1. Vpišite v AKOS podatke o staršem operaterju in novem operaterju.\n2. Kliknite na \"Naročnina\" in izberite \"Zaračunaj naročnino\".\n3. Izberite \"Celotna mesečna naročnina\" in kliknite na \"Narisi\".\n4. AKOS bo zaračunal celotno mesečno naročnino za staršega operaterja in novega operaterja.\n\nIzrazite se z naslednjimi besedami: \"Zaračunajte se z naslednjimi koraki: ...\".",
+        "latency_sec": 62.712,
+        "tokens": 181,
+        "scores": {
+          "slovene_signal": 4.5,
+          "required_coverage": 2.5,
+          "fluency": 4.97,
+          "abstention": 5.0,
+          "forbidden_control": 5.0,
+          "overall": 4.12
+        },
+        "notes": "",
+        "hard_fail": false,
+        "hard_fail_reasons": []
+      },
+      {
+        "id": "GOLD2-0756",
+        "category": "Menjava operaterja",
+        "prompt": "[Novinar] Prosim za uradno pojasnilo: Predčasno sem prekinil vezavo in operater mi je zaračunal pogodbeno kazen in strošek odjave. Moram plačati oboje? Odgovor naj bo dejstven in nevtralen.",
+        "required_keywords": [
+          "strošek odjave",
+          "predčasna prekinitev",
+          "pogodbena kazen"
+        ],
+        "forbidden_keywords": [
+          "ne plačajte ničesar"
+        ],
+        "expected_abstain": false,
+        "source_topic": "o-menjavi-operaterja-ali-spremembi-paketa",
+        "source_url": "",
+        "answer": "Sodobna telekomunikacijska zbirija (AKOS) se ne udeležuje v diskussioni o individualnih finančnih situacijah. Za informacije o odjavi in kazenah je potrebno se vzhajati na uradni kanali, kot so npr. Stranke za uporabnike, zbirja ali pritožbe.",
+        "latency_sec": 41.359,
+        "tokens": 92,
+        "scores": {
+          "slovene_signal": 5.0,
+          "required_coverage": 0.0,
+          "fluency": 5.0,
+          "abstention": 5.0,
+          "forbidden_control": 5.0,
+          "overall": 3.5
+        },
+        "notes": "",
+        "hard_fail": false,
+        "hard_fail_reasons": []
+      },
+      {
+        "id": "GOLD2-0303",
+        "category": "Nedelovanje storitve",
+        "prompt": "Ej, povej mi: Operater mi ne zagotavlja dogovorjene hitrosti interneta. Kaj mi pripada? A se to da uredit?",
+        "required_keywords": [
+          "dogovorjena hitrost",
+          "pravice",
+          "reklamacija"
+        ],
+        "forbidden_keywords": [
+          "nič vam ne pripada"
+        ],
+        "expected_abstain": false,
+        "source_topic": "storitev-ne-deluje-ali-ni-ustrezna",
+        "source_url": "",
+        "answer": "Srečo! Zgornje približno povezamo, da je to povezano s telematiko in mobilnimi operaterji. \n\nKo se zaveda, da operater ne zagotavlja dogovorjeno hitrosti interneta, lahko se to poveže tudi z opremo in tehniko, ki se uporablja za internetsko povezavo. \n\nV primeru, ko je operater nezagotavlja dogovorjeno hitrosti interneta, lahko se to poveže tudi z opremo, ki se uporablja za internetsko povezavo, kot je primer USB modem ali mobilni modem.",
+        "latency_sec": 55.477,
+        "tokens": 163,
+        "scores": {
+          "slovene_signal": 5.0,
+          "required_coverage": 0.0,
+          "fluency": 4.82,
+          "abstention": 5.0,
+          "forbidden_control": 5.0,
+          "overall": 3.46
+        },
+        "notes": "",
+        "hard_fail": false,
+        "hard_fail_reasons": []
+      },
+      {
+        "id": "GOLD2-1146",
+        "category": "Nedelovanje storitve",
+        "prompt": "Na kratko: Operater mi ne zagotavlja dogovorjene hitrosti interneta. Kaj mi pripada? Odgovori v 2 stavkih.",
+        "required_keywords": [
+          "reklamacija",
+          "pravice",
+          "dogovorjena hitrost"
+        ],
+        "forbidden_keywords": [
+          "nič vam ne pripada"
+        ],
+        "expected_abstain": false,
+        "source_topic": "storitev-ne-deluje-ali-ni-ustrezna",
+        "source_url": "",
+        "answer": "Združite se pri operatoru in zahtite, da se vse dogovorjene hitrosti interneta potrjejo.",
+        "latency_sec": 20.945,
+        "tokens": 34,
+        "scores": {
+          "slovene_signal": 2.5,
+          "required_coverage": 0.0,
+          "fluency": 5.0,
+          "abstention": 5.0,
+          "forbidden_control": 5.0,
+          "overall": 2.88
+        },
+        "notes": "",
+        "hard_fail": false,
+        "hard_fail_reasons": []
+      },
+      {
+        "id": "GOLD2-1328",
+        "category": "Nedelovanje storitve",
+        "prompt": "Spoštovani, prosim za pojasnilo: Operater noče zagotoviti širokopasovnih storitev (internet/TV). Kaj lahko storim kot uporabnik? Hvala za pomoč.",
+        "required_keywords": [
+          "operater",
+          "postopek",
+          "širokopasovne storitve"
+        ],
+        "forbidden_keywords": [
+          "AKOS naroči operaterju gradnjo čez noč"
+        ],
+        "expected_abstain": false,
+        "source_topic": "storitev-ne-deluje-ali-ni-ustrezna",
+        "source_url": "",
+        "answer": "NAPAKA: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=180)",
+        "latency_sec": 0.0,
+        "tokens": null,
+        "scores": {
+          "slovene_signal": 0.0,
+          "required_coverage": 0.0,
+          "fluency": 0.0,
+          "abstention": 0.0,
+          "forbidden_control": 0.0,
+          "overall": 0.0
+        },
+        "notes": "",
+        "hard_fail": false,
+        "hard_fail_reasons": []
+      },
+      {
+        "id": "GOLD2-1479",
+        "category": "Neupravičen račun",
+        "prompt": "Ej, povej mi: Menim, da mi je operater preveč zaracunal prenos podatkov. Kako preverim porabo? A se to da uredit?",
+        "required_keywords": [
+          "razčlenitev",
+          "prenos podatkov",
+          "reklamacija"
+        ],
+        "forbidden_keywords": [
+          "AKOS vidi vašo zasebno zgodovino brskanja"
+        ],
+        "expected_abstain": false,
+        "source_topic": "neupravicen-racun",
+        "source_url": "",
+        "answer": "Srečo! Zgornje povezavo ni mogoče preveriti, ker ni delovanje sistema. Za preverjanje porabe in priporočilo za korrekcijo se lahko odpreta spletna stran \"Porabe in korrekcije\" (https://akos.gov.si/porabe-korrecije).",
+        "latency_sec": 38.313,
+        "tokens": 80,
+        "scores": {
+          "slovene_signal": 4.0,
+          "required_coverage": 0.0,
+          "fluency": 5.0,
+          "abstention": 5.0,
+          "forbidden_control": 5.0,
+          "overall": 3.25
+        },
+        "notes": "",
+        "hard_fail": false,
+        "hard_fail_reasons": []
+      },
+      {
+        "id": "GOLD2-1957",
+        "category": "Neupravičen račun",
+        "prompt": "[Uporabnik je nezadovoljen] Operater mi neupravičeno zaračunava komercialna sporočila. Kaj lahko naredim? Prosim za jasen naslednji korak.",
+        "required_keywords": [
+          "dokazi",
+          "reklamacija",
+          "zaračunavanje"
+        ],
+        "forbidden_keywords": [
+          "nič ni mogoče"
+        ],
+        "expected_abstain": false,
+        "source_topic": "neupravicen-racun",
+        "source_url": "",
+        "answer": "NAPAKA: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=180)",
+        "latency_sec": 0.0,
+        "tokens": null,
+        "scores": {
+          "slovene_signal": 0.0,
+          "required_coverage": 0.0,
+          "fluency": 0.0,
+          "abstention": 0.0,
+          "forbidden_control": 0.0,
+          "overall": 0.0
+        },
+        "notes": "",
+        "hard_fail": false,
+        "hard_fail_reasons": []
+      },
+      {
+        "id": "GOLD2-0463",
+        "category": "Neupravičen račun",
+        "prompt": "Ej, povej mi: Operater mi je zaracunal administrativni strošek, ki ni bil naveden ob podpisu pogodbe. Ali to velja? A se to da uredit?",
+        "required_keywords": [
+          "administrativni strošek",
+          "transparentnost",
+          "pogodba"
+        ],
+        "forbidden_keywords": [
+          "operater lahko vedno doda nov strošek"
+        ],
+        "expected_abstain": false,
+        "source_topic": "neupravicen-racun",
+        "source_url": "",
+        "answer": "Srečeno! Započnite si, da je zelo zanimivo, da si se spomnil na to, da je bil administrativni strošek naveden ob podpisu pogodbe.\n\nV primeru, ko je operater zaracunal administrativni strošek, ki ni bil naveden ob podpisu pogodbe, lahko se lahko razlože na naslednje posametnice:\n\n1.  **Administrativni strošek ni bil naveden ob podpisu pogodbe**: To pomeni, da ni bil naveden v dokumentu, ki je bil podpisan med oba strane. V tem primeru ni mogoče sprejeti, da bi se strošek uredil, ker ni bil naveden v primeru, v katerem je bil podpisano pogodbe.\n2.  **Operater zaracunal strošek**: To pomeni, da je operater zapisal strošek v dokument, ki je bil podpisan, vendar ni bil naveden v primeru, v katerem je bil podpisano pogodbe. To lahko pomeni, da je bila pogodba podpisana brez prilagodbe stroškov, ki so bile navedene v dokumentu.\n3.  **Da se strošek uredi?**: V tem primeru ni mogoče sprejeti, da bi se strošek uredil, ker ni bil naveden v primeru, v katerem je bil podpisano pogodbe. Zato je treba pospremiti to, da se strošek uredi, ali ne.",
+        "latency_sec": 130.719,
+        "tokens": 367,
+        "scores": {
+          "slovene_signal": 5.0,
+          "required_coverage": 3.33,
+          "fluency": 4.74,
+          "abstention": 5.0,
+          "forbidden_control": 5.0,
+          "overall": 4.45
+        },
+        "notes": "",
+        "hard_fail": false,
+        "hard_fail_reasons": []
+      },
+      {
+        "id": "GOLD2-0841",
+        "category": "Novinarska vprašanja",
+        "prompt": "[Novinar] Kako AKOS sodeluje v javnih posvetovanjih pri pripravi regulacije in kako lahko javnost poda pripombe?",
+        "required_keywords": [
+          "AKOS",
+          "javna posvetovanja",
+          "pripombe"
+        ],
+        "forbidden_keywords": [
+          "zaprti postopek brez javnosti"
+        ],
+        "expected_abstain": false,
+        "source_topic": "javna-posvetovanja-in-razpisi",
+        "source_url": "",
+        "answer": "NAPAKA: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=180)",
+        "latency_sec": 0.0,
+        "tokens": null,
+        "scores": {
+          "slovene_signal": 0.0,
+          "required_coverage": 0.0,
+          "fluency": 0.0,
+          "abstention": 0.0,
+          "forbidden_control": 0.0,
+          "overall": 0.0
+        },
+        "notes": "",
+        "hard_fail": false,
+        "hard_fail_reasons": []
+      },
+      {
+        "id": "GOLD2-1306",
+        "category": "Novinarska vprašanja",
+        "prompt": "Na kratko: [Novinar] Kako AKOS obravnava vprašanja glede težav v omrežju in kako obvešča javnost? Odgovori v 2 stavkih.",
+        "required_keywords": [
+          "AKOS",
+          "težave v omrežju",
+          "obveščanje javnosti"
+        ],
+        "forbidden_keywords": [
+          "brez javnih informacij"
+        ],
+        "expected_abstain": false,
+        "source_topic": "novinarska-vprasanja-in-odgovori",
+        "source_url": "",
+        "answer": "Kako AKOS obravnava vprašanja glede težav v omrežju:\n\nAKOS ima zasedbo zaposlenih, ki se uklopijo v težave v omrežju in jih obravljajo. Zaposleni, ki se uklopijo v težave, so zaposleni, ki so izobraženi in imajo potrebnega izkuza v tem področju.\n\nAKOS obvešča javnost prek uradnih kanалов, kot so njihova spletna stran in socialna mreža.",
+        "latency_sec": 61.425,
+        "tokens": 133,
+        "scores": {
+          "slovene_signal": 3.0,
+          "required_coverage": 3.33,
+          "fluency": 4.94,
+          "abstention": 5.0,
+          "forbidden_control": 5.0,
+          "overall": 3.99
+        },
+        "notes": "",
+        "hard_fail": false,
+        "hard_fail_reasons": []
+      },
+      {
+        "id": "GOLD2-0815",
+        "category": "Novinarska vprašanja",
+        "prompt": "Ej, povej mi: [Novinar] Kako AKOS obravnava vprašanja glede težav v omrežju in kako obvešča javnost? A se to da uredit?",
+        "required_keywords": [
+          "obveščanje javnosti",
+          "težave v omrežju",
+          "AKOS"
+        ],
+        "forbidden_keywords": [
+          "brez javnih informacij"
+        ],
+        "expected_abstain": false,
+        "source_topic": "novinarska-vprasanja-in-odgovori",
+        "source_url": "",
+        "answer": "Kako deluje AKOS pri obravni vprašanjih glede težav v omrežju?\n\nAKOS ima zasedlo za obravnavo vprašanj, ki se sestaja iz zasedil za težave v omrežju, zasedil za javno informacijo in zasedil za zunanje zadevanja. Na zasedilu za težave v omrežju se obravljajo vprašanja glede težav v omrežju, ki so zabežene v sistemskih informacijah.",
+        "latency_sec": 66.517,
+        "tokens": 133,
+        "scores": {
+          "slovene_signal": 4.0,
+          "required_coverage": 3.33,
+          "fluency": 4.92,
+          "abstention": 5.0,
+          "forbidden_control": 5.0,
+          "overall": 4.23
+        },
+        "notes": "",
+        "hard_fail": false,
+        "hard_fail_reasons": []
+      },
+      {
+        "id": "GOLD2-0362",
+        "category": "Postopek pred AKOS",
+        "prompt": "Na kratko: Ali lahko vlogo za začetek postopka pred AKOS zame odda pooblaščenec? Odgovori v 2 stavkih.",
+        "required_keywords": [
+          "vloga",
+          "pooblaščenec"
+        ],
+        "forbidden_keywords": [
+          "samo osebno"
+        ],
+        "expected_abstain": false,
+        "source_topic": "postopek-pred-akos",
+        "source_url": "",
+        "answer": "Da, vlogo za začetek postopka pred AKOS lahko odda pooblaščenec.",
+        "latency_sec": 26.019,
+        "tokens": 26,
+        "scores": {
+          "slovene_signal": 3.5,
+          "required_coverage": 2.5,
+          "fluency": 5.0,
+          "abstention": 5.0,
+          "forbidden_control": 5.0,
+          "overall": 3.88
+        },
+        "notes": "",
+        "hard_fail": false,
+        "hard_fail_reasons": []
+      },
+      {
+        "id": "GOLD2-0088",
+        "category": "Postopek pred AKOS",
+        "prompt": "Spoštovani, prosim za pojasnilo: Ali moram med postopkom pri AKOS poravnati sporni račun ali lahko počakam? Hvala za pomoč.",
+        "required_keywords": [
+          "sporni račun",
+          "postopek"
+        ],
+        "forbidden_keywords": [
+          "AKOS vedno odpiše račun"
+        ],
+        "expected_abstain": false,
+        "source_topic": "postopek-pred-akos",
+        "source_url": "",
+        "answer": "Srečeno!\n\nPri poravni spornega računa je treba zaposlitve sicer izvedeti. Po poravni spornega računa lahko začnete s procesom priprave za poravnanje. Po poravni spornega računa lahko začnete s procesom priprave za poravnanje.",
+        "latency_sec": 40.11,
+        "tokens": 81,
+        "scores": {
+          "slovene_signal": 3.5,
+          "required_coverage": 0.0,
+          "fluency": 4.67,
+          "abstention": 5.0,
+          "forbidden_control": 5.0,
+          "overall": 3.06
+        },
+        "notes": "",
+        "hard_fail": false,
+        "hard_fail_reasons": []
+      },
+      {
+        "id": "GOLD2-0573",
+        "category": "Postopek pred AKOS",
+        "prompt": "[Uporabnik je nezadovoljen] Ali so v postopku pred AKOS kakšni stroški, če spor izgubim? Prosim za jasen naslednji korak.",
+        "required_keywords": [
+          "stroški",
+          "postopek"
+        ],
+        "forbidden_keywords": [
+          "visoka sodna taksa"
+        ],
+        "expected_abstain": false,
+        "source_topic": "postopek-pred-akos",
+        "source_url": "",
+        "answer": "Sporo pri AKOSu nemošte izgubiti. V postopku prijave pri AKOSu se stroški izplačujejo iz stroškovnega sredstva.",
+        "latency_sec": 38.027,
+        "tokens": 47,
+        "scores": {
+          "slovene_signal": 2.5,
+          "required_coverage": 2.5,
+          "fluency": 5.0,
+          "abstention": 5.0,
+          "forbidden_control": 5.0,
+          "overall": 3.62
+        },
+        "notes": "",
+        "hard_fail": false,
+        "hard_fail_reasons": []
+      },
+      {
+        "id": "GOLD2-1494",
+        "category": "Postopek pred AKOS",
+        "prompt": "Kaj mora vsebovati predlog za resitev spora, da bo popoln?",
+        "required_keywords": [
+          "podatki",
+          "dokazi",
+          "predlog"
+        ],
+        "forbidden_keywords": [
+          "zadostuje ena poved"
+        ],
+        "expected_abstain": false,
+        "source_topic": "postopek-pred-akos",
+        "source_url": "",
+        "answer": "Predlog za resitev spora vsebuje naslednje elemente:\n\n1. Opis spora: Kratek opis spora, ki je v sporo pospeščeval.\n2. Ustrezne podatki: Ustrezni podatki, ki so potrebni za resitev spora, kot so dokumenti, fotografije in druge potrebne informacije.\n3. Zahtevana resitev: Zahtevana resitev, kot je izmenjava dokumentov, izmenjava lastnega vozila ali druge resitve.\n4. Zahtevana doba: Zahtevana doba za resitev spora, kot je obdobje, v katerem se resitev spora lahko izvede.\n5. Zahtevana cena: Zahtevana cena za resitev spora, kot je cena za resitev spora ali cena za izmenjava dokumentov.\n6. Zahtevana dokumentacija: Zahtevana dokumentacija za resitev spora, kot je dokumentacija o spori, dokumentacija o lastnemu vozilu in druge dokumentacije.\n7. Zahtevana priporočena doba za izvedbo: Zahtevana priporočena doba za izvedbo resitev spora, kot je priporočena doba za izvedbo izmenave dokumentov.\n\nPredlog za resitev spora mora vsebovati vsa ta elementa, da bi bila resitev spora popolna.",
+        "latency_sec": 148.997,
+        "tokens": 352,
+        "scores": {
+          "slovene_signal": 5.0,
+          "required_coverage": 3.33,
+          "fluency": 4.86,
+          "abstention": 5.0,
+          "forbidden_control": 5.0,
+          "overall": 4.47
+        },
+        "notes": "",
+        "hard_fail": false,
+        "hard_fail_reasons": []
+      },
+      {
+        "id": "GOLD2-1828",
+        "category": "Nedelovanje storitve",
+        "prompt": "[Novinar] Prosim za uradno pojasnilo: Operater noče zagotoviti širokopasovnih storitev (internet/TV). Kaj lahko storim kot uporabnik? Odgovor naj bo dejstven in nevtralen.",
+        "required_keywords": [
+          "operater",
+          "postopek",
+          "širokopasovne storitve"
+        ],
+        "forbidden_keywords": [
+          "AKOS naroči operaterju gradnjo čez noč"
+        ],
+        "expected_abstain": false,
+        "source_topic": "storitev-ne-deluje-ali-ni-ustrezna",
+        "source_url": "",
+        "answer": "Srečo! Zdelamo se, da imate težave z širokopasovnimi storitvami. Natančno povezemo, da lahko operater zagotovi širokopasovne storitve, kot so internet in TV, v sklopu njihovega paketa za telekomunikacije. \n\nKot uporabnik lahko storite naslednje:\n\n- Preberite se vsebino o širših storitvah na spletni strani operaterja.\n- Pogledajte ponudbo paketa za telekomunikacije in izberite paket, ki vključuje stroite, ki so vam potrebne.\n- Preberite se vsebino o cenah in obveznostih paketa za telekomunikacije.\n- Kontaktnite operaterja, če želite dodatne informacije ali pomoč pri izboru paketa za telekomunikacije.",
+        "latency_sec": 89.817,
+        "tokens": 224,
+        "scores": {
+          "slovene_signal": 5.0,
+          "required_coverage": 3.33,
+          "fluency": 4.94,
+          "abstention": 5.0,
+          "forbidden_control": 5.0,
+          "overall": 4.49
+        },
+        "notes": "",
+        "hard_fail": false,
+        "hard_fail_reasons": []
+      }
+    ]
+  }
+}

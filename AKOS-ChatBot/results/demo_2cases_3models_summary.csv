@@ -1,0 +1,4 @@
+model,status,avg_score,avg_latency_sec,tests,critical_failures,hard_fail_count
+llama3.1:8b,FAIL,0.0,0.0,2,2,0
+gemma2:9b,FAIL,0.0,0.0,2,2,0
+mistral-nemo:12b,FAIL,0.0,0.0,2,2,0

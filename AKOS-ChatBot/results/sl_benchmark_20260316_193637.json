@@ -1,0 +1,36 @@
+{
+  "llama3.2:3b": {
+    "cases": [
+      {
+        "id": "INTP-026",
+        "category": "Call-center - signal",
+        "prompt": "Na kratko: [Anonimizirano] Na stalnem naslovu nimam stabilnega mobilnega signala. Kako naj prijavim težavo? Odgovori v 2 stavkih.",
+        "required_keywords": [
+          "mobilni signal",
+          "operater",
+          "prijava"
+        ],
+        "forbidden_keywords": [
+          "AKOS zagotovi signal na lokaciji"
+        ],
+        "expected_abstain": false,
+        "source_topic": "storitev-ne-deluje-ali-ni-ustrezna",
+        "source_url": "https://www.akos-rs.si/pogosta-vprasanja-in-odgovori/storitev-ne-deluje-ali-ni-ustrezna",
+        "answer": "NAPAKA: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=420)",
+        "latency_sec": 0.0,
+        "tokens": null,
+        "scores": {
+          "slovene_signal": 0.0,
+          "required_coverage": 0.0,
+          "fluency": 0.0,
+          "abstention": 0.0,
+          "forbidden_control": 0.0,
+          "overall": 0.0
+        },
+        "notes": "",
+        "hard_fail": false,
+        "hard_fail_reasons": []
+      }
+    ]
+  }
+}

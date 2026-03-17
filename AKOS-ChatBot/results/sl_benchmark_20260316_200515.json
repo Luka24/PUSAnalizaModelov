@@ -1,0 +1,194 @@
+{
+  "llama3.1:8b": {
+    "cases": [
+      {
+        "id": "INTP-026",
+        "category": "Call-center - signal",
+        "prompt": "Na kratko: [Anonimizirano] Na stalnem naslovu nimam stabilnega mobilnega signala. Kako naj prijavim težavo? Odgovori v 2 stavkih.",
+        "required_keywords": [
+          "mobilni signal",
+          "operater",
+          "prijava"
+        ],
+        "forbidden_keywords": [
+          "AKOS zagotovi signal na lokaciji"
+        ],
+        "expected_abstain": false,
+        "source_topic": "storitev-ne-deluje-ali-ni-ustrezna",
+        "source_url": "https://www.akos-rs.si/pogosta-vprasanja-in-odgovori/storitev-ne-deluje-ali-ni-ustrezna",
+        "answer": "NAPAKA: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=420)",
+        "latency_sec": 0.0,
+        "tokens": null,
+        "scores": {
+          "slovene_signal": 0.0,
+          "required_coverage": 0.0,
+          "fluency": 0.0,
+          "abstention": 0.0,
+          "forbidden_control": 0.0,
+          "overall": 0.0
+        },
+        "notes": "",
+        "hard_fail": false,
+        "hard_fail_reasons": []
+      },
+      {
+        "id": "INTP-021",
+        "category": "Inbox - pošta",
+        "prompt": "[Anonimizirano] Pošiljka ni bila dostavljena v običajnem roku. Kako lahko sprožim postopek?",
+        "required_keywords": [
+          "izvajalec poštnih storitev",
+          "reklamacija",
+          "AKOS"
+        ],
+        "forbidden_keywords": [
+          "AKOS neposredno dostavi pošiljko"
+        ],
+        "expected_abstain": false,
+        "source_topic": "spori-med-operaterji",
+        "source_url": "https://www.akos-rs.si/uporabniki-storitev/raziscite/spori-med-operaterji-oz-izvajalci-postnih-storitev-in-koncnimi-uporabniki",
+        "answer": "NAPAKA: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=420)",
+        "latency_sec": 0.0,
+        "tokens": null,
+        "scores": {
+          "slovene_signal": 0.0,
+          "required_coverage": 0.0,
+          "fluency": 0.0,
+          "abstention": 0.0,
+          "forbidden_control": 0.0,
+          "overall": 0.0
+        },
+        "notes": "",
+        "hard_fail": false,
+        "hard_fail_reasons": []
+      }
+    ]
+  },
+  "gemma2:9b": {
+    "cases": [
+      {
+        "id": "INTP-026",
+        "category": "Call-center - signal",
+        "prompt": "Na kratko: [Anonimizirano] Na stalnem naslovu nimam stabilnega mobilnega signala. Kako naj prijavim težavo? Odgovori v 2 stavkih.",
+        "required_keywords": [
+          "mobilni signal",
+          "operater",
+          "prijava"
+        ],
+        "forbidden_keywords": [
+          "AKOS zagotovi signal na lokaciji"
+        ],
+        "expected_abstain": false,
+        "source_topic": "storitev-ne-deluje-ali-ni-ustrezna",
+        "source_url": "https://www.akos-rs.si/pogosta-vprasanja-in-odgovori/storitev-ne-deluje-ali-ni-ustrezna",
+        "answer": "NAPAKA: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=420)",
+        "latency_sec": 0.0,
+        "tokens": null,
+        "scores": {
+          "slovene_signal": 0.0,
+          "required_coverage": 0.0,
+          "fluency": 0.0,
+          "abstention": 0.0,
+          "forbidden_control": 0.0,
+          "overall": 0.0
+        },
+        "notes": "",
+        "hard_fail": false,
+        "hard_fail_reasons": []
+      },
+      {
+        "id": "INTP-021",
+        "category": "Inbox - pošta",
+        "prompt": "[Anonimizirano] Pošiljka ni bila dostavljena v običajnem roku. Kako lahko sprožim postopek?",
+        "required_keywords": [
+          "izvajalec poštnih storitev",
+          "reklamacija",
+          "AKOS"
+        ],
+        "forbidden_keywords": [
+          "AKOS neposredno dostavi pošiljko"
+        ],
+        "expected_abstain": false,
+        "source_topic": "spori-med-operaterji",
+        "source_url": "https://www.akos-rs.si/uporabniki-storitev/raziscite/spori-med-operaterji-oz-izvajalci-postnih-storitev-in-koncnimi-uporabniki",
+        "answer": "NAPAKA: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=420)",
+        "latency_sec": 0.0,
+        "tokens": null,
+        "scores": {
+          "slovene_signal": 0.0,
+          "required_coverage": 0.0,
+          "fluency": 0.0,
+          "abstention": 0.0,
+          "forbidden_control": 0.0,
+          "overall": 0.0
+        },
+        "notes": "",
+        "hard_fail": false,
+        "hard_fail_reasons": []
+      }
+    ]
+  },
+  "mistral-nemo:12b": {
+    "cases": [
+      {
+        "id": "INTP-026",
+        "category": "Call-center - signal",
+        "prompt": "Na kratko: [Anonimizirano] Na stalnem naslovu nimam stabilnega mobilnega signala. Kako naj prijavim težavo? Odgovori v 2 stavkih.",
+        "required_keywords": [
+          "mobilni signal",
+          "operater",
+          "prijava"
+        ],
+        "forbidden_keywords": [
+          "AKOS zagotovi signal na lokaciji"
+        ],
+        "expected_abstain": false,
+        "source_topic": "storitev-ne-deluje-ali-ni-ustrezna",
+        "source_url": "https://www.akos-rs.si/pogosta-vprasanja-in-odgovori/storitev-ne-deluje-ali-ni-ustrezna",
+        "answer": "NAPAKA: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=420)",
+        "latency_sec": 0.0,
+        "tokens": null,
+        "scores": {
+          "slovene_signal": 0.0,
+          "required_coverage": 0.0,
+          "fluency": 0.0,
+          "abstention": 0.0,
+          "forbidden_control": 0.0,
+          "overall": 0.0
+        },
+        "notes": "",
+        "hard_fail": false,
+        "hard_fail_reasons": []
+      },
+      {
+        "id": "INTP-021",
+        "category": "Inbox - pošta",
+        "prompt": "[Anonimizirano] Pošiljka ni bila dostavljena v običajnem roku. Kako lahko sprožim postopek?",
+        "required_keywords": [
+          "izvajalec poštnih storitev",
+          "reklamacija",
+          "AKOS"
+        ],
+        "forbidden_keywords": [
+          "AKOS neposredno dostavi pošiljko"
+        ],
+        "expected_abstain": false,
+        "source_topic": "spori-med-operaterji",
+        "source_url": "https://www.akos-rs.si/uporabniki-storitev/raziscite/spori-med-operaterji-oz-izvajalci-postnih-storitev-in-koncnimi-uporabniki",
+        "answer": "NAPAKA: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=420)",
+        "latency_sec": 0.0,
+        "tokens": null,
+        "scores": {
+          "slovene_signal": 0.0,
+          "required_coverage": 0.0,
+          "fluency": 0.0,
+          "abstention": 0.0,
+          "forbidden_control": 0.0,
+          "overall": 0.0
+        },
+        "notes": "",
+        "hard_fail": false,
+        "hard_fail_reasons": []
+      }
+    ]
+  }
+}

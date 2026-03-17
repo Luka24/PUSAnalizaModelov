@@ -1,0 +1,765 @@
+{
+  "dataset_name": "AKOS Internal Proxy Set (40)",
+  "language": "sl",
+  "created_at": "2026-03-15",
+  "size": 40,
+  "note": "To ni pravi interni inbox/call-center dump. Gre za anonimizirane proxy primere pripravljene iz javnih AKOS tematik.",
+  "cases": [
+    {
+      "id": "INTP-001",
+      "category": "Inbox - račun",
+      "prompt": "[Anonimizirano] Prejel sem nenavadno visok račun za mobilne storitve. Kako naj pravilno ukrepam?",
+      "required_keywords": [
+        "reklamacija",
+        "razčlenjen račun",
+        "AKOS"
+      ],
+      "forbidden_keywords": [
+        "računa ni treba plačati nikoli"
+      ],
+      "expected_abstain": false,
+      "reference_answer": "Pojasni reklamacijo pri operaterju, zahtevo za razčlenitev in možnost postopka pri AKOS.",
+      "source_topic": "neupravicen-racun",
+      "source_url": "https://www.akos-rs.si/pogosta-vprasanja-in-odgovori/neupravicen-racun",
+      "source_type": "proxy-internal",
+      "variant_style": "standard"
+    },
+    {
+      "id": "INTP-002",
+      "category": "Inbox - račun",
+      "prompt": "Na kratko: [Anonimizirano] Prejel sem nenavadno visok račun za mobilne storitve. Kako naj pravilno ukrepam? Odgovori v 2 stavkih.",
+      "required_keywords": [
+        "reklamacija",
+        "razčlenjen račun",
+        "AKOS"
+      ],
+      "forbidden_keywords": [
+        "računa ni treba plačati nikoli"
+      ],
+      "expected_abstain": false,
+      "reference_answer": "Pojasni reklamacijo pri operaterju, zahtevo za razčlenitev in možnost postopka pri AKOS.",
+      "source_topic": "neupravicen-racun",
+      "source_url": "https://www.akos-rs.si/pogosta-vprasanja-in-odgovori/neupravicen-racun",
+      "source_type": "proxy-internal",
+      "variant_style": "short"
+    },
+    {
+      "id": "INTP-003",
+      "category": "Inbox - račun",
+      "prompt": "Spoštovani, [Anonimizirano] Prejel sem nenavadno visok račun za mobilne storitve. Kako naj pravilno ukrepam? Hvala.",
+      "required_keywords": [
+        "reklamacija",
+        "razčlenjen račun",
+        "AKOS"
+      ],
+      "forbidden_keywords": [
+        "računa ni treba plačati nikoli"
+      ],
+      "expected_abstain": false,
+      "reference_answer": "Pojasni reklamacijo pri operaterju, zahtevo za razčlenitev in možnost postopka pri AKOS.",
+      "source_topic": "neupravicen-racun",
+      "source_url": "https://www.akos-rs.si/pogosta-vprasanja-in-odgovori/neupravicen-racun",
+      "source_type": "proxy-internal",
+      "variant_style": "formal"
+    },
+    {
+      "id": "INTP-004",
+      "category": "Inbox - račun",
+      "prompt": "[Stranka je nezadovoljna] [Anonimizirano] Prejel sem nenavadno visok račun za mobilne storitve. Kako naj pravilno ukrepam? Prosim za konkreten korak.",
+      "required_keywords": [
+        "reklamacija",
+        "razčlenjen račun",
+        "AKOS"
+      ],
+      "forbidden_keywords": [
+        "računa ni treba plačati nikoli"
+      ],
+      "expected_abstain": false,
+      "reference_answer": "Pojasni reklamacijo pri operaterju, zahtevo za razčlenitev in možnost postopka pri AKOS.",
+      "source_topic": "neupravicen-racun",
+      "source_url": "https://www.akos-rs.si/pogosta-vprasanja-in-odgovori/neupravicen-racun",
+      "source_type": "proxy-internal",
+      "variant_style": "frustrated"
+    },
+    {
+      "id": "INTP-005",
+      "category": "Inbox - gostovanje",
+      "prompt": "[Anonimizirano] V EU gostovanju so mi zaračunali storitve kot izven EU. Kaj lahko storim?",
+      "required_keywords": [
+        "EU",
+        "gostovanje",
+        "reklamacija"
+      ],
+      "forbidden_keywords": [
+        "EU pravila ne veljajo"
+      ],
+      "expected_abstain": false,
+      "reference_answer": "Pojasni pravila gostovanja in postopek ugovora pri napačnem obračunu.",
+      "source_topic": "o-gostovanju",
+      "source_url": "https://www.akos-rs.si/pogosta-vprasanja-in-odgovori/o-gostovanju",
+      "source_type": "proxy-internal",
+      "variant_style": "standard"
+    },
+    {
+      "id": "INTP-006",
+      "category": "Inbox - gostovanje",
+      "prompt": "Na kratko: [Anonimizirano] V EU gostovanju so mi zaračunali storitve kot izven EU. Kaj lahko storim? Odgovori v 2 stavkih.",
+      "required_keywords": [
+        "EU",
+        "gostovanje",
+        "reklamacija"
+      ],
+      "forbidden_keywords": [
+        "EU pravila ne veljajo"
+      ],
+      "expected_abstain": false,
+      "reference_answer": "Pojasni pravila gostovanja in postopek ugovora pri napačnem obračunu.",
+      "source_topic": "o-gostovanju",
+      "source_url": "https://www.akos-rs.si/pogosta-vprasanja-in-odgovori/o-gostovanju",
+      "source_type": "proxy-internal",
+      "variant_style": "short"
+    },
+    {
+      "id": "INTP-007",
+      "category": "Inbox - gostovanje",
+      "prompt": "Spoštovani, [Anonimizirano] V EU gostovanju so mi zaračunali storitve kot izven EU. Kaj lahko storim? Hvala.",
+      "required_keywords": [
+        "EU",
+        "gostovanje",
+        "reklamacija"
+      ],
+      "forbidden_keywords": [
+        "EU pravila ne veljajo"
+      ],
+      "expected_abstain": false,
+      "reference_answer": "Pojasni pravila gostovanja in postopek ugovora pri napačnem obračunu.",
+      "source_topic": "o-gostovanju",
+      "source_url": "https://www.akos-rs.si/pogosta-vprasanja-in-odgovori/o-gostovanju",
+      "source_type": "proxy-internal",
+      "variant_style": "formal"
+    },
+    {
+      "id": "INTP-008",
+      "category": "Inbox - gostovanje",
+      "prompt": "[Stranka je nezadovoljna] [Anonimizirano] V EU gostovanju so mi zaračunali storitve kot izven EU. Kaj lahko storim? Prosim za konkreten korak.",
+      "required_keywords": [
+        "EU",
+        "gostovanje",
+        "reklamacija"
+      ],
+      "forbidden_keywords": [
+        "EU pravila ne veljajo"
+      ],
+      "expected_abstain": false,
+      "reference_answer": "Pojasni pravila gostovanja in postopek ugovora pri napačnem obračunu.",
+      "source_topic": "o-gostovanju",
+      "source_url": "https://www.akos-rs.si/pogosta-vprasanja-in-odgovori/o-gostovanju",
+      "source_type": "proxy-internal",
+      "variant_style": "frustrated"
+    },
+    {
+      "id": "INTP-009",
+      "category": "Inbox - menjava operaterja",
+      "prompt": "[Anonimizirano] Pri prenosu številke je prišlo do zamude in dodatnih stroškov. Katere pravice imam?",
+      "required_keywords": [
+        "prenos številke",
+        "zamuda",
+        "pravice"
+      ],
+      "forbidden_keywords": [
+        "uporabnik nima nobene pravice"
+      ],
+      "expected_abstain": false,
+      "reference_answer": "Pojasni pravice ob zamudi in postopke reklamacije/spora.",
+      "source_topic": "o-menjavi-operaterja-ali-spremembi-paketa",
+      "source_url": "https://www.akos-rs.si/pogosta-vprasanja-in-odgovori/o-menjavi-operaterja-ali-spremembi-paketa",
+      "source_type": "proxy-internal",
+      "variant_style": "standard"
+    },
+    {
+      "id": "INTP-010",
+      "category": "Inbox - menjava operaterja",
+      "prompt": "Na kratko: [Anonimizirano] Pri prenosu številke je prišlo do zamude in dodatnih stroškov. Katere pravice imam? Odgovori v 2 stavkih.",
+      "required_keywords": [
+        "prenos številke",
+        "zamuda",
+        "pravice"
+      ],
+      "forbidden_keywords": [
+        "uporabnik nima nobene pravice"
+      ],
+      "expected_abstain": false,
+      "reference_answer": "Pojasni pravice ob zamudi in postopke reklamacije/spora.",
+      "source_topic": "o-menjavi-operaterja-ali-spremembi-paketa",
+      "source_url": "https://www.akos-rs.si/pogosta-vprasanja-in-odgovori/o-menjavi-operaterja-ali-spremembi-paketa",
+      "source_type": "proxy-internal",
+      "variant_style": "short"
+    },
+    {
+      "id": "INTP-011",
+      "category": "Inbox - menjava operaterja",
+      "prompt": "Spoštovani, [Anonimizirano] Pri prenosu številke je prišlo do zamude in dodatnih stroškov. Katere pravice imam? Hvala.",
+      "required_keywords": [
+        "prenos številke",
+        "zamuda",
+        "pravice"
+      ],
+      "forbidden_keywords": [
+        "uporabnik nima nobene pravice"
+      ],
+      "expected_abstain": false,
+      "reference_answer": "Pojasni pravice ob zamudi in postopke reklamacije/spora.",
+      "source_topic": "o-menjavi-operaterja-ali-spremembi-paketa",
+      "source_url": "https://www.akos-rs.si/pogosta-vprasanja-in-odgovori/o-menjavi-operaterja-ali-spremembi-paketa",
+      "source_type": "proxy-internal",
+      "variant_style": "formal"
+    },
+    {
+      "id": "INTP-012",
+      "category": "Inbox - menjava operaterja",
+      "prompt": "[Stranka je nezadovoljna] [Anonimizirano] Pri prenosu številke je prišlo do zamude in dodatnih stroškov. Katere pravice imam? Prosim za konkreten korak.",
+      "required_keywords": [
+        "prenos številke",
+        "zamuda",
+        "pravice"
+      ],
+      "forbidden_keywords": [
+        "uporabnik nima nobene pravice"
+      ],
+      "expected_abstain": false,
+      "reference_answer": "Pojasni pravice ob zamudi in postopke reklamacije/spora.",
+      "source_topic": "o-menjavi-operaterja-ali-spremembi-paketa",
+      "source_url": "https://www.akos-rs.si/pogosta-vprasanja-in-odgovori/o-menjavi-operaterja-ali-spremembi-paketa",
+      "source_type": "proxy-internal",
+      "variant_style": "frustrated"
+    },
+    {
+      "id": "INTP-013",
+      "category": "Call-center - nedelovanje",
+      "prompt": "[Anonimizirano] Internet mi več dni ne deluje, operater ne odpravi napake. Kako naj nadaljujem?",
+      "required_keywords": [
+        "prijava napake",
+        "reklamacija",
+        "AKOS"
+      ],
+      "forbidden_keywords": [
+        "nič se ne da storiti"
+      ],
+      "expected_abstain": false,
+      "reference_answer": "Predlaga dokumentirano prijavo, reklamacijo in nadaljnje postopke.",
+      "source_topic": "storitev-ne-deluje-ali-ni-ustrezna",
+      "source_url": "https://www.akos-rs.si/pogosta-vprasanja-in-odgovori/storitev-ne-deluje-ali-ni-ustrezna",
+      "source_type": "proxy-internal",
+      "variant_style": "standard"
+    },
+    {
+      "id": "INTP-014",
+      "category": "Call-center - nedelovanje",
+      "prompt": "Na kratko: [Anonimizirano] Internet mi več dni ne deluje, operater ne odpravi napake. Kako naj nadaljujem? Odgovori v 2 stavkih.",
+      "required_keywords": [
+        "prijava napake",
+        "reklamacija",
+        "AKOS"
+      ],
+      "forbidden_keywords": [
+        "nič se ne da storiti"
+      ],
+      "expected_abstain": false,
+      "reference_answer": "Predlaga dokumentirano prijavo, reklamacijo in nadaljnje postopke.",
+      "source_topic": "storitev-ne-deluje-ali-ni-ustrezna",
+      "source_url": "https://www.akos-rs.si/pogosta-vprasanja-in-odgovori/storitev-ne-deluje-ali-ni-ustrezna",
+      "source_type": "proxy-internal",
+      "variant_style": "short"
+    },
+    {
+      "id": "INTP-015",
+      "category": "Call-center - nedelovanje",
+      "prompt": "Spoštovani, [Anonimizirano] Internet mi več dni ne deluje, operater ne odpravi napake. Kako naj nadaljujem? Hvala.",
+      "required_keywords": [
+        "prijava napake",
+        "reklamacija",
+        "AKOS"
+      ],
+      "forbidden_keywords": [
+        "nič se ne da storiti"
+      ],
+      "expected_abstain": false,
+      "reference_answer": "Predlaga dokumentirano prijavo, reklamacijo in nadaljnje postopke.",
+      "source_topic": "storitev-ne-deluje-ali-ni-ustrezna",
+      "source_url": "https://www.akos-rs.si/pogosta-vprasanja-in-odgovori/storitev-ne-deluje-ali-ni-ustrezna",
+      "source_type": "proxy-internal",
+      "variant_style": "formal"
+    },
+    {
+      "id": "INTP-016",
+      "category": "Call-center - nedelovanje",
+      "prompt": "[Stranka je nezadovoljna] [Anonimizirano] Internet mi več dni ne deluje, operater ne odpravi napake. Kako naj nadaljujem? Prosim za konkreten korak.",
+      "required_keywords": [
+        "prijava napake",
+        "reklamacija",
+        "AKOS"
+      ],
+      "forbidden_keywords": [
+        "nič se ne da storiti"
+      ],
+      "expected_abstain": false,
+      "reference_answer": "Predlaga dokumentirano prijavo, reklamacijo in nadaljnje postopke.",
+      "source_topic": "storitev-ne-deluje-ali-ni-ustrezna",
+      "source_url": "https://www.akos-rs.si/pogosta-vprasanja-in-odgovori/storitev-ne-deluje-ali-ni-ustrezna",
+      "source_type": "proxy-internal",
+      "variant_style": "frustrated"
+    },
+    {
+      "id": "INTP-017",
+      "category": "Call-center - postopek",
+      "prompt": "[Anonimizirano] Operater je zavrnil mojo reklamacijo. Kako vložim predlog za rešitev spora?",
+      "required_keywords": [
+        "predlog",
+        "rok",
+        "AKOS"
+      ],
+      "forbidden_keywords": [
+        "tožba je obvezna"
+      ],
+      "expected_abstain": false,
+      "reference_answer": "Pojasni korake in roke za vložitev predloga pri AKOS.",
+      "source_topic": "postopek-pred-akos",
+      "source_url": "https://www.akos-rs.si/pogosta-vprasanja-in-odgovori/postopek-pred-akos",
+      "source_type": "proxy-internal",
+      "variant_style": "standard"
+    },
+    {
+      "id": "INTP-018",
+      "category": "Call-center - postopek",
+      "prompt": "Na kratko: [Anonimizirano] Operater je zavrnil mojo reklamacijo. Kako vložim predlog za rešitev spora? Odgovori v 2 stavkih.",
+      "required_keywords": [
+        "predlog",
+        "rok",
+        "AKOS"
+      ],
+      "forbidden_keywords": [
+        "tožba je obvezna"
+      ],
+      "expected_abstain": false,
+      "reference_answer": "Pojasni korake in roke za vložitev predloga pri AKOS.",
+      "source_topic": "postopek-pred-akos",
+      "source_url": "https://www.akos-rs.si/pogosta-vprasanja-in-odgovori/postopek-pred-akos",
+      "source_type": "proxy-internal",
+      "variant_style": "short"
+    },
+    {
+      "id": "INTP-019",
+      "category": "Call-center - postopek",
+      "prompt": "Spoštovani, [Anonimizirano] Operater je zavrnil mojo reklamacijo. Kako vložim predlog za rešitev spora? Hvala.",
+      "required_keywords": [
+        "predlog",
+        "rok",
+        "AKOS"
+      ],
+      "forbidden_keywords": [
+        "tožba je obvezna"
+      ],
+      "expected_abstain": false,
+      "reference_answer": "Pojasni korake in roke za vložitev predloga pri AKOS.",
+      "source_topic": "postopek-pred-akos",
+      "source_url": "https://www.akos-rs.si/pogosta-vprasanja-in-odgovori/postopek-pred-akos",
+      "source_type": "proxy-internal",
+      "variant_style": "formal"
+    },
+    {
+      "id": "INTP-020",
+      "category": "Call-center - postopek",
+      "prompt": "[Stranka je nezadovoljna] [Anonimizirano] Operater je zavrnil mojo reklamacijo. Kako vložim predlog za rešitev spora? Prosim za konkreten korak.",
+      "required_keywords": [
+        "predlog",
+        "rok",
+        "AKOS"
+      ],
+      "forbidden_keywords": [
+        "tožba je obvezna"
+      ],
+      "expected_abstain": false,
+      "reference_answer": "Pojasni korake in roke za vložitev predloga pri AKOS.",
+      "source_topic": "postopek-pred-akos",
+      "source_url": "https://www.akos-rs.si/pogosta-vprasanja-in-odgovori/postopek-pred-akos",
+      "source_type": "proxy-internal",
+      "variant_style": "frustrated"
+    },
+    {
+      "id": "INTP-021",
+      "category": "Inbox - pošta",
+      "prompt": "[Anonimizirano] Pošiljka ni bila dostavljena v običajnem roku. Kako lahko sprožim postopek?",
+      "required_keywords": [
+        "izvajalec poštnih storitev",
+        "reklamacija",
+        "AKOS"
+      ],
+      "forbidden_keywords": [
+        "AKOS neposredno dostavi pošiljko"
+      ],
+      "expected_abstain": false,
+      "reference_answer": "Pojasni reklamacijo pri izvajalcu in možnost spora pri AKOS.",
+      "source_topic": "spori-med-operaterji",
+      "source_url": "https://www.akos-rs.si/uporabniki-storitev/raziscite/spori-med-operaterji-oz-izvajalci-postnih-storitev-in-koncnimi-uporabniki",
+      "source_type": "proxy-internal",
+      "variant_style": "standard"
+    },
+    {
+      "id": "INTP-022",
+      "category": "Inbox - pošta",
+      "prompt": "Na kratko: [Anonimizirano] Pošiljka ni bila dostavljena v običajnem roku. Kako lahko sprožim postopek? Odgovori v 2 stavkih.",
+      "required_keywords": [
+        "izvajalec poštnih storitev",
+        "reklamacija",
+        "AKOS"
+      ],
+      "forbidden_keywords": [
+        "AKOS neposredno dostavi pošiljko"
+      ],
+      "expected_abstain": false,
+      "reference_answer": "Pojasni reklamacijo pri izvajalcu in možnost spora pri AKOS.",
+      "source_topic": "spori-med-operaterji",
+      "source_url": "https://www.akos-rs.si/uporabniki-storitev/raziscite/spori-med-operaterji-oz-izvajalci-postnih-storitev-in-koncnimi-uporabniki",
+      "source_type": "proxy-internal",
+      "variant_style": "short"
+    },
+    {
+      "id": "INTP-023",
+      "category": "Inbox - pošta",
+      "prompt": "Spoštovani, [Anonimizirano] Pošiljka ni bila dostavljena v običajnem roku. Kako lahko sprožim postopek? Hvala.",
+      "required_keywords": [
+        "izvajalec poštnih storitev",
+        "reklamacija",
+        "AKOS"
+      ],
+      "forbidden_keywords": [
+        "AKOS neposredno dostavi pošiljko"
+      ],
+      "expected_abstain": false,
+      "reference_answer": "Pojasni reklamacijo pri izvajalcu in možnost spora pri AKOS.",
+      "source_topic": "spori-med-operaterji",
+      "source_url": "https://www.akos-rs.si/uporabniki-storitev/raziscite/spori-med-operaterji-oz-izvajalci-postnih-storitev-in-koncnimi-uporabniki",
+      "source_type": "proxy-internal",
+      "variant_style": "formal"
+    },
+    {
+      "id": "INTP-024",
+      "category": "Inbox - pošta",
+      "prompt": "[Stranka je nezadovoljna] [Anonimizirano] Pošiljka ni bila dostavljena v običajnem roku. Kako lahko sprožim postopek? Prosim za konkreten korak.",
+      "required_keywords": [
+        "izvajalec poštnih storitev",
+        "reklamacija",
+        "AKOS"
+      ],
+      "forbidden_keywords": [
+        "AKOS neposredno dostavi pošiljko"
+      ],
+      "expected_abstain": false,
+      "reference_answer": "Pojasni reklamacijo pri izvajalcu in možnost spora pri AKOS.",
+      "source_topic": "spori-med-operaterji",
+      "source_url": "https://www.akos-rs.si/uporabniki-storitev/raziscite/spori-med-operaterji-oz-izvajalci-postnih-storitev-in-koncnimi-uporabniki",
+      "source_type": "proxy-internal",
+      "variant_style": "frustrated"
+    },
+    {
+      "id": "INTP-025",
+      "category": "Call-center - signal",
+      "prompt": "[Anonimizirano] Na stalnem naslovu nimam stabilnega mobilnega signala. Kako naj prijavim težavo?",
+      "required_keywords": [
+        "mobilni signal",
+        "operater",
+        "prijava"
+      ],
+      "forbidden_keywords": [
+        "AKOS zagotovi signal na lokaciji"
+      ],
+      "expected_abstain": false,
+      "reference_answer": "Usmeri na prijavo pri operaterju in nadaljnje korake pri nereševanju.",
+      "source_topic": "storitev-ne-deluje-ali-ni-ustrezna",
+      "source_url": "https://www.akos-rs.si/pogosta-vprasanja-in-odgovori/storitev-ne-deluje-ali-ni-ustrezna",
+      "source_type": "proxy-internal",
+      "variant_style": "standard"
+    },
+    {
+      "id": "INTP-026",
+      "category": "Call-center - signal",
+      "prompt": "Na kratko: [Anonimizirano] Na stalnem naslovu nimam stabilnega mobilnega signala. Kako naj prijavim težavo? Odgovori v 2 stavkih.",
+      "required_keywords": [
+        "mobilni signal",
+        "operater",
+        "prijava"
+      ],
+      "forbidden_keywords": [
+        "AKOS zagotovi signal na lokaciji"
+      ],
+      "expected_abstain": false,
+      "reference_answer": "Usmeri na prijavo pri operaterju in nadaljnje korake pri nereševanju.",
+      "source_topic": "storitev-ne-deluje-ali-ni-ustrezna",
+      "source_url": "https://www.akos-rs.si/pogosta-vprasanja-in-odgovori/storitev-ne-deluje-ali-ni-ustrezna",
+      "source_type": "proxy-internal",
+      "variant_style": "short"
+    },
+    {
+      "id": "INTP-027",
+      "category": "Call-center - signal",
+      "prompt": "Spoštovani, [Anonimizirano] Na stalnem naslovu nimam stabilnega mobilnega signala. Kako naj prijavim težavo? Hvala.",
+      "required_keywords": [
+        "mobilni signal",
+        "operater",
+        "prijava"
+      ],
+      "forbidden_keywords": [
+        "AKOS zagotovi signal na lokaciji"
+      ],
+      "expected_abstain": false,
+      "reference_answer": "Usmeri na prijavo pri operaterju in nadaljnje korake pri nereševanju.",
+      "source_topic": "storitev-ne-deluje-ali-ni-ustrezna",
+      "source_url": "https://www.akos-rs.si/pogosta-vprasanja-in-odgovori/storitev-ne-deluje-ali-ni-ustrezna",
+      "source_type": "proxy-internal",
+      "variant_style": "formal"
+    },
+    {
+      "id": "INTP-028",
+      "category": "Call-center - signal",
+      "prompt": "[Stranka je nezadovoljna] [Anonimizirano] Na stalnem naslovu nimam stabilnega mobilnega signala. Kako naj prijavim težavo? Prosim za konkreten korak.",
+      "required_keywords": [
+        "mobilni signal",
+        "operater",
+        "prijava"
+      ],
+      "forbidden_keywords": [
+        "AKOS zagotovi signal na lokaciji"
+      ],
+      "expected_abstain": false,
+      "reference_answer": "Usmeri na prijavo pri operaterju in nadaljnje korake pri nereševanju.",
+      "source_topic": "storitev-ne-deluje-ali-ni-ustrezna",
+      "source_url": "https://www.akos-rs.si/pogosta-vprasanja-in-odgovori/storitev-ne-deluje-ali-ni-ustrezna",
+      "source_type": "proxy-internal",
+      "variant_style": "frustrated"
+    },
+    {
+      "id": "INTP-029",
+      "category": "Inbox - administrativni stroški",
+      "prompt": "[Anonimizirano] Operater je dodal administrativni strošek, ki ga ni bilo v pogodbi. Ali ga moram plačati?",
+      "required_keywords": [
+        "pogodba",
+        "strošek",
+        "reklamacija"
+      ],
+      "forbidden_keywords": [
+        "vsi dodatni stroški so dovoljeni"
+      ],
+      "expected_abstain": false,
+      "reference_answer": "Pojasni preverjanje pogodbenih podlag in postopek izpodbijanja stroška.",
+      "source_topic": "neupravicen-racun",
+      "source_url": "https://www.akos-rs.si/pogosta-vprasanja-in-odgovori/neupravicen-racun",
+      "source_type": "proxy-internal",
+      "variant_style": "standard"
+    },
+    {
+      "id": "INTP-030",
+      "category": "Inbox - administrativni stroški",
+      "prompt": "Na kratko: [Anonimizirano] Operater je dodal administrativni strošek, ki ga ni bilo v pogodbi. Ali ga moram plačati? Odgovori v 2 stavkih.",
+      "required_keywords": [
+        "pogodba",
+        "strošek",
+        "reklamacija"
+      ],
+      "forbidden_keywords": [
+        "vsi dodatni stroški so dovoljeni"
+      ],
+      "expected_abstain": false,
+      "reference_answer": "Pojasni preverjanje pogodbenih podlag in postopek izpodbijanja stroška.",
+      "source_topic": "neupravicen-racun",
+      "source_url": "https://www.akos-rs.si/pogosta-vprasanja-in-odgovori/neupravicen-racun",
+      "source_type": "proxy-internal",
+      "variant_style": "short"
+    },
+    {
+      "id": "INTP-031",
+      "category": "Inbox - administrativni stroški",
+      "prompt": "Spoštovani, [Anonimizirano] Operater je dodal administrativni strošek, ki ga ni bilo v pogodbi. Ali ga moram plačati? Hvala.",
+      "required_keywords": [
+        "pogodba",
+        "strošek",
+        "reklamacija"
+      ],
+      "forbidden_keywords": [
+        "vsi dodatni stroški so dovoljeni"
+      ],
+      "expected_abstain": false,
+      "reference_answer": "Pojasni preverjanje pogodbenih podlag in postopek izpodbijanja stroška.",
+      "source_topic": "neupravicen-racun",
+      "source_url": "https://www.akos-rs.si/pogosta-vprasanja-in-odgovori/neupravicen-racun",
+      "source_type": "proxy-internal",
+      "variant_style": "formal"
+    },
+    {
+      "id": "INTP-032",
+      "category": "Inbox - administrativni stroški",
+      "prompt": "[Stranka je nezadovoljna] [Anonimizirano] Operater je dodal administrativni strošek, ki ga ni bilo v pogodbi. Ali ga moram plačati? Prosim za konkreten korak.",
+      "required_keywords": [
+        "pogodba",
+        "strošek",
+        "reklamacija"
+      ],
+      "forbidden_keywords": [
+        "vsi dodatni stroški so dovoljeni"
+      ],
+      "expected_abstain": false,
+      "reference_answer": "Pojasni preverjanje pogodbenih podlag in postopek izpodbijanja stroška.",
+      "source_topic": "neupravicen-racun",
+      "source_url": "https://www.akos-rs.si/pogosta-vprasanja-in-odgovori/neupravicen-racun",
+      "source_type": "proxy-internal",
+      "variant_style": "frustrated"
+    },
+    {
+      "id": "INTP-033",
+      "category": "Call-center - center 080",
+      "prompt": "[Anonimizirano] Želim preveriti, v kateri fazi je moj spor pri AKOS. Kam pokličem?",
+      "required_keywords": [
+        "080 2735",
+        "klicni center"
+      ],
+      "forbidden_keywords": [
+        "pokličite policijo"
+      ],
+      "expected_abstain": false,
+      "reference_answer": "Navede kontakt klicnega centra in njegov namen.",
+      "source_topic": "spori-med-operaterji",
+      "source_url": "https://www.akos-rs.si/uporabniki-storitev/raziscite/spori-med-operaterji-oz-izvajalci-postnih-storitev-in-koncnimi-uporabniki",
+      "source_type": "proxy-internal",
+      "variant_style": "standard"
+    },
+    {
+      "id": "INTP-034",
+      "category": "Call-center - center 080",
+      "prompt": "Na kratko: [Anonimizirano] Želim preveriti, v kateri fazi je moj spor pri AKOS. Kam pokličem? Odgovori v 2 stavkih.",
+      "required_keywords": [
+        "080 2735",
+        "klicni center"
+      ],
+      "forbidden_keywords": [
+        "pokličite policijo"
+      ],
+      "expected_abstain": false,
+      "reference_answer": "Navede kontakt klicnega centra in njegov namen.",
+      "source_topic": "spori-med-operaterji",
+      "source_url": "https://www.akos-rs.si/uporabniki-storitev/raziscite/spori-med-operaterji-oz-izvajalci-postnih-storitev-in-koncnimi-uporabniki",
+      "source_type": "proxy-internal",
+      "variant_style": "short"
+    },
+    {
+      "id": "INTP-035",
+      "category": "Call-center - center 080",
+      "prompt": "Spoštovani, [Anonimizirano] Želim preveriti, v kateri fazi je moj spor pri AKOS. Kam pokličem? Hvala.",
+      "required_keywords": [
+        "080 2735",
+        "klicni center"
+      ],
+      "forbidden_keywords": [
+        "pokličite policijo"
+      ],
+      "expected_abstain": false,
+      "reference_answer": "Navede kontakt klicnega centra in njegov namen.",
+      "source_topic": "spori-med-operaterji",
+      "source_url": "https://www.akos-rs.si/uporabniki-storitev/raziscite/spori-med-operaterji-oz-izvajalci-postnih-storitev-in-koncnimi-uporabniki",
+      "source_type": "proxy-internal",
+      "variant_style": "formal"
+    },
+    {
+      "id": "INTP-036",
+      "category": "Call-center - center 080",
+      "prompt": "[Stranka je nezadovoljna] [Anonimizirano] Želim preveriti, v kateri fazi je moj spor pri AKOS. Kam pokličem? Prosim za konkreten korak.",
+      "required_keywords": [
+        "080 2735",
+        "klicni center"
+      ],
+      "forbidden_keywords": [
+        "pokličite policijo"
+      ],
+      "expected_abstain": false,
+      "reference_answer": "Navede kontakt klicnega centra in njegov namen.",
+      "source_topic": "spori-med-operaterji",
+      "source_url": "https://www.akos-rs.si/uporabniki-storitev/raziscite/spori-med-operaterji-oz-izvajalci-postnih-storitev-in-koncnimi-uporabniki",
+      "source_type": "proxy-internal",
+      "variant_style": "frustrated"
+    },
+    {
+      "id": "INTP-037",
+      "category": "Inbox - novinarsko",
+      "prompt": "[Anonimizirano - mediji] Kako AKOS javnost obvešča o spremembah regulacije?",
+      "required_keywords": [
+        "javna posvetovanja",
+        "AKOS",
+        "objava"
+      ],
+      "forbidden_keywords": [
+        "ne objavlja ničesar"
+      ],
+      "expected_abstain": false,
+      "reference_answer": "Pojasni javne objave, posvetovanja in uradna pojasnila.",
+      "source_topic": "novinarska-vprasanja-in-odgovori",
+      "source_url": "https://www.akos-rs.si/medijsko-sredisce/novinarska-vprasanja-in-odgovori",
+      "source_type": "proxy-internal",
+      "variant_style": "standard"
+    },
+    {
+      "id": "INTP-038",
+      "category": "Inbox - novinarsko",
+      "prompt": "Na kratko: [Anonimizirano - mediji] Kako AKOS javnost obvešča o spremembah regulacije? Odgovori v 2 stavkih.",
+      "required_keywords": [
+        "javna posvetovanja",
+        "AKOS",
+        "objava"
+      ],
+      "forbidden_keywords": [
+        "ne objavlja ničesar"
+      ],
+      "expected_abstain": false,
+      "reference_answer": "Pojasni javne objave, posvetovanja in uradna pojasnila.",
+      "source_topic": "novinarska-vprasanja-in-odgovori",
+      "source_url": "https://www.akos-rs.si/medijsko-sredisce/novinarska-vprasanja-in-odgovori",
+      "source_type": "proxy-internal",
+      "variant_style": "short"
+    },
+    {
+      "id": "INTP-039",
+      "category": "Inbox - novinarsko",
+      "prompt": "Spoštovani, [Anonimizirano - mediji] Kako AKOS javnost obvešča o spremembah regulacije? Hvala.",
+      "required_keywords": [
+        "javna posvetovanja",
+        "AKOS",
+        "objava"
+      ],
+      "forbidden_keywords": [
+        "ne objavlja ničesar"
+      ],
+      "expected_abstain": false,
+      "reference_answer": "Pojasni javne objave, posvetovanja in uradna pojasnila.",
+      "source_topic": "novinarska-vprasanja-in-odgovori",
+      "source_url": "https://www.akos-rs.si/medijsko-sredisce/novinarska-vprasanja-in-odgovori",
+      "source_type": "proxy-internal",
+      "variant_style": "formal"
+    },
+    {
+      "id": "INTP-040",
+      "category": "Inbox - novinarsko",
+      "prompt": "[Stranka je nezadovoljna] [Anonimizirano - mediji] Kako AKOS javnost obvešča o spremembah regulacije? Prosim za konkreten korak.",
+      "required_keywords": [
+        "javna posvetovanja",
+        "AKOS",
+        "objava"
+      ],
+      "forbidden_keywords": [
+        "ne objavlja ničesar"
+      ],
+      "expected_abstain": false,
+      "reference_answer": "Pojasni javne objave, posvetovanja in uradna pojasnila.",
+      "source_topic": "novinarska-vprasanja-in-odgovori",
+      "source_url": "https://www.akos-rs.si/medijsko-sredisce/novinarska-vprasanja-in-odgovori",
+      "source_type": "proxy-internal",
+      "variant_style": "frustrated"
+    }
+  ]
+}

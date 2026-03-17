@@ -4,7 +4,7 @@ Pogovorni agentni sistem za AKOS (Agencija za komunikacijska omrežja in storitv
 
 ## 📋 Opis
 
-Sistem omogoča javnosti, da postavi vprašanja v naravnem jeziku in prejme odgovore na podlagi baze znanja AKOS. ChatBot uporabi preprosto iskanje po ključnih besedah in generira odgovore na podlagi ustreznih dokumentov.
+Sistem omogoča javnosti, da postavi vprašanja v naravnem jeziku in prejme odgovore na podlagi baze znanja AKOS. ChatBot uporablja lokalni LLM (Ollama) in RAG (retrieval-augmented generation) za semantično iskanje po dokumentih.
 
 ## 🏗️ Arhitektura
 
@@ -26,6 +26,7 @@ AKOS-ChatBot/
 - Python 3.8+
 - pip
 - Spletni brskalnik
+- Ollama (lokalni LLM)
 
 ### Namestitev
 
@@ -40,14 +41,20 @@ cd backend
 pip install -r requirements.txt
 ```
 
-3. **Zaženi Flask strežnik**
+3. **Pripravi Ollama modele (LLM + embedding)**
+```bash
+ollama pull llama3.2:3b
+ollama pull nomic-embed-text
+```
+
+4. **Zaženi Flask strežnik**
 ```bash
 python app.py
 ```
 
 Strežnik se bo zagnal na `http://localhost:5000`
 
-4. **Odpri ChatBot v brskalniku**
+5. **Odpri ChatBot v brskalniku**
 ```
 Odpri `frontend/index.html` v spletnem brskalniku
 ali
@@ -62,7 +69,12 @@ Pošlje vprašanje in prejme odgovor
 **Zahtevek:**
 ```json
 {
-  "query": "Kako lahko poddam pritožbo?"
+  "query": "Kako lahko poddam pritožbo?",
+  "user_profile": {
+    "audience": "potrošnik",
+    "tone": "prijazen",
+    "detail_level": "kratko"
+  }
 }
 ```
 
@@ -70,14 +82,22 @@ Pošlje vprašanje in prejme odgovor
 ```json
 {
   "answer": "Za pritožbe...",
+  "method": "rag-semantic-llm",
   "sources": [
     {
       "title": "Varstvo potrošnikov",
       "category": "Varstvo potrošnikov",
-      "id": "doc_002"
+      "id": "doc_002",
+      "score": 0.87
     }
   ],
-  "confidence": 0.9
+  "confidence": 0.9,
+  "rag": {
+    "enabled": true,
+    "retrieval": "semantic",
+    "embed_model": "nomic-embed-text",
+    "last_error": null
+  }
 }
 ```
 

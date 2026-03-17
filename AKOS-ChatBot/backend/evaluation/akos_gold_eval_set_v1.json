@@ -1,0 +1,421 @@
+{
+  "dataset_name": "AKOS Gold Eval Set v1 (public-proxy)",
+  "language": "sl",
+  "created_at": "2026-03-12",
+  "size": 40,
+  "purpose": "Benchmark pogovornega agenta za javna vprašanja uporabnikov in novinarjev v domeni AKOS.",
+  "note": "Ker dejanski inbox/call-center zapisi niso javno dostopni, je to javni proxy dataset, sestavljen iz realnih tipov vprašanj na AKOS FAQ in javnih vsebinah. Pred produkcijo ga dopolnite z internimi anonimiziranimi primeri.",
+  "source_urls": [
+    "https://www.akos-rs.si/pogosta-vprasanja-in-odgovori",
+    "https://www.akos-rs.si/pogosta-vprasanja-in-odgovori/postopek-pred-akos",
+    "https://www.akos-rs.si/pogosta-vprasanja-in-odgovori/o-gostovanju",
+    "https://www.akos-rs.si/pogosta-vprasanja-in-odgovori/storitev-ne-deluje-ali-ni-ustrezna",
+    "https://www.akos-rs.si/pogosta-vprasanja-in-odgovori/o-menjavi-operaterja-ali-spremembi-paketa",
+    "https://www.akos-rs.si/pogosta-vprasanja-in-odgovori/neupravicen-racun",
+    "https://www.akos-rs.si/uporabniki-storitev/raziscite/spori-med-operaterji-oz-izvajalci-postnih-storitev-in-koncnimi-uporabniki",
+    "https://www.akos-rs.si/uporabniki-storitev/raziscite/koristni-nasveti-in-opozorila",
+    "https://www.akos-rs.si/medijsko-sredisce/novinarska-vprasanja-in-odgovori"
+  ],
+  "cases": [
+    {
+      "id": "GOLD-001",
+      "category": "Postopek pred AKOS",
+      "prompt": "[Anonimizirano] Operater je zavrnil mojo reklamacijo. Kako lahko sprožim postopek pri AKOS?",
+      "required_keywords": ["reklamacija", "predlog za rešitev spora", "AKOS"],
+      "forbidden_keywords": ["tožba je obvezna"],
+      "expected_abstain": false,
+      "reference_answer": "Pojasni, da uporabnik po zavrnitvi reklamacije lahko vloži predlog za rešitev spora pri AKOS po predpisanem postopku in v roku.",
+      "source_topic": "postopek-pred-akos"
+    },
+    {
+      "id": "GOLD-002",
+      "category": "Postopek pred AKOS",
+      "prompt": "Ali lahko vlogo za začetek postopka pred AKOS zame odda pooblaščenec?",
+      "required_keywords": ["pooblaščenec", "vloga"],
+      "forbidden_keywords": ["samo osebno"],
+      "expected_abstain": false,
+      "reference_answer": "Pojasni možnost vložitve po pooblaščencu in potrebo po ustreznem pooblastilu, če je zahtevano.",
+      "source_topic": "postopek-pred-akos"
+    },
+    {
+      "id": "GOLD-003",
+      "category": "Postopek pred AKOS",
+      "prompt": "Ali moram med postopkom pri AKOS poravnati sporni račun ali lahko počakam?",
+      "required_keywords": ["sporni račun", "postopek"],
+      "forbidden_keywords": ["AKOS vedno odpiše račun"],
+      "expected_abstain": false,
+      "reference_answer": "Odgovor naj pojasni razmerje med ugovorom, postopkom in obveznostmi plačila skladno s postopkovnimi pravili.",
+      "source_topic": "postopek-pred-akos"
+    },
+    {
+      "id": "GOLD-004",
+      "category": "Postopek pred AKOS",
+      "prompt": "Kakšne so moje možnosti, če se ne strinjam z izdanim računom operaterja?",
+      "required_keywords": ["ugovor", "reklamacija", "AKOS"],
+      "forbidden_keywords": ["nič ne morete storiti"],
+      "expected_abstain": false,
+      "reference_answer": "Pojasni korake: najprej reklamacijski postopek pri operaterju, nato možnost spora pri AKOS.",
+      "source_topic": "postopek-pred-akos"
+    },
+    {
+      "id": "GOLD-005",
+      "category": "Postopek pred AKOS",
+      "prompt": "Ali so v postopku pred AKOS kakšni stroški, če spor izgubim?",
+      "required_keywords": ["stroški", "postopek"],
+      "forbidden_keywords": ["visoka sodna taksa"],
+      "expected_abstain": false,
+      "reference_answer": "Odgovor naj jedrnato pojasni stroškovni vidik postopka pri AKOS in razliko do sodnega postopka.",
+      "source_topic": "postopek-pred-akos"
+    },
+    {
+      "id": "GOLD-006",
+      "category": "Postopek pred AKOS",
+      "prompt": "Kako tečejo roki v postopku pred AKOS in kdaj moram oddati vlogo?",
+      "required_keywords": ["roki", "vloga", "postopek"],
+      "forbidden_keywords": ["rokov ni"],
+      "expected_abstain": false,
+      "reference_answer": "Pojasni, da so roki določeni in da je treba predlog vložiti v predpisanem roku po odgovoru operaterja ali molku.",
+      "source_topic": "postopek-pred-akos"
+    },
+    {
+      "id": "GOLD-007",
+      "category": "Postopek pred AKOS",
+      "prompt": "Ali lahko predlog za rešitev spora oddam elektronsko in na kateri kanal?",
+      "required_keywords": ["elektronsko", "vloga", "AKOS"],
+      "forbidden_keywords": ["samo navadna pošta"],
+      "expected_abstain": false,
+      "reference_answer": "Odgovor naj navede, da je treba slediti uradnim navodilom AKOS za oddajo vloge in preveriti aktualne kanale oddaje.",
+      "source_topic": "postopek-pred-akos"
+    },
+    {
+      "id": "GOLD-008",
+      "category": "Postopek pred AKOS",
+      "prompt": "Kaj mora vsebovati predlog za rešitev spora, da bo popoln?",
+      "required_keywords": ["predlog", "podatki", "dokazi"],
+      "forbidden_keywords": ["zadostuje ena poved"],
+      "expected_abstain": false,
+      "reference_answer": "Pojasni ključne sestavine predloga in napoti na obrazec/navodila AKOS.",
+      "source_topic": "postopek-pred-akos"
+    },
+    {
+      "id": "GOLD-009",
+      "category": "Postopek pred AKOS",
+      "prompt": "Na kakšen način lahko oddam predlog za rešitev spora (osebno, pošta, e-pot)?",
+      "required_keywords": ["način oddaje", "predlog", "AKOS"],
+      "forbidden_keywords": ["samo telefonsko"],
+      "expected_abstain": false,
+      "reference_answer": "Navede naj uradne načine oddaje po navodilih AKOS in opozori na popolnost vloge.",
+      "source_topic": "postopek-pred-akos"
+    },
+    {
+      "id": "GOLD-010",
+      "category": "Postopek pred AKOS",
+      "prompt": "Operater mi na reklamacijo ni odgovoril v roku. Kdaj se lahko obrnem na AKOS?",
+      "required_keywords": ["reklamacija", "rok", "AKOS"],
+      "forbidden_keywords": ["ni pomembno, ali ste reklamirali"],
+      "expected_abstain": false,
+      "reference_answer": "Pojasni predhodni pogoj reklamacije pri operaterju in nato možnost vložitve predloga pri AKOS v ustreznem roku.",
+      "source_topic": "spori-med-operaterji"
+    },
+    {
+      "id": "GOLD-011",
+      "category": "Neupravičen račun",
+      "prompt": "Po testnem obdobju TV storitve mi je operater začel zaračunavati storitev. Je to dovoljeno?",
+      "required_keywords": ["testno obdobje", "zaračunavanje", "pogoji"],
+      "forbidden_keywords": ["vedno je dovoljeno"],
+      "expected_abstain": false,
+      "reference_answer": "Odgovor naj preveri, ali je bilo zaračunavanje skladno s pogodbo in transparentno obveščeno.",
+      "source_topic": "neupravicen-racun"
+    },
+    {
+      "id": "GOLD-012",
+      "category": "Neupravičen račun",
+      "prompt": "Ne strinjam se z izvršbo, ki jo je sprožil operater. Ali mi AKOS lahko pomaga?",
+      "required_keywords": ["izvršba", "pristojnost", "AKOS"],
+      "forbidden_keywords": ["AKOS vodi izvršbo"],
+      "expected_abstain": false,
+      "reference_answer": "Jasno razmeji pristojnosti in pojasni, kje AKOS lahko pomaga ter kje ne.",
+      "source_topic": "neupravicen-racun"
+    },
+    {
+      "id": "GOLD-013",
+      "category": "Neupravičen račun",
+      "prompt": "Operater mi neupravičeno zaračunava komercialna sporočila. Kaj lahko naredim?",
+      "required_keywords": ["reklamacija", "zaračunavanje", "dokazi"],
+      "forbidden_keywords": ["nič ni mogoče"],
+      "expected_abstain": false,
+      "reference_answer": "Predlaga reklamacijo, zahtevo za razčlenitev in nadaljnje postopke pri AKOS, če spor ostane.",
+      "source_topic": "neupravicen-racun"
+    },
+    {
+      "id": "GOLD-014",
+      "category": "Neupravičen račun",
+      "prompt": "Ali imam pravico zahtevati razčlenjen račun z natančnimi postavkami?",
+      "required_keywords": ["razčlenjen račun", "postavke"],
+      "forbidden_keywords": ["operater ni dolžan"],
+      "expected_abstain": false,
+      "reference_answer": "Pojasni pravico do razčlenitve in praktične korake za uveljavitev.",
+      "source_topic": "neupravicen-racun"
+    },
+    {
+      "id": "GOLD-015",
+      "category": "Neupravičen račun",
+      "prompt": "Ali lahko operater zaračuna strošek ponovnega vklopa po začasnem izklopu zaradi neplačila?",
+      "required_keywords": ["ponovni vklop", "strošek", "pogoji"],
+      "forbidden_keywords": ["vedno brez stroškov"],
+      "expected_abstain": false,
+      "reference_answer": "Odgovor naj razloži, da je treba preveriti pogodbo/splošne pogoje in zakonitost stroška.",
+      "source_topic": "neupravicen-racun"
+    },
+    {
+      "id": "GOLD-016",
+      "category": "Neupravičen račun",
+      "prompt": "Ali lahko operater zaračunava naročnino tudi, ko so storitve začasno izklopljene zaradi neplačila?",
+      "required_keywords": ["naročnina", "začasni izklop"],
+      "forbidden_keywords": ["AKOS določa cene paketa"],
+      "expected_abstain": false,
+      "reference_answer": "Jasno pojasni, da je treba presoditi pogodbeni režim in zakonitost zaračunavanja.",
+      "source_topic": "neupravicen-racun"
+    },
+    {
+      "id": "GOLD-017",
+      "category": "Neupravičen račun",
+      "prompt": "Operater mi je zaračunal članarino za Moneto v mesecu, ko storitve nisem uporabljal. Je to pravilno?",
+      "required_keywords": ["članarina", "Moneta", "pogoji"],
+      "forbidden_keywords": ["ni treba preveriti pogodbe"],
+      "expected_abstain": false,
+      "reference_answer": "Odgovor naj usmeri v preverjanje naročniškega razmerja, naročnine in reklamacijo pri operaterju.",
+      "source_topic": "neupravicen-racun"
+    },
+    {
+      "id": "GOLD-018",
+      "category": "Neupravičen račun",
+      "prompt": "Menim, da mi je operater preveč zaračunal prenos podatkov. Kako preverim porabo?",
+      "required_keywords": ["prenos podatkov", "razčlenitev", "reklamacija"],
+      "forbidden_keywords": ["AKOS vidi vašo zasebno zgodovino brskanja"],
+      "expected_abstain": false,
+      "reference_answer": "Pojasni, kako uporabnik pri operaterju zahteva podatke o obračunu in sproži ugovor.",
+      "source_topic": "neupravicen-racun"
+    },
+    {
+      "id": "GOLD-019",
+      "category": "Neupravičen račun",
+      "prompt": "Po klicu na 090 sem dobil zelo visok račun. Kako ukrepam?",
+      "required_keywords": ["090", "reklamacija", "AKOS"],
+      "forbidden_keywords": ["AKOS bo samodejno izbrisal dolg"],
+      "expected_abstain": false,
+      "reference_answer": "Predlaga naj dokazila, reklamacijo pri operaterju ter možnost spora pri AKOS.",
+      "source_topic": "neupravicen-racun"
+    },
+    {
+      "id": "GOLD-020",
+      "category": "Neupravičen račun",
+      "prompt": "Operater mi je zaračunal administrativni strošek, ki ni bil naveden ob podpisu pogodbe. Ali to velja?",
+      "required_keywords": ["administrativni strošek", "pogodba", "transparentnost"],
+      "forbidden_keywords": ["operater lahko vedno doda nov strošek"],
+      "expected_abstain": false,
+      "reference_answer": "Odgovor naj poudari pregled pogodbe/splošnih pogojev ter pravico do izpodbijanja nejasnih stroškov.",
+      "source_topic": "neupravicen-racun"
+    },
+    {
+      "id": "GOLD-021",
+      "category": "Menjava operaterja",
+      "prompt": "Ali mi lahko operater odklopi storitve samo zaradi neplačila?",
+      "required_keywords": ["odklop", "neplačilo", "pogoji"],
+      "forbidden_keywords": ["odklop brez pravil je vedno dovoljen"],
+      "expected_abstain": false,
+      "reference_answer": "Pojasni pogoje in postopkovne obveznosti operaterja pred odklopom.",
+      "source_topic": "o-menjavi-operaterja-ali-spremembi-paketa"
+    },
+    {
+      "id": "GOLD-022",
+      "category": "Menjava operaterja",
+      "prompt": "Kako zamenjam operaterja, če je spremenil splošne pogoje?",
+      "required_keywords": ["sprememba pogojev", "zamenjava operaterja"],
+      "forbidden_keywords": ["odstop ni mogoč"],
+      "expected_abstain": false,
+      "reference_answer": "Odgovor naj opiše pravice ob spremembah pogojev in korake za prenos/odstop.",
+      "source_topic": "o-menjavi-operaterja-ali-spremembi-paketa"
+    },
+    {
+      "id": "GOLD-023",
+      "category": "Menjava operaterja",
+      "prompt": "Nov operater bi moral urediti prekinitev pri starem, a sem vseeno dobil račun starega operaterja. Kaj naj naredim?",
+      "required_keywords": ["stari operater", "račun", "reklamacija"],
+      "forbidden_keywords": ["račun ignorirajte"],
+      "expected_abstain": false,
+      "reference_answer": "Pojasni preverjanje datumov prenosa, obračuna in reklamacijo pri starem operaterju.",
+      "source_topic": "o-menjavi-operaterja-ali-spremembi-paketa"
+    },
+    {
+      "id": "GOLD-024",
+      "category": "Menjava operaterja",
+      "prompt": "Prenos številke se je izvedel 10 dni prepozno. Imam pravico do nadomestila ali pritožbe?",
+      "required_keywords": ["prenos številke", "zamuda", "pravice"],
+      "forbidden_keywords": ["zamuda ni nikoli problem"],
+      "expected_abstain": false,
+      "reference_answer": "Odgovor naj opiše pravice ob zamudi pri prenosu številke in postopek uveljavljanja.",
+      "source_topic": "o-menjavi-operaterja-ali-spremembi-paketa"
+    },
+    {
+      "id": "GOLD-025",
+      "category": "Menjava operaterja",
+      "prompt": "Ali mi sme stari operater zaračunati celotno mesečno naročnino, če sem med mesecem odšel drugam?",
+      "required_keywords": ["obračunsko obdobje", "naročnina"],
+      "forbidden_keywords": ["vedno polna naročnina"],
+      "expected_abstain": false,
+      "reference_answer": "Pojasni načela obračuna ob prehodu in potrebo po preverjanju pogodbenih pravil.",
+      "source_topic": "o-menjavi-operaterja-ali-spremembi-paketa"
+    },
+    {
+      "id": "GOLD-026",
+      "category": "Menjava operaterja",
+      "prompt": "Kako prenesem telefonsko številko k drugemu operaterju in kdo vodi postopek?",
+      "required_keywords": ["prenos številke", "nov operater", "postopek"],
+      "forbidden_keywords": ["AKOS ročno prenese številko"],
+      "expected_abstain": false,
+      "reference_answer": "Odgovor naj razloži tipičen postopek prenosa in vlogo operaterjev.",
+      "source_topic": "o-menjavi-operaterja-ali-spremembi-paketa"
+    },
+    {
+      "id": "GOLD-027",
+      "category": "Menjava operaterja",
+      "prompt": "Operater mi je za prenos številke zaračunal 5 EUR. Ali je to dopustno?",
+      "required_keywords": ["prenos številke", "zaračunavanje", "pogoji"],
+      "forbidden_keywords": ["vsaka tarifa je avtomatsko zakonita"],
+      "expected_abstain": false,
+      "reference_answer": "Pojasni, da je treba presoditi veljavna pravila in pogodbo ter po potrebi sprožiti reklamacijo.",
+      "source_topic": "o-menjavi-operaterja-ali-spremembi-paketa"
+    },
+    {
+      "id": "GOLD-028",
+      "category": "Menjava operaterja",
+      "prompt": "Predčasno sem prekinil vezavo in operater mi je zaračunal pogodbeno kazen in strošek odjave. Moram plačati oboje?",
+      "required_keywords": ["predčasna prekinitev", "pogodbena kazen", "strošek odjave"],
+      "forbidden_keywords": ["ne plačajte ničesar"],
+      "expected_abstain": false,
+      "reference_answer": "Odgovor naj pojasni, da je treba preveriti podlago v pogodbi in možnost izpodbijanja neupravičenih stroškov.",
+      "source_topic": "o-menjavi-operaterja-ali-spremembi-paketa"
+    },
+    {
+      "id": "GOLD-029",
+      "category": "Gostovanje",
+      "prompt": "Prejel sem SMS, da mi bodo zaračunali pribitke v gostovanju, če ne spremenim vzorca porabe. Ali je to pravilno?",
+      "required_keywords": ["SMS", "pribitki", "gostovanje"],
+      "forbidden_keywords": ["pribitki so vedno prepovedani"],
+      "expected_abstain": false,
+      "reference_answer": "Pojasni režim poštene uporabe in kako preveriti, ali so pogoji za pribitke izpolnjeni.",
+      "source_topic": "o-gostovanju"
+    },
+    {
+      "id": "GOLD-030",
+      "category": "Gostovanje",
+      "prompt": "Bil sem na Hrvaškem, operater pa mi je zaračunal klic kot srbno omrežje. Kaj lahko storim?",
+      "required_keywords": ["gostovanje", "zaračunavanje", "reklamacija"],
+      "forbidden_keywords": ["to ni mogoče preveriti"],
+      "expected_abstain": false,
+      "reference_answer": "Odgovor naj usmeri v reklamacijo in preverjanje zapisov omrežja/gostovanja.",
+      "source_topic": "o-gostovanju"
+    },
+    {
+      "id": "GOLD-031",
+      "category": "Gostovanje",
+      "prompt": "Operater mi je v EU državi zaračunal podatke kot izven-EU gostovanje. Je to dopustno?",
+      "required_keywords": ["EU", "gostovanje", "zaračunavanje"],
+      "forbidden_keywords": ["EU pravila ne veljajo"],
+      "expected_abstain": false,
+      "reference_answer": "Pojasni razliko med EU/international režimom in postopek ugovora pri napačnem obračunu.",
+      "source_topic": "o-gostovanju"
+    },
+    {
+      "id": "GOLD-032",
+      "category": "Gostovanje",
+      "prompt": "Kakšen je limit prenosa podatkov v gostovanju in kako se izračuna?",
+      "required_keywords": ["limit", "prenos podatkov", "gostovanje"],
+      "forbidden_keywords": ["neomejeno brez pogojev"],
+      "expected_abstain": false,
+      "reference_answer": "Odgovor naj razloži, da je limit odvisen od paketa/tarife in veljavnih pravil poštene uporabe.",
+      "source_topic": "o-gostovanju"
+    },
+    {
+      "id": "GOLD-033",
+      "category": "Gostovanje",
+      "prompt": "V ZDA so mi zaračunali tudi neodgovorjene klice. Ali je to normalno?",
+      "required_keywords": ["ZDA", "zaračunavanje", "gostovanje"],
+      "forbidden_keywords": ["AKOS določa tarife izven EU"],
+      "expected_abstain": false,
+      "reference_answer": "Pojasni, da v državah izven EU veljajo drugačna pravila in da je treba preveriti operaterjev cenik ter reklamacijo.",
+      "source_topic": "o-gostovanju"
+    },
+    {
+      "id": "GOLD-034",
+      "category": "Gostovanje",
+      "prompt": "Operater mi grozi z onemogočitvijo storitev za 14 dni zaradi pretežno nacionalnega gostovanja. Je to dovoljeno?",
+      "required_keywords": ["pretežno nacionalno gostovanje", "14 dni", "pogoji"],
+      "forbidden_keywords": ["brez pravil lahko kadarkoli"],
+      "expected_abstain": false,
+      "reference_answer": "Odgovor naj pojasni pogoje takega ukrepa in možnost preveritve/uveljavljanja pravic.",
+      "source_topic": "o-gostovanju"
+    },
+    {
+      "id": "GOLD-035",
+      "category": "Nedelovanje storitve",
+      "prompt": "Operater mi ne zagotavlja dogovorjene hitrosti interneta. Kaj mi pripada?",
+      "required_keywords": ["dogovorjena hitrost", "pravice", "reklamacija"],
+      "forbidden_keywords": ["nič vam ne pripada"],
+      "expected_abstain": false,
+      "reference_answer": "Pojasni možnost preveritve kakovosti storitve, reklamacijo in nadaljnje korake pri sporu.",
+      "source_topic": "storitev-ne-deluje-ali-ni-ustrezna"
+    },
+    {
+      "id": "GOLD-036",
+      "category": "Nedelovanje storitve",
+      "prompt": "Na naslovu stalnega prebivališča nimam mobilnega signala. Kako lahko ukrepam?",
+      "required_keywords": ["mobilni signal", "operater", "ukrep"],
+      "forbidden_keywords": ["AKOS fizično zagotovi signal"],
+      "expected_abstain": false,
+      "reference_answer": "Odgovor naj usmeri v prijavo težave operaterju, preverjanje pokritosti in možnosti nadaljnjih postopkov.",
+      "source_topic": "storitev-ne-deluje-ali-ni-ustrezna"
+    },
+    {
+      "id": "GOLD-037",
+      "category": "Nedelovanje storitve",
+      "prompt": "Operater noče zagotoviti širokopasovnih storitev (internet/TV). Kaj lahko storim kot uporabnik?",
+      "required_keywords": ["širokopasovne storitve", "operater", "postopek"],
+      "forbidden_keywords": ["AKOS naroči operaterju gradnjo čez noč"],
+      "expected_abstain": false,
+      "reference_answer": "Pojasni pravice uporabnika, preverjanje pogojev ter postopkovne poti pri sporih.",
+      "source_topic": "storitev-ne-deluje-ali-ni-ustrezna"
+    },
+    {
+      "id": "GOLD-038",
+      "category": "Nedelovanje storitve",
+      "prompt": "Za prijavo izpada sem dolgo čakal v čakalni vrsti klicnega centra operaterja. Kako naj to uradno prijavim?",
+      "required_keywords": ["prijava", "izpad", "reklamacija"],
+      "forbidden_keywords": ["telefonska pritožba ni nikoli veljavna"],
+      "expected_abstain": false,
+      "reference_answer": "Svetuje dokumentirano prijavo težave in hranjenje dokazil o prijavi/odzivu.",
+      "source_topic": "storitev-ne-deluje-ali-ni-ustrezna"
+    },
+    {
+      "id": "GOLD-039",
+      "category": "Novinarska vprašanja",
+      "prompt": "[Novinar] Kako AKOS sodeluje v javnih posvetovanjih pri pripravi regulacije in kako lahko javnost poda pripombe?",
+      "required_keywords": ["javna posvetovanja", "pripombe", "AKOS"],
+      "forbidden_keywords": ["zaprti postopek brez javnosti"],
+      "expected_abstain": false,
+      "reference_answer": "Odgovor naj bo institucionalen: javna objava predlogov, možnost oddaje pripomb in objava odzivov.",
+      "source_topic": "javna-posvetovanja-in-razpisi"
+    },
+    {
+      "id": "GOLD-040",
+      "category": "Novinarska vprašanja",
+      "prompt": "[Novinar] Kako AKOS obravnava vprašanja glede težav v omrežju in kako obvešča javnost?",
+      "required_keywords": ["težave v omrežju", "obveščanje javnosti", "AKOS"],
+      "forbidden_keywords": ["brez javnih informacij"],
+      "expected_abstain": false,
+      "reference_answer": "Povzame naj regulatorno vlogo AKOS in javne komunikacijske kanale (sporočila, pojasnila, uradne objave).",
+      "source_topic": "novinarska-vprasanja-in-odgovori"
+    }
+  ]
+}

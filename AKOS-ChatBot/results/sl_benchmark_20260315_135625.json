@@ -1,0 +1,156 @@
+{
+  "llama3.2:3b": {
+    "cases": [
+      {
+        "id": "INTP-026",
+        "category": "Call-center - signal",
+        "prompt": "Na kratko: [Anonimizirano] Na stalnem naslovu nimam stabilnega mobilnega signala. Kako naj prijavim težavo? Odgovori v 2 stavkih.",
+        "required_keywords": [
+          "mobilni signal",
+          "operater",
+          "prijava"
+        ],
+        "forbidden_keywords": [
+          "AKOS zagotovi signal na lokaciji"
+        ],
+        "expected_abstain": false,
+        "source_topic": "storitev-ne-deluje-ali-ni-ustrezna",
+        "source_url": "https://www.akos-rs.si/pogosta-vprasanja-in-odgovori/storitev-ne-deluje-ali-ni-ustrezna",
+        "answer": "Združenje AKOS: \"Količina podatkov, ki jih je potrebno za prijavitev težave, ni dostopna. Za bolj podrobnimi informacije in pomoč, prosim, da se vpišete v uradni portal AKOS in se povežete z njim.\"",
+        "latency_sec": 33.802,
+        "tokens": 79,
+        "scores": {
+          "slovene_signal": 4.5,
+          "required_coverage": 0.0,
+          "fluency": 5.0,
+          "abstention": 5.0,
+          "forbidden_control": 5.0,
+          "overall": 3.38
+        },
+        "notes": "",
+        "hard_fail": false,
+        "hard_fail_reasons": []
+      },
+      {
+        "id": "INTP-021",
+        "category": "Inbox - pošta",
+        "prompt": "[Anonimizirano] Pošiljka ni bila dostavljena v običajnem roku. Kako lahko sprožim postopek?",
+        "required_keywords": [
+          "izvajalec poštnih storitev",
+          "reklamacija",
+          "AKOS"
+        ],
+        "forbidden_keywords": [
+          "AKOS neposredno dostavi pošiljko"
+        ],
+        "expected_abstain": false,
+        "source_topic": "spori-med-operaterji",
+        "source_url": "https://www.akos-rs.si/uporabniki-storitev/raziscite/spori-med-operaterji-oz-izvajalci-postnih-storitev-in-koncnimi-uporabniki",
+        "answer": "Spremljeno\n\nZdruženje za upravljanje zaposlovijo in socialno zaposljenost (AKOS) vodi uporabnikom priporočeno postopko za sproščanje postopka z dostavo poštilj. \n\n1.  Preberite se na strane AKOS in izberite \"Pomoc\" v spodnjem levem zidu.\n2.  Izberite \"Sproščite postopek\" in izberite \"Dostava poštilj\".\n3.  Vnesite podatke o pošiljki, kot so število pošiljke, datum dostave in naslov pošiljke.\n4.  Potrdite podatke in izberite \"Sproščite postopek\".\n\nTiskani postopek bodo preučeni in sproščeni.",
+        "latency_sec": 57.838,
+        "tokens": 205,
+        "scores": {
+          "slovene_signal": 4.0,
+          "required_coverage": 1.67,
+          "fluency": 4.98,
+          "abstention": 5.0,
+          "forbidden_control": 5.0,
+          "overall": 3.75
+        },
+        "notes": "",
+        "hard_fail": false,
+        "hard_fail_reasons": []
+      },
+      {
+        "id": "INTP-038",
+        "category": "Inbox - novinarsko",
+        "prompt": "Na kratko: [Anonimizirano - mediji] Kako AKOS javnost obvešča o spremembah regulacije? Odgovori v 2 stavkih.",
+        "required_keywords": [
+          "javna posvetovanja",
+          "AKOS",
+          "objava"
+        ],
+        "forbidden_keywords": [
+          "ne objavlja ničesar"
+        ],
+        "expected_abstain": false,
+        "source_topic": "novinarska-vprasanja-in-odgovori",
+        "source_url": "https://www.akos-rs.si/medijsko-sredisce/novinarska-vprasanja-in-odgovori",
+        "answer": "Na kratko: AKOS obvešča javnost o spremembah regulacije prek oglasov v delovnih listih, ki se izdajajo v vseh štabih in delovnih tisih, kjer delujejo.",
+        "latency_sec": 23.371,
+        "tokens": 61,
+        "scores": {
+          "slovene_signal": 3.5,
+          "required_coverage": 1.67,
+          "fluency": 5.0,
+          "abstention": 5.0,
+          "forbidden_control": 5.0,
+          "overall": 3.63
+        },
+        "notes": "",
+        "hard_fail": false,
+        "hard_fail_reasons": []
+      },
+      {
+        "id": "INTP-030",
+        "category": "Inbox - administrativni stroški",
+        "prompt": "Na kratko: [Anonimizirano] Operater je dodal administrativni strošek, ki ga ni bilo v pogodbi. Ali ga moram plačati? Odgovori v 2 stavkih.",
+        "required_keywords": [
+          "pogodba",
+          "strošek",
+          "reklamacija"
+        ],
+        "forbidden_keywords": [
+          "vsi dodatni stroški so dovoljeni"
+        ],
+        "expected_abstain": false,
+        "source_topic": "neupravicen-racun",
+        "source_url": "https://www.akos-rs.si/pogosta-vprasanja-in-odgovori/neupravicen-racun",
+        "answer": "Zgodilo se je, da je administrativni strošek bil dodan, kar ni bil v pogodbi. Toda, zgodilo se je, da je to zgodilo pri operaterju, ki je bil zaposlen pri AKOS.",
+        "latency_sec": 21.574,
+        "tokens": 56,
+        "scores": {
+          "slovene_signal": 2.5,
+          "required_coverage": 1.67,
+          "fluency": 4.89,
+          "abstention": 5.0,
+          "forbidden_control": 5.0,
+          "overall": 3.35
+        },
+        "notes": "",
+        "hard_fail": false,
+        "hard_fail_reasons": []
+      },
+      {
+        "id": "INTP-006",
+        "category": "Inbox - gostovanje",
+        "prompt": "Na kratko: [Anonimizirano] V EU gostovanju so mi zaračunali storitve kot izven EU. Kaj lahko storim? Odgovori v 2 stavkih.",
+        "required_keywords": [
+          "EU",
+          "gostovanje",
+          "reklamacija"
+        ],
+        "forbidden_keywords": [
+          "EU pravila ne veljajo"
+        ],
+        "expected_abstain": false,
+        "source_topic": "o-gostovanju",
+        "source_url": "https://www.akos-rs.si/pogosta-vprasanja-in-odgovori/o-gostovanju",
+        "answer": "Zdaj se lahko pogovorimo o tem, da so v EU gostovanju zaračunali storitve kot izven EU. \n\nZaracunani storitvi v EU so zaračunani po navodi 13. direktive 2006/112/ES, ki se nanaša na zaračunane storitve gostujočega državljana. Zaračunani storitvi so zaračunani po navodi 13. direktive 2006/112/ES, ki se nanaša na zaračunane storitve gostujočega državljana.\n\nDa bi se zanesljivo informirali o tem, kako se zaračunani storitvi gostujočega državljana zaračunajo v EU, se lahko odprite uradni kanali AKOS, ki bodo vemo pomočati v tem primeru.",
+        "latency_sec": 57.503,
+        "tokens": 214,
+        "scores": {
+          "slovene_signal": 4.0,
+          "required_coverage": 1.67,
+          "fluency": 4.82,
+          "abstention": 5.0,
+          "forbidden_control": 5.0,
+          "overall": 3.71
+        },
+        "notes": "",
+        "hard_fail": false,
+        "hard_fail_reasons": []
+      }
+    ]
+  }
+}

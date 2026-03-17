@@ -1,0 +1,1206 @@
+{
+  "qwen/qwen3-32b": {
+    "cases": [
+      {
+        "id": "INTP-035",
+        "category": "Call-center - center 080",
+        "prompt": "Spoštovani, [Anonimizirano] Želim preveriti, v kateri fazi je moj spor pri AKOS. Kam pokličem? Hvala.",
+        "required_keywords": [
+          "080 2735",
+          "klicni center"
+        ],
+        "forbidden_keywords": [
+          "pokličite policijo"
+        ],
+        "expected_abstain": false,
+        "source_topic": "spori-med-operaterji",
+        "source_url": "https://www.akos-rs.si/uporabniki-storitev/raziscite/spori-med-operaterji-oz-izvajalci-postnih-storitev-in-koncnimi-uporabniki",
+        "answer": "<think>\nOkay, the user wants to check the status of their case at AKOS. They're asking where to call. Let me recall the standard procedures.\n\nFirst, I should mention the official contact channels. The main phone number for AKOS is 01 47 47 47. That's the direct line for inquiries. Also, they can check their status online via the AKOS website using their personal account. If they don't have an account, they might need to create one. \n\nI need to make sure I don't provide any information beyond what's publicly available. Since I can't access their specific case details, I should direct them to the official sources. Maybe also mention the possibility of visiting the office in person if they prefer. \n\nWait, the user is asking specifically about the phone number. Let me confirm that the number is correct. Yes, 01 47 47 47 is the right contact. Also, the website is www.akos.gov.si. I should include both options. \n\nI should keep the response concise, as per the instructions. No need to add extra information. Just the phone number, website, and a note about visiting the office. Make sure to state that I can't provide specific case details. \n\nDouble-checking for any typos in the phone number and website. All looks good. Alright, ready to present the answer clearly.\n</think>\n\nSpoštovani, za preverjanje faze vašega spora pri AKOS vam priporočamo, da se obrnete na uradno telefonsko številko **01 47 47 47** ali preverite stanje prek vašega računa na spletni strani [www.akos.gov.si](https://www.akos.gov.si). Če želite, lahko tudi osebno obiščete najbližje pooblaščeno točko AKOS. Za dodatne informacije se vedno obrnite na uradne kanale.",
+        "latency_sec": 5.52,
+        "tokens": 439,
+        "scores": {
+          "slovene_signal": 5.0,
+          "required_coverage": 0.0,
+          "fluency": 4.95,
+          "abstention": 5.0,
+          "forbidden_control": 5.0,
+          "overall": 3.49
+        },
+        "notes": "",
+        "hard_fail": false,
+        "hard_fail_reasons": []
+      },
+      {
+        "id": "INTP-034",
+        "category": "Call-center - center 080",
+        "prompt": "Na kratko: [Anonimizirano] Želim preveriti, v kateri fazi je moj spor pri AKOS. Kam pokličem? Odgovori v 2 stavkih.",
+        "required_keywords": [
+          "080 2735",
+          "klicni center"
+        ],
+        "forbidden_keywords": [
+          "pokličite policijo"
+        ],
+        "expected_abstain": false,
+        "source_topic": "spori-med-operaterji",
+        "source_url": "https://www.akos-rs.si/uporabniki-storitev/raziscite/spori-med-operaterji-oz-izvajalci-postnih-storitev-in-koncnimi-uporabniki",
+        "answer": "<think>\nOkay, the user wants to check the status of their case at AKOS. They're asking who to call. Let me recall the official info.\n\nFirst, I should mention the contact center. The number is 080 1111. That's the main line for inquiries. Also, they can check online via the AKOS website using their personal account. Need to make sure I don't add extra info if it's not certain. If there's no other way, just stick to the provided methods. Don't guess any other numbers or services. Keep it concise, two sentences as requested.\n</think>\n\nZa preverjanje faze svojega spora pokličite AKOS-ov center za javnost na številko 080 1111. Poleg tega lahko preverite status prek osebnega računa na uradni spletni strani AKOS.",
+        "latency_sec": 3.378,
+        "tokens": 200,
+        "scores": {
+          "slovene_signal": 3.5,
+          "required_coverage": 0.0,
+          "fluency": 5.0,
+          "abstention": 5.0,
+          "forbidden_control": 5.0,
+          "overall": 3.12
+        },
+        "notes": "",
+        "hard_fail": false,
+        "hard_fail_reasons": []
+      },
+      {
+        "id": "INTP-016",
+        "category": "Call-center - nedelovanje",
+        "prompt": "[Stranka je nezadovoljna] [Anonimizirano] Internet mi več dni ne deluje, operater ne odpravi napake. Kako naj nadaljujem? Prosim za konkreten korak.",
+        "required_keywords": [
+          "prijava napake",
+          "reklamacija",
+          "AKOS"
+        ],
+        "forbidden_keywords": [
+          "nič se ne da storiti"
+        ],
+        "expected_abstain": false,
+        "source_topic": "storitev-ne-deluje-ali-ni-ustrezna",
+        "source_url": "https://www.akos-rs.si/pogosta-vprasanja-in-odgovori/storitev-ne-deluje-ali-ni-ustrezna",
+        "answer": "<think>\nOkay, the user is having internet issues and their operator isn't fixing it. They want to know what to do next. Let me recall the AKOS procedures.\n\nFirst, check if they've already contacted their provider. Since the user says the operator hasn't resolved it, they probably have. The next step according to AKOS would be to file a complaint. They need to do this within 14 days of the issue arising. The complaint should include details like the problem description, contact info, and any communication with the provider.\n\nThen, the user should submit the complaint to AKOS. They can do this via the website, email, or post. The address is important here. Also, mention the deadline for submitting the complaint. If they don't have the necessary documents, they should ask the provider for them.\n\nWait, the user might not know where to send the complaint. I should provide the exact address and contact info. Also, maybe mention that if they don't have the documents, they can request them from the provider. But I shouldn't make up any info if it's not available. Let me confirm the correct address and contact details for AKOS.\n\nYes, the address is Ulica kneza Kranja 1, 1000 Ljubljana. Email is info@akos.gov.si. They can also use the online form on the AKOS website. The user needs to be specific in their complaint. Also, remind them about the 14-day deadline. If they're unsure, they can contact AKOS directly for help. But don't suggest any steps beyond what's official. Make sure the response is concise and in Slovenian.\n</think>\n\nČe internetni problem ni odpravljen, napišite pisno pritožbo operaterju znotraj 14 dni od nastanka težave. V pritožbi navedite:  \n- Opis težave in datum, ko je prišla do napake.  \n- Kopijo komunikacije z operaterjem (če imate).  \n- Vaše osebne podatke in kontaktne podatke.  \n\nČe operater ne reši težave v roku 14 dni od prejema pritožbe, **najprej kontaktirajte AKOS** preko:  \n📧 **info@akos.gov.si**  \n🌐 **www.akos.gov.si** (obrazec za pritožbo)  \n📬 **Ulica kneza Kranja 1, 1000 Ljubljana**  \n\nČe potrebujete pomoč pri pripravi pritožbe, se obrnite neposredno na AKOS. Če podatkov nimate, jasno to povejte v pritožbi in zahtevajte, da operater zagotovi potrebne dokumente.",
+        "latency_sec": 4.16,
+        "tokens": 615,
+        "scores": {
+          "slovene_signal": 5.0,
+          "required_coverage": 1.67,
+          "fluency": 3.96,
+          "abstention": 5.0,
+          "forbidden_control": 5.0,
+          "overall": 3.79
+        },
+        "notes": "",
+        "hard_fail": false,
+        "hard_fail_reasons": []
+      },
+      {
+        "id": "INTP-015",
+        "category": "Call-center - nedelovanje",
+        "prompt": "Spoštovani, [Anonimizirano] Internet mi več dni ne deluje, operater ne odpravi napake. Kako naj nadaljujem? Hvala.",
+        "required_keywords": [
+          "prijava napake",
+          "reklamacija",
+          "AKOS"
+        ],
+        "forbidden_keywords": [
+          "nič se ne da storiti"
+        ],
+        "expected_abstain": false,
+        "source_topic": "storitev-ne-deluje-ali-ni-ustrezna",
+        "source_url": "https://www.akos-rs.si/pogosta-vprasanja-in-odgovori/storitev-ne-deluje-ali-ni-ustrezna",
+        "answer": "<think>\nOkay, the user is saying their internet hasn't been working for several days and the operator hasn't fixed it. They want to know what to do next. Let me think about the steps they should take.\n\nFirst, they should check if it's a local issue. Maybe restart the router or modem. If that doesn't work, test another device to see if the problem is with their equipment. If it's still down, they need to contact their operator again, maybe in writing to get a record. \n\nIf the operator isn't responding, they can escalate the issue. In Slovenia, there's the Telecommunications Users' Association (ZDTS) that handles complaints. They can file a complaint there. Also, the official AKOS website has information on how to resolve such issues. \n\nI should mention the steps clearly and concisely, without guessing. If they need more info, direct them to the official channels. Make sure to use formal Slovenian and keep it straightforward.\n</think>\n\nSpoštovani, če internet ne deluje in operater napako ne odpravi, sledite tem korakom:  \n1. **Preverite lokalno opremo** (ponovno zaženite ruter/omnipotnik).  \n2. **Kontaktirajte operaterja pisno** (e-pošta, obrazec) in dokumentirajte čas in trajanje težave.  \n3. Če se problem ne reši, **najava težave prek AKOS-ovega portala za pritožbe** (https://www.akos.gov.si).  \n\nZa dodatno pomoč se obrnite na **Združenje uporabnikov telekomunikacijskih storitev (ZDTS)** ali preverite AKOS-ove nasvete na uradni spletni strani.",
+        "latency_sec": 3.518,
+        "tokens": 406,
+        "scores": {
+          "slovene_signal": 5.0,
+          "required_coverage": 1.67,
+          "fluency": 5.0,
+          "abstention": 5.0,
+          "forbidden_control": 5.0,
+          "overall": 4.0
+        },
+        "notes": "",
+        "hard_fail": false,
+        "hard_fail_reasons": []
+      },
+      {
+        "id": "INTP-018",
+        "category": "Call-center - postopek",
+        "prompt": "Na kratko: [Anonimizirano] Operater je zavrnil mojo reklamacijo. Kako vložim predlog za rešitev spora? Odgovori v 2 stavkih.",
+        "required_keywords": [
+          "predlog",
+          "rok",
+          "AKOS"
+        ],
+        "forbidden_keywords": [
+          "tožba je obvezna"
+        ],
+        "expected_abstain": false,
+        "source_topic": "postopek-pred-akos",
+        "source_url": "https://www.akos-rs.si/pogosta-vprasanja-in-odgovori/postopek-pred-akos",
+        "answer": "<think>\nOkay, the user is asking how to file a complaint resolution request with AKOS after their operator rejected their complaint. Let me recall the process.\n\nFirst, they need to submit a written proposal for dispute resolution to AKOS. I should mention the required information like personal details, operator's name, and the complaint's content. Also, the deadline is 15 days from the rejection notice. I need to keep it concise, two sentences. Make sure to direct them to official channels if they need more info. Let me check if all the key points are covered without any guesses.\n</think>\n\nVložite pisni predlog za rešitev spora na AKOS, vključite osebne podatke, ime operaterja in povzete okoliščine spora. Časovni rok za vložitev je 15 dni od prejema odgovora operaterja.",
+        "latency_sec": 3.75,
+        "tokens": 199,
+        "scores": {
+          "slovene_signal": 4.0,
+          "required_coverage": 5.0,
+          "fluency": 5.0,
+          "abstention": 5.0,
+          "forbidden_control": 5.0,
+          "overall": 4.75
+        },
+        "notes": "",
+        "hard_fail": false,
+        "hard_fail_reasons": []
+      },
+      {
+        "id": "INTP-020",
+        "category": "Call-center - postopek",
+        "prompt": "[Stranka je nezadovoljna] [Anonimizirano] Operater je zavrnil mojo reklamacijo. Kako vložim predlog za rešitev spora? Prosim za konkreten korak.",
+        "required_keywords": [
+          "predlog",
+          "rok",
+          "AKOS"
+        ],
+        "forbidden_keywords": [
+          "tožba je obvezna"
+        ],
+        "expected_abstain": false,
+        "source_topic": "postopek-pred-akos",
+        "source_url": "https://www.akos-rs.si/pogosta-vprasanja-in-odgovori/postopek-pred-akos",
+        "answer": "<think>\nOkay, the user is asking how to file a complaint resolution request after their operator rejected their complaint. Let me recall the official process for AKOS.\n\nFirst, I need to check if there's a specific procedure outlined by AKOS for submitting a dispute resolution proposal. From what I remember, consumers can use the official channels provided by AKOS. The user wants concrete steps, so I should mention the official website and the form they need to fill out. Also, including the deadline is important—usually 15 days from the rejection. I should make sure not to guess any details, so if I'm unsure about the exact form or deadline, I need to direct them to the official site. Let me confirm the steps again. Yes, the correct form is the \"Predlog rešitve spora\" form available on AKOS's website. The deadline is 15 days. They should submit it via the website or by post. I should also mention contacting the helpdesk if they need further assistance. Avoid any guesses and stick to the official info.\n</think>\n\nČe je operater zavrnil vašo reklamacijo, lahko vložite predlog za rešitev spora preko obrazca **\"Predlog rešitve spora\"** na uradni spletni strani AKOS: [www.akos.si](https://www.akos.si). Obrazec najdete v sekciji **\"Reklamacije in spori\"**.  \n\n**Koraki:**  \n1. Prenesite in izpolnite obrazec.  \n2. Prijavite se na spletno stran AKOS (ali pošljite z izpolnjeno obrazco po pošti).  \n3. Vključite vse dokumente, ki podpirajo vašo zahtevo.  \n\n**Pomembno:** Predlog morate vložiti **do 15 dni** od datuma zavrnitve reklamacije.  \n\nČe potrebujete dodatno pomoč, se obrnite na AKOS-ov center za pomoč: **0800 000 800** (brezplačno) ali prek e-pošte: **pomoc@akos.si**.",
+        "latency_sec": 4.071,
+        "tokens": 495,
+        "scores": {
+          "slovene_signal": 5.0,
+          "required_coverage": 3.33,
+          "fluency": 4.98,
+          "abstention": 5.0,
+          "forbidden_control": 5.0,
+          "overall": 4.5
+        },
+        "notes": "",
+        "hard_fail": false,
+        "hard_fail_reasons": []
+      },
+      {
+        "id": "INTP-026",
+        "category": "Call-center - signal",
+        "prompt": "Na kratko: [Anonimizirano] Na stalnem naslovu nimam stabilnega mobilnega signala. Kako naj prijavim težavo? Odgovori v 2 stavkih.",
+        "required_keywords": [
+          "mobilni signal",
+          "operater",
+          "prijava"
+        ],
+        "forbidden_keywords": [
+          "AKOS zagotovi signal na lokaciji"
+        ],
+        "expected_abstain": false,
+        "source_topic": "storitev-ne-deluje-ali-ni-ustrezna",
+        "source_url": "https://www.akos-rs.si/pogosta-vprasanja-in-odgovori/storitev-ne-deluje-ali-ni-ustrezna",
+        "answer": "<think>\nOkay, the user is asking how to report a problem with unstable mobile signal at their permanent address. They want a short answer in two sentences.\n\nFirst, I need to recall the correct procedure for reporting such issues in Slovenia. Since they mentioned AKOS, which is the state company for public services, maybe they're referring to reporting to the government or public services. But usually, mobile signal issues are handled by the mobile network providers, not AKOS. AKOS deals with public services like water, electricity, etc. Wait, maybe the user is confused. Let me check.\n\nIf the user is experiencing poor mobile signal, they should contact their mobile provider. But the question is in Slovenian and mentions AKOS, so maybe there's a specific process through the government. However, in Slovenia, mobile networks are handled by companies like MTS, A1, or T-2. AKOS might not be the right authority here. The user might have thought that AKOS handles all public services, but that's not the case.\n\nSo, the correct answer would be to direct them to contact their mobile service provider. If they don't know how, maybe suggest the provider's support channels. Also, if they need to report it to the government for some reason, maybe the Communications Agency of Slovenia (AKOS) has a role in regulating, but not handling individual complaints. So, the answer should clarify that they need to contact their provider and mention that if they need further help, they can reach out to AKOS for general information.\n</think>\n\nTežave z mobilnim signalom prijavite neposredno svojemu mobilnemu ponudniku (npr. MTS, A1, T-2). Če potrebujete dodatno pomoč, se obrnite na AKOS prek uradnih kanalov.",
+        "latency_sec": 2.804,
+        "tokens": 383,
+        "scores": {
+          "slovene_signal": 3.5,
+          "required_coverage": 0.0,
+          "fluency": 4.97,
+          "abstention": 5.0,
+          "forbidden_control": 5.0,
+          "overall": 3.12
+        },
+        "notes": "",
+        "hard_fail": false,
+        "hard_fail_reasons": []
+      },
+      {
+        "id": "INTP-027",
+        "category": "Call-center - signal",
+        "prompt": "Spoštovani, [Anonimizirano] Na stalnem naslovu nimam stabilnega mobilnega signala. Kako naj prijavim težavo? Hvala.",
+        "required_keywords": [
+          "mobilni signal",
+          "operater",
+          "prijava"
+        ],
+        "forbidden_keywords": [
+          "AKOS zagotovi signal na lokaciji"
+        ],
+        "expected_abstain": false,
+        "source_topic": "storitev-ne-deluje-ali-ni-ustrezna",
+        "source_url": "https://www.akos-rs.si/pogosta-vprasanja-in-odgovori/storitev-ne-deluje-ali-ni-ustrezna",
+        "answer": "<think>\nOkay, the user is asking how to report a problem with unstable mobile signal at their permanent address. They mentioned they're a Slovenian-speaking assistant for AKOS. I need to be concise, accurate, and not guess. If I don't have the data, I should clearly state that and direct them to official AKOS channels.\n\nFirst, I should check if AKOS has a specific procedure for reporting signal issues. Since I don't have access to internal processes, I can't provide exact steps. The safest approach is to inform the user that I can't handle the report directly and suggest they contact AKOS through their official channels. I should mention the customer service number, website, or email. Also, maybe suggest checking the AKOS website for any self-service options or forms. Make sure the response is polite and helpful, guiding them to the right place without making up information.\n</think>\n\nSpoštovani, težave z mobilnim signalom na vašem stalnem naslovu naj boste prijavili neposredno prek uradnih kanalov AKOS. Lahko se obrnete na službo za odnose z javnostmi prek e-pošte info@akos.si ali telefonsko na številko 0800 111 222. Na spletni strani AKOS najdete tudi obrazce za prijavo težav. Hvala za razumevanje.",
+        "latency_sec": 5.572,
+        "tokens": 313,
+        "scores": {
+          "slovene_signal": 4.5,
+          "required_coverage": 0.0,
+          "fluency": 4.99,
+          "abstention": 5.0,
+          "forbidden_control": 5.0,
+          "overall": 3.37
+        },
+        "notes": "",
+        "hard_fail": false,
+        "hard_fail_reasons": []
+      },
+      {
+        "id": "INTP-030",
+        "category": "Inbox - administrativni stroški",
+        "prompt": "Na kratko: [Anonimizirano] Operater je dodal administrativni strošek, ki ga ni bilo v pogodbi. Ali ga moram plačati? Odgovori v 2 stavkih.",
+        "required_keywords": [
+          "pogodba",
+          "strošek",
+          "reklamacija"
+        ],
+        "forbidden_keywords": [
+          "vsi dodatni stroški so dovoljeni"
+        ],
+        "expected_abstain": false,
+        "source_topic": "neupravicen-racun",
+        "source_url": "https://www.akos-rs.si/pogosta-vprasanja-in-odgovori/neupravicen-racun",
+        "answer": "<think>\nOkay, the user is asking whether they have to pay an administrative fee that wasn't in the contract. Let me start by recalling Slovenian consumer protection laws. If the fee wasn't agreed upon in the contract, it's probably not enforceable.\n\nI should check if there are any specific regulations about hidden fees. In Slovenia, the Consumer Protection Act (Zakon o varstvu potrošnikov) might be relevant here. If the operator added a fee without prior agreement, the user isn't obligated to pay it. They should contact the operator first to resolve it, and if that fails, escalate to the official channels like the Consumer Claims Court or the Trade Inspection. Need to make sure the answer is concise and directs them to the right authorities if needed.\n</think>\n\nČe administrativni strošek ni bil predpisan v pogodbi, ga ne morete zahtevati plačati. V primeru spora se obrnite na Upravno sodišče za potrošnike ali na Državni inšpektorat za tržno nadzor.",
+        "latency_sec": 5.323,
+        "tokens": 233,
+        "scores": {
+          "slovene_signal": 4.5,
+          "required_coverage": 1.67,
+          "fluency": 4.99,
+          "abstention": 5.0,
+          "forbidden_control": 5.0,
+          "overall": 3.87
+        },
+        "notes": "",
+        "hard_fail": false,
+        "hard_fail_reasons": []
+      },
+      {
+        "id": "INTP-031",
+        "category": "Inbox - administrativni stroški",
+        "prompt": "Spoštovani, [Anonimizirano] Operater je dodal administrativni strošek, ki ga ni bilo v pogodbi. Ali ga moram plačati? Hvala.",
+        "required_keywords": [
+          "pogodba",
+          "strošek",
+          "reklamacija"
+        ],
+        "forbidden_keywords": [
+          "vsi dodatni stroški so dovoljeni"
+        ],
+        "expected_abstain": false,
+        "source_topic": "neupravicen-racun",
+        "source_url": "https://www.akos-rs.si/pogosta-vprasanja-in-odgovori/neupravicen-racun",
+        "answer": "<think>\nOkay, the user is asking whether they have to pay an administrative fee that wasn't in their contract. Let me start by recalling Slovenian consumer protection laws. From what I know, any additional fees not mentioned in the contract might be considered unfair. The Consumer Protection Act (Zakon o varstvu potrošnikov) probably covers this.\n\nI should check if administrative fees are allowed. If the contract didn't mention it, the operator can't just add it. But maybe there are exceptions, like if it's a standard industry practice and properly disclosed. However, since the user says it wasn't in the contract, that's a red flag.\n\nI need to advise them to review the contract again for any hidden clauses. If it's definitely not there, they shouldn't have to pay. Suggest contacting the operator to dispute the fee. Also, mention the right to complain to the Consumer Protection Agency (AKOS) if needed. But since I can't access real-time data, I should tell them to check the official AKOS website or contact them directly for confirmation. Keep the answer concise and direct them to official channels if unsure.\n</think>\n\nČe administrativni strošek ni bil predpisan v vaši pogodbi, ga ne smete plačati. Preverite pogodbo za morebitne dodatne poglavja ali priloge. Če ni bilo pisnega dogovora, se obrnite na operaterja in zahtevajte razlago. V primeru nesoglasja se lahko obrnete na [AKOS](https://www.akos.gov.si) za dodatno pomoč.",
+        "latency_sec": 5.681,
+        "tokens": 353,
+        "scores": {
+          "slovene_signal": 5.0,
+          "required_coverage": 1.67,
+          "fluency": 4.98,
+          "abstention": 5.0,
+          "forbidden_control": 5.0,
+          "overall": 4.0
+        },
+        "notes": "",
+        "hard_fail": false,
+        "hard_fail_reasons": []
+      },
+      {
+        "id": "INTP-006",
+        "category": "Inbox - gostovanje",
+        "prompt": "Na kratko: [Anonimizirano] V EU gostovanju so mi zaračunali storitve kot izven EU. Kaj lahko storim? Odgovori v 2 stavkih.",
+        "required_keywords": [
+          "EU",
+          "gostovanje",
+          "reklamacija"
+        ],
+        "forbidden_keywords": [
+          "EU pravila ne veljajo"
+        ],
+        "expected_abstain": false,
+        "source_topic": "o-gostovanju",
+        "source_url": "https://www.akos-rs.si/pogosta-vprasanja-in-odgovori/o-gostovanju",
+        "answer": "<think>\nOkay, the user is asking about being charged for services in the EU as if they were outside the EU. First, I need to recall the relevant regulations. The EU has rules about cross-border services, like the VAT exemption for B2C services. If the service provider incorrectly applied non-EU rates, the user might be entitled to a refund. The user should contact the provider to correct the invoice. If that doesn't work, they can escalate to the national tax authority in the EU country where the service was provided. Since I don't have specific data on their case, I should direct them to official sources like the European Commission's website for more detailed steps.\n</think>\n\nČe ste bili zaračunani storitve kot izven EU, preverite pravilnost uporabe davčne stopnje glede na pravilo o storitvah v EU (npr. 0 % DDV za B2C storitve v skladu z DDV zakonom). Kontaktirajte ponudnika storitev za popravitev računa ali se obrnite na pristojno davčno upravo v državi, kjer ste prejeli storitev. Za dodatno pomoč naslovite na uradne strani Evropske komisije za DDV vprašanja.",
+        "latency_sec": 4.853,
+        "tokens": 292,
+        "scores": {
+          "slovene_signal": 5.0,
+          "required_coverage": 1.67,
+          "fluency": 4.99,
+          "abstention": 5.0,
+          "forbidden_control": 5.0,
+          "overall": 4.0
+        },
+        "notes": "",
+        "hard_fail": false,
+        "hard_fail_reasons": []
+      },
+      {
+        "id": "INTP-008",
+        "category": "Inbox - gostovanje",
+        "prompt": "[Stranka je nezadovoljna] [Anonimizirano] V EU gostovanju so mi zaračunali storitve kot izven EU. Kaj lahko storim? Prosim za konkreten korak.",
+        "required_keywords": [
+          "EU",
+          "gostovanje",
+          "reklamacija"
+        ],
+        "forbidden_keywords": [
+          "EU pravila ne veljajo"
+        ],
+        "expected_abstain": false,
+        "source_topic": "o-gostovanju",
+        "source_url": "https://www.akos-rs.si/pogosta-vprasanja-in-odgovori/o-gostovanju",
+        "answer": "<think>\nOkay, the user is asking about being charged for services in the EU as if they were outside the EU. First, I need to recall AKOS's policies on EU stays. AKOS is the Slovenian social insurance agency, so this likely relates to health insurance or similar services.\n\nThe user might have received a bill for services in another EU country but were charged as if it were outside the EU, which shouldn't happen under EU regulations. The correct procedure would involve submitting the necessary forms to AKOS to get the costs covered properly.\n\nI should check if there's a specific form or process for EU cross-border services. The E111 form is used for health insurance in the EU, so maybe they need to submit that. Also, they might need to contact the foreign provider for an invoice and then submit it to AKOS.\n\nI need to make sure the steps are clear: contact the foreign provider, get the invoice, fill out the E111 form, and submit everything to AKOS. If there's a discrepancy, they should contact AKOS directly for clarification. Since I can't access real-time data, I should direct them to the official AKOS website or contact info for further help.\n</think>\n\nČe ste bili zaračunani storitve v EU kot izven EU, sledite tem korakom:  \n1. **Zberite dokumentacijo**: Zberite račun za storitve in potrdilo o prebivališču/študiju v EU državi.  \n2. **Kontaktirajte ponudnika storitev**: Zahtevajte popravljeno račun, ki upošteva EU pravilo (brez dodatnih stroškov za izven EU).  \n3. **Prijavite se na AKOS**: Pošljite dokumentacijo na **info@akos.gov.si** ali oddajte v pisarni.  \n\nČe se problem ne reši, se obrnite neposredno na **AKOS-ov infocentar** (tel. 080 1111) za podrobnejše nasvete.",
+        "latency_sec": 4.828,
+        "tokens": 462,
+        "scores": {
+          "slovene_signal": 5.0,
+          "required_coverage": 1.67,
+          "fluency": 4.97,
+          "abstention": 5.0,
+          "forbidden_control": 5.0,
+          "overall": 4.0
+        },
+        "notes": "",
+        "hard_fail": false,
+        "hard_fail_reasons": []
+      },
+      {
+        "id": "INTP-011",
+        "category": "Inbox - menjava operaterja",
+        "prompt": "Spoštovani, [Anonimizirano] Pri prenosu številke je prišlo do zamude in dodatnih stroškov. Katere pravice imam? Hvala.",
+        "required_keywords": [
+          "prenos številke",
+          "zamuda",
+          "pravice"
+        ],
+        "forbidden_keywords": [
+          "uporabnik nima nobene pravice"
+        ],
+        "expected_abstain": false,
+        "source_topic": "o-menjavi-operaterja-ali-spremembi-paketa",
+        "source_url": "https://www.akos-rs.si/pogosta-vprasanja-in-odgovori/o-menjavi-operaterja-ali-spremembi-paketa",
+        "answer": "<think>\nOkay, the user is asking about their rights regarding a delayed number transfer and additional costs. First, I need to recall the relevant Slovenian regulations. The main authority here is AKOS, so I should check their guidelines.\n\nUnder Slovenian law, specifically the Telecommunications Act, there are provisions about number portability. The user might be referring to the process of keeping their phone number when switching providers. If there was a delay, the provider is supposed to handle the transfer within a certain timeframe. If they didn't, the user could be entitled to compensation for any extra charges incurred.\n\nI should mention the right to a timely transfer and the possibility of claiming reimbursement for additional costs. It's important to direct them to AKOS for detailed information and to file a complaint if necessary. Also, remind them to contact their service provider first, as per standard procedure. Since I can't provide legal advice, I need to keep it general and suggest they reach out to AKOS or their provider for specifics.\n</think>\n\nSpoštovani, glede na Zakon o telekomunikacijah imate pravico do brezprekorišnega prenosa številke v dogovorjenem roku. Če so prišli do zamude in dodatnih stroškov, lahko zahtevate odškodnino za neposredne stroške, ki so nastali zaradi zamude. Za podrobnejše informacije in ureditev pritožbe se obrnite na AKOS (https://www.akos.gov.si) ali vašega telekomunikacijskega ponudnika.",
+        "latency_sec": 2.786,
+        "tokens": 347,
+        "scores": {
+          "slovene_signal": 5.0,
+          "required_coverage": 0.0,
+          "fluency": 5.0,
+          "abstention": 5.0,
+          "forbidden_control": 5.0,
+          "overall": 3.5
+        },
+        "notes": "",
+        "hard_fail": false,
+        "hard_fail_reasons": []
+      },
+      {
+        "id": "INTP-010",
+        "category": "Inbox - menjava operaterja",
+        "prompt": "Na kratko: [Anonimizirano] Pri prenosu številke je prišlo do zamude in dodatnih stroškov. Katere pravice imam? Odgovori v 2 stavkih.",
+        "required_keywords": [
+          "prenos številke",
+          "zamuda",
+          "pravice"
+        ],
+        "forbidden_keywords": [
+          "uporabnik nima nobene pravice"
+        ],
+        "expected_abstain": false,
+        "source_topic": "o-menjavi-operaterja-ali-spremembi-paketa",
+        "source_url": "https://www.akos-rs.si/pogosta-vprasanja-in-odgovori/o-menjavi-operaterja-ali-spremembi-paketa",
+        "answer": "<think>\nOkay, the user is asking about their rights regarding a delayed number transfer and additional costs. Let me recall the relevant regulations.\n\nFirst, under EU regulations, telecom providers must handle number portability efficiently. If there's a delay, the user might be entitled to compensation. Also, any extra charges incurred due to the delay should be reimbursed by the provider. I need to mention both points concisely. If I'm not sure about specific details, I should direct them to official AKOS channels. Let me check if there's a specific law or guideline in Slovenia about this. Since I can't access current data, I'll stick to general EU rules and advise contacting AKOS for precise information.\n</think>\n\nČe je pri prenosu številke prišlo do zamude ali dodatnih stroškov, imate pravico do odškodnine za neposredne škode, ki so nastale zaradi zamude, in pravico, da vam ponujenec storitev odškoduje dodatne stroške. Za podrobne informacije in nadaljnje korake se obrnite na AKOS prek uradnih kanalov.",
+        "latency_sec": 2.087,
+        "tokens": 256,
+        "scores": {
+          "slovene_signal": 5.0,
+          "required_coverage": 0.0,
+          "fluency": 4.99,
+          "abstention": 5.0,
+          "forbidden_control": 5.0,
+          "overall": 3.5
+        },
+        "notes": "",
+        "hard_fail": false,
+        "hard_fail_reasons": []
+      },
+      {
+        "id": "INTP-038",
+        "category": "Inbox - novinarsko",
+        "prompt": "Na kratko: [Anonimizirano - mediji] Kako AKOS javnost obvešča o spremembah regulacije? Odgovori v 2 stavkih.",
+        "required_keywords": [
+          "javna posvetovanja",
+          "AKOS",
+          "objava"
+        ],
+        "forbidden_keywords": [
+          "ne objavlja ničesar"
+        ],
+        "expected_abstain": false,
+        "source_topic": "novinarska-vprasanja-in-odgovori",
+        "source_url": "https://www.akos-rs.si/medijsko-sredisce/novinarska-vprasanja-in-odgovori",
+        "answer": "<think>\nOkay, the user is asking how AKOS informs the public about regulatory changes. They want a concise answer in two sentences.\n\nFirst, I need to recall AKOS's communication channels. They probably use their official website and press releases. Also, maybe social media or newsletters.\n\nSecond, they might have a dedicated section for regulations or updates. It's important to mention direct communication channels like contact forms or emails for specific inquiries.\n\nWait, the user emphasized being brief and accurate. Don't add extra info. Also, if unsure, refer to official channels. But since I know AKOS uses their website and press releases, that's solid. Make sure to structure two clear sentences without fluff.\n</think>\n\nAKOS javnost obvešča o spremembah regulacije preko uradne spletno strani, kjer objavlja aktualne informacije, predloge regulativnih aktov in javne konzultacije. Poleg tega uporablja tiskovne sporočila in družbene omrežja za hitro obveščanje o pomembnih spremembah.",
+        "latency_sec": 1.719,
+        "tokens": 242,
+        "scores": {
+          "slovene_signal": 3.0,
+          "required_coverage": 1.67,
+          "fluency": 4.99,
+          "abstention": 5.0,
+          "forbidden_control": 5.0,
+          "overall": 3.5
+        },
+        "notes": "",
+        "hard_fail": false,
+        "hard_fail_reasons": []
+      },
+      {
+        "id": "INTP-040",
+        "category": "Inbox - novinarsko",
+        "prompt": "[Stranka je nezadovoljna] [Anonimizirano - mediji] Kako AKOS javnost obvešča o spremembah regulacije? Prosim za konkreten korak.",
+        "required_keywords": [
+          "javna posvetovanja",
+          "AKOS",
+          "objava"
+        ],
+        "forbidden_keywords": [
+          "ne objavlja ničesar"
+        ],
+        "expected_abstain": false,
+        "source_topic": "novinarska-vprasanja-in-odgovori",
+        "source_url": "https://www.akos-rs.si/medijsko-sredisce/novinarska-vprasanja-in-odgovori",
+        "answer": "<think>\nOkay, the user is asking how AKOS informs the public about regulatory changes and wants a specific step. Let me check the available information.\n\nFirst, I need to recall AKOS's communication channels. They probably use their official website, press releases, and maybe social media. Also, public consultations or stakeholder meetings might be part of their process.\n\nThe user wants a concrete step. The most direct way would be directing them to the official website where they can find the latest regulations and announcements. Additionally, mentioning public consultations or notifications through the media could be relevant.\n\nI should make sure not to guess. If I'm not certain about specific steps beyond the website, I should state that and suggest checking the official site or contacting their info center. Need to stay accurate and concise as per the instructions.\n</think>\n\nAKOS javnost obvešča o spremembah regulacije preko uradnih objav na svoji spletni strani (www.akos.gov.si), kjer najdete najnovejše pravilnike, razpisane javne konzultacije in odločitve. Za konkreten korak preverite sekcijo \"Pravila in odločitve\" ali \"Javne konzultacije\". Če potrebujete dodatne informacije, se obrnite na AKOS-ov informacijski center preko e-pošte ali telefonskega številke.",
+        "latency_sec": 2.893,
+        "tokens": 315,
+        "scores": {
+          "slovene_signal": 4.5,
+          "required_coverage": 1.67,
+          "fluency": 4.99,
+          "abstention": 5.0,
+          "forbidden_control": 5.0,
+          "overall": 3.87
+        },
+        "notes": "",
+        "hard_fail": false,
+        "hard_fail_reasons": []
+      },
+      {
+        "id": "INTP-021",
+        "category": "Inbox - pošta",
+        "prompt": "[Anonimizirano] Pošiljka ni bila dostavljena v običajnem roku. Kako lahko sprožim postopek?",
+        "required_keywords": [
+          "izvajalec poštnih storitev",
+          "reklamacija",
+          "AKOS"
+        ],
+        "forbidden_keywords": [
+          "AKOS neposredno dostavi pošiljko"
+        ],
+        "expected_abstain": false,
+        "source_topic": "spori-med-operaterji",
+        "source_url": "https://www.akos-rs.si/uporabniki-storitev/raziscite/spori-med-operaterji-oz-izvajalci-postnih-storitev-in-koncnimi-uporabniki",
+        "answer": "<think>\nOkay, the user is asking about a delayed delivery and wants to start a process. First, I need to recall AKOS procedures. AKOS is the Slovenian postal service, so their process would involve checking the tracking status first. The user should verify the tracking number to ensure there's no mistake. If the tracking shows a delay, the next step is contacting customer service. I should mention the official channels like their website or phone number. Also, maybe suggest checking the website for any service disruptions. If the package is significantly delayed, they might need to file a complaint. But I don't have specific info on the exact steps beyond that, so I should direct them to the official sources. Need to keep it concise and not make up any steps. Make sure to provide the contact details and website link.\n</think>\n\nČe pošiljka ni bila dostavljena v običajnem roku, preverite status pošiljke preko [akos.si](https://www.akos.si) z številko sledenja. Če so težave trajajoče, se obrnite na AKOS-ov [infocenter](https://www.akos.si/kontakt) ali pošljite pritožbo preko njihovega spleta. Če potrebujete dodatno pomoč, uporabite uradne telefonske številke ali e-poštno naslov, ki jih najdete na spletni strani.",
+        "latency_sec": 2.402,
+        "tokens": 325,
+        "scores": {
+          "slovene_signal": 3.5,
+          "required_coverage": 1.67,
+          "fluency": 4.99,
+          "abstention": 5.0,
+          "forbidden_control": 5.0,
+          "overall": 3.62
+        },
+        "notes": "",
+        "hard_fail": false,
+        "hard_fail_reasons": []
+      },
+      {
+        "id": "INTP-023",
+        "category": "Inbox - pošta",
+        "prompt": "Spoštovani, [Anonimizirano] Pošiljka ni bila dostavljena v običajnem roku. Kako lahko sprožim postopek? Hvala.",
+        "required_keywords": [
+          "izvajalec poštnih storitev",
+          "reklamacija",
+          "AKOS"
+        ],
+        "forbidden_keywords": [
+          "AKOS neposredno dostavi pošiljko"
+        ],
+        "expected_abstain": false,
+        "source_topic": "spori-med-operaterji",
+        "source_url": "https://www.akos-rs.si/uporabniki-storitev/raziscite/spori-med-operaterji-oz-izvajalci-postnih-storitev-in-koncnimi-uporabniki",
+        "answer": "<think>\nOkay, the user is asking about a delayed delivery and wants to start a process. They mentioned AKOS, which I think is the Slovenian postal service. First, I need to check if I have the correct information. Since I don't have access to their system, I should direct them to official channels.\n\nI should tell them to check the tracking status online first. If that doesn't help, they need to contact customer service. Maybe provide the website and phone number. Also, mention the deadline for claims, which is usually 14 days. Keep it short and clear, no guesses. Make sure to use Slovenian and be polite.\n</think>\n\nSpoštovani, za sprožitev postopka preverite status pošiljke na [akos.si](https://www.akos.si) ali se obrnite na [AKOS-ov center za podporo](tel:+38615885555) (telefon: 01 588 55 55). Če je pošiljka prepozno dostavljena, predložite pritožbo v roku 14 dni od dneva, ko bi morala biti dostavljena. Za dodatne informacije obiščite [pritožbe AKOS](https://www.akos.si/pritozbe).",
+        "latency_sec": 2.757,
+        "tokens": 299,
+        "scores": {
+          "slovene_signal": 4.5,
+          "required_coverage": 1.67,
+          "fluency": 4.99,
+          "abstention": 5.0,
+          "forbidden_control": 5.0,
+          "overall": 3.87
+        },
+        "notes": "",
+        "hard_fail": false,
+        "hard_fail_reasons": []
+      },
+      {
+        "id": "INTP-003",
+        "category": "Inbox - račun",
+        "prompt": "Spoštovani, [Anonimizirano] Prejel sem nenavadno visok račun za mobilne storitve. Kako naj pravilno ukrepam? Hvala.",
+        "required_keywords": [
+          "reklamacija",
+          "razčlenjen račun",
+          "AKOS"
+        ],
+        "forbidden_keywords": [
+          "računa ni treba plačati nikoli"
+        ],
+        "expected_abstain": false,
+        "source_topic": "neupravicen-racun",
+        "source_url": "https://www.akos-rs.si/pogosta-vprasanja-in-odgovori/neupravicen-racun",
+        "answer": "<think>\nOkay, the user received an unusually high mobile bill and wants to know how to proceed. First, I need to recall the standard steps for disputing a high bill in Slovenia, specifically with AKOS. Let me start by checking if there's an official process outlined on AKOS's website or their customer service guidelines.\n\nThe user is asking for precise steps, so I should list them clearly. The first step is usually to check the bill for any errors, like incorrect charges or duplicate entries. Then, contacting customer support to report the issue. They might need to provide the bill and any relevant details. If the problem isn't resolved, escalating the issue through formal complaint channels. Also, mentioning the possibility of contacting the Telecommunications Authority if necessary. \n\nWait, I need to make sure I don't include any guesses. If there's a specific form or contact number from AKOS, I should include that. But if I don't have that information, I should direct them to the official website or contact details. Let me verify if AKOS has a dedicated email or phone number for billing disputes. \n\nAlso, the user might need to know about the time frame for resolving such issues. Typically, providers have a certain number of days to respond. Including that could be helpful. But if I'm unsure about the exact time frame, I should avoid making it up and instead refer them to official sources. \n\nAnother point is to advise keeping records of all communications. That's a standard practice in such cases. Also, checking if there were any unauthorized services or subscriptions that might have been added without their consent. \n\nI need to structure the response step by step, ensuring clarity and conciseness. Avoid using technical jargon. Make sure each step is actionable. If there's any uncertainty about specific AKOS procedures, it's better to direct the user to their official channels rather than provide incorrect information. \n\nLet me summarize the steps: 1. Review the bill for errors. 2. Contact AKOS customer service with the bill details. 3. If unresolved, file a formal complaint. 4. Contact the Telecommunications Authority if needed. Provide contact details for AKOS and the authority. \n\nCheck if all the contact information is up to date. If not, instruct the user to visit the official website for the latest details. Avoid any assumptions beyond standard procedures. Make sure the response is in Slovene and matches the tone of an official response.\n</think>\n\nSpoštovani, za reševanje visokih računov za mobilne storitve sledite tem korakom:  \n1. **Preverite račun** za morebitne napake (npr. podvojene stroške, nepooblaščene storitve).  \n2. **Kontaktirajte AKOS** preko telefonskega števila **0800 111 222** ali e-pošte **podpora@akos.si**, da poročite o problemu in predložite račun.  \n3. Če se problem ne reši, **vložite pritožbo** preko [AKOS-ovega spleta](https://www.akos.si).  \n4. Če ne uspe, se obrnite na **Avtoriteto za komunikacijske storitve** (telefon: **01 47 88 200**).  \n\nZa natančnejše informacije preverite uradne kanale AKOS.",
+        "latency_sec": 3.098,
+        "tokens": 750,
+        "scores": {
+          "slovene_signal": 5.0,
+          "required_coverage": 1.67,
+          "fluency": 3.97,
+          "abstention": 5.0,
+          "forbidden_control": 5.0,
+          "overall": 3.79
+        },
+        "notes": "",
+        "hard_fail": false,
+        "hard_fail_reasons": []
+      },
+      {
+        "id": "INTP-004",
+        "category": "Inbox - račun",
+        "prompt": "[Stranka je nezadovoljna] [Anonimizirano] Prejel sem nenavadno visok račun za mobilne storitve. Kako naj pravilno ukrepam? Prosim za konkreten korak.",
+        "required_keywords": [
+          "reklamacija",
+          "razčlenjen račun",
+          "AKOS"
+        ],
+        "forbidden_keywords": [
+          "računa ni treba plačati nikoli"
+        ],
+        "expected_abstain": false,
+        "source_topic": "neupravicen-racun",
+        "source_url": "https://www.akos-rs.si/pogosta-vprasanja-in-odgovori/neupravicen-racun",
+        "answer": "<think>\nOkay, the user received an unusually high mobile bill and wants to know the correct steps to take. First, I need to outline the specific actions they should follow. Let me start by recalling the standard procedure for such issues in Slovenia.\n\nFirst step is to check the bill for any errors. They should look at the services and charges listed. Maybe there are unexpected charges or overages. Next, contacting the provider's customer service is essential. They can get in touch via phone or online chat. The user should ask for a detailed breakdown of the charges. If there's a mistake, the provider should correct it. \n\nIf the issue isn't resolved, the next step would be to file a complaint with the relevant authority. In Slovenia, that's the Telecommunications Office (TIC). They can submit a complaint through the official website. It's important to mention the deadline for filing a complaint, which is usually 30 days from the date they became aware of the issue. \n\nI should also remind them to keep all documentation, like the bill and any correspondence with the provider. If the complaint to TIC isn't resolved, they might need to consider legal action, but that's a last resort. \n\nWait, the user is asking for concrete steps, so I need to list them clearly. Let me structure it step by step. Also, make sure to mention the official channels for complaints. Avoid any assumptions and stick to the facts. If I don't have specific information, direct them to the official sources. Let me check if there are any other steps or if I missed something. Maybe suggest checking for unauthorized services or subscriptions. Also, advising them to monitor their usage moving forward could be helpful. But since the question is about what to do now, focus on the immediate steps. Alright, that should cover it.\n</think>\n\n1. **Preverite račun**: Podrobno preverite vse postavke in stroške na računu.  \n2. **Kontaktirajte ponudnika storitev**: Prijavite se na spletno stran ali pokličite službo podpore ponudnika (npr. T-2, A1, M-net). Zahtevajte pojasnilo in popravite morebitne napake.  \n3. **Prijavite pritožbo**: Če problem ostane, v roku 30 dni od datuma, ko ste spoznali problem, vložite pritožbo na spletni strani **Urad za komunikacijske storitve (AKOS)**: [www.akos.gov.si](https://www.akos.gov.si).  \n4. **Zabeležite dokumentacijo**: Shrani vse dokaze (račun, e-poštno komunikacijo, opombe o uporabi storitev).  \n\nČe potrebujete dodatno pomoč, se obrnite neposredno na AKOS prek njihovih uradnih kanalov.",
+        "latency_sec": 4.354,
+        "tokens": 645,
+        "scores": {
+          "slovene_signal": 5.0,
+          "required_coverage": 1.67,
+          "fluency": 3.99,
+          "abstention": 5.0,
+          "forbidden_control": 5.0,
+          "overall": 3.8
+        },
+        "notes": "",
+        "hard_fail": false,
+        "hard_fail_reasons": []
+      }
+    ]
+  },
+  "openai/gpt-oss-20b": {
+    "cases": [
+      {
+        "id": "INTP-035",
+        "category": "Call-center - center 080",
+        "prompt": "Spoštovani, [Anonimizirano] Želim preveriti, v kateri fazi je moj spor pri AKOS. Kam pokličem? Hvala.",
+        "required_keywords": [
+          "080 2735",
+          "klicni center"
+        ],
+        "forbidden_keywords": [
+          "pokličite policijo"
+        ],
+        "expected_abstain": false,
+        "source_topic": "spori-med-operaterji",
+        "source_url": "https://www.akos-rs.si/uporabniki-storitev/raziscite/spori-med-operaterji-oz-izvajalci-postnih-storitev-in-koncnimi-uporabniki",
+        "answer": "Za preverjanje faze sporja pokličite AKOS na telefonsko številko **01 123 45 67**.",
+        "latency_sec": 3.287,
+        "tokens": 681,
+        "scores": {
+          "slovene_signal": 3.0,
+          "required_coverage": 0.0,
+          "fluency": 5.0,
+          "abstention": 5.0,
+          "forbidden_control": 5.0,
+          "overall": 3.0
+        },
+        "notes": "",
+        "hard_fail": false,
+        "hard_fail_reasons": []
+      },
+      {
+        "id": "INTP-034",
+        "category": "Call-center - center 080",
+        "prompt": "Na kratko: [Anonimizirano] Želim preveriti, v kateri fazi je moj spor pri AKOS. Kam pokličem? Odgovori v 2 stavkih.",
+        "required_keywords": [
+          "080 2735",
+          "klicni center"
+        ],
+        "forbidden_keywords": [
+          "pokličite policijo"
+        ],
+        "expected_abstain": false,
+        "source_topic": "spori-med-operaterji",
+        "source_url": "https://www.akos-rs.si/uporabniki-storitev/raziscite/spori-med-operaterji-oz-izvajalci-postnih-storitev-in-koncnimi-uporabniki",
+        "answer": "Pokličite na 01 123 45 67 ali pošljite e‑pošto na info@akos.si, kjer vam bodo zagnali podrobnosti o fazi vašega spora. Za dodatne informacije obiščite uradno spletno stran www.akos.si.",
+        "latency_sec": 1.784,
+        "tokens": 509,
+        "scores": {
+          "slovene_signal": 3.5,
+          "required_coverage": 0.0,
+          "fluency": 5.0,
+          "abstention": 5.0,
+          "forbidden_control": 5.0,
+          "overall": 3.12
+        },
+        "notes": "",
+        "hard_fail": false,
+        "hard_fail_reasons": []
+      },
+      {
+        "id": "INTP-016",
+        "category": "Call-center - nedelovanje",
+        "prompt": "[Stranka je nezadovoljna] [Anonimizirano] Internet mi več dni ne deluje, operater ne odpravi napake. Kako naj nadaljujem? Prosim za konkreten korak.",
+        "required_keywords": [
+          "prijava napake",
+          "reklamacija",
+          "AKOS"
+        ],
+        "forbidden_keywords": [
+          "nič se ne da storiti"
+        ],
+        "expected_abstain": false,
+        "source_topic": "storitev-ne-deluje-ali-ni-ustrezna",
+        "source_url": "https://www.akos-rs.si/pogosta-vprasanja-in-odgovori/storitev-ne-deluje-ali-ni-ustrezna",
+        "answer": "Najprej zapišite datum in čas, ko je internet izpustil, ter pokličite našo podporo na **0800‑123‑456**. Zahtevajte pisno potrdilo o napaki in, če operater ne reši težave, **vložite pritožbo** na portal AKOS pod razdelkom „Pritožbe“. Če potrebujete dodatno pomoč, pošljite e‑pošto na **podpora@akos.si**.",
+        "latency_sec": 2.17,
+        "tokens": 663,
+        "scores": {
+          "slovene_signal": 3.5,
+          "required_coverage": 1.67,
+          "fluency": 5.0,
+          "abstention": 5.0,
+          "forbidden_control": 5.0,
+          "overall": 3.63
+        },
+        "notes": "",
+        "hard_fail": false,
+        "hard_fail_reasons": []
+      },
+      {
+        "id": "INTP-015",
+        "category": "Call-center - nedelovanje",
+        "prompt": "Spoštovani, [Anonimizirano] Internet mi več dni ne deluje, operater ne odpravi napake. Kako naj nadaljujem? Hvala.",
+        "required_keywords": [
+          "prijava napake",
+          "reklamacija",
+          "AKOS"
+        ],
+        "forbidden_keywords": [
+          "nič se ne da storiti"
+        ],
+        "expected_abstain": false,
+        "source_topic": "storitev-ne-deluje-ali-ni-ustrezna",
+        "source_url": "https://www.akos-rs.si/pogosta-vprasanja-in-odgovori/storitev-ne-deluje-ali-ni-ustrezna",
+        "answer": "Spoštovani,\n\nČe operater še vedno ne odpravi napake, sledite tem korakom:\n\n1. **Ponovno kontaktirajte operaterja** – zapišite datum, čas in vse informacije, ki ste jih posredovali.  \n2. **Prijavite težavo na regulator** – v Sloveniji je to **Regulator komunikacij** (RegKom).  \n   - E‑mail: regkom@regkom.si  \n   - Telefon: 0800 123 123 (brezplačno iz Slovenije)  \n   - Spletna prijava: [regkom.si](https://www.regkom.si)  \n3. **Prijavite se na AKOS** – lahko podate pritožbo in dobite dodatne informacije.  \n   - E‑mail: info@akos.si  \n   - Telefon: 0800 123 456 (brezplačno iz Slovenije)  \n   - Spletna prijava: [akos.si](https://www.akos.si)  \n4. **Zapišite vse komunikacije** – vključno z e‑maili, SMS‑i in telefonskimi zapisniki.  \n5. **Če napaka še vedno ostane nerešena**, lahko vložite uradno pritožbo pri RegKom in/ali pri AKOS.  \n\nČe potrebujete dodatne informacije, se obrnite neposredno na zgoraj navedene uradne kanale. Hvala.",
+        "latency_sec": 1.812,
+        "tokens": 556,
+        "scores": {
+          "slovene_signal": 5.0,
+          "required_coverage": 1.67,
+          "fluency": 4.95,
+          "abstention": 5.0,
+          "forbidden_control": 5.0,
+          "overall": 3.99
+        },
+        "notes": "",
+        "hard_fail": false,
+        "hard_fail_reasons": []
+      },
+      {
+        "id": "INTP-018",
+        "category": "Call-center - postopek",
+        "prompt": "Na kratko: [Anonimizirano] Operater je zavrnil mojo reklamacijo. Kako vložim predlog za rešitev spora? Odgovori v 2 stavkih.",
+        "required_keywords": [
+          "predlog",
+          "rok",
+          "AKOS"
+        ],
+        "forbidden_keywords": [
+          "tožba je obvezna"
+        ],
+        "expected_abstain": false,
+        "source_topic": "postopek-pred-akos",
+        "source_url": "https://www.akos-rs.si/pogosta-vprasanja-in-odgovori/postopek-pred-akos",
+        "answer": "Predlog za rešitev spora lahko vložite na spletni strani AKOS, izpolnite obrazec „Predlog za rešitev spora“, priložite dokumentacijo in pošljite na e‑mail ali po pošti. Po prejemu boste prejeli potrdilo in nadaljnje navodilo za nadaljnje postopke.",
+        "latency_sec": 1.988,
+        "tokens": 422,
+        "scores": {
+          "slovene_signal": 4.5,
+          "required_coverage": 3.33,
+          "fluency": 4.94,
+          "abstention": 5.0,
+          "forbidden_control": 5.0,
+          "overall": 4.36
+        },
+        "notes": "",
+        "hard_fail": false,
+        "hard_fail_reasons": []
+      },
+      {
+        "id": "INTP-020",
+        "category": "Call-center - postopek",
+        "prompt": "[Stranka je nezadovoljna] [Anonimizirano] Operater je zavrnil mojo reklamacijo. Kako vložim predlog za rešitev spora? Prosim za konkreten korak.",
+        "required_keywords": [
+          "predlog",
+          "rok",
+          "AKOS"
+        ],
+        "forbidden_keywords": [
+          "tožba je obvezna"
+        ],
+        "expected_abstain": false,
+        "source_topic": "postopek-pred-akos",
+        "source_url": "https://www.akos-rs.si/pogosta-vprasanja-in-odgovori/postopek-pred-akos",
+        "answer": "Za vložitev predloga za rešitev spora se obrnite na AKOS preko njihove spletne strani:\n\n1. Obiščite **www.akos.si**.  \n2. V meniju izberite **„Pritožbe“** → **„Vložitev pritožbe“**.  \n3. Izpolnite obrazec, priložite vse relevantne dokumente (pogodba, komunikacija z operaterjem, potrdilo o zavrnitvi).  \n4. Po oddaji boste prejeli potrdilo o prejemu in nadaljnje navodila.\n\nČe imate težave z dostopom do spletne strani, pokličite AKOS na 01 22 22 22 ali obiščite najbližjo pisarno.",
+        "latency_sec": 1.846,
+        "tokens": 620,
+        "scores": {
+          "slovene_signal": 4.5,
+          "required_coverage": 3.33,
+          "fluency": 5.0,
+          "abstention": 5.0,
+          "forbidden_control": 5.0,
+          "overall": 4.37
+        },
+        "notes": "",
+        "hard_fail": false,
+        "hard_fail_reasons": []
+      },
+      {
+        "id": "INTP-026",
+        "category": "Call-center - signal",
+        "prompt": "Na kratko: [Anonimizirano] Na stalnem naslovu nimam stabilnega mobilnega signala. Kako naj prijavim težavo? Odgovori v 2 stavkih.",
+        "required_keywords": [
+          "mobilni signal",
+          "operater",
+          "prijava"
+        ],
+        "forbidden_keywords": [
+          "AKOS zagotovi signal na lokaciji"
+        ],
+        "expected_abstain": false,
+        "source_topic": "storitev-ne-deluje-ali-ni-ustrezna",
+        "source_url": "https://www.akos-rs.si/pogosta-vprasanja-in-odgovori/storitev-ne-deluje-ali-ni-ustrezna",
+        "answer": "Za prijavo težave z mobilnim signalom na stalnem naslovu se obrnite na AKOS preko njihove spletne strani ali kontaktne številke. Če potrebujete dodatno pomoč, obiščite uradno spletno stran AKOS ali pokličite njihovo podporo.",
+        "latency_sec": 1.604,
+        "tokens": 203,
+        "scores": {
+          "slovene_signal": 4.0,
+          "required_coverage": 0.0,
+          "fluency": 5.0,
+          "abstention": 5.0,
+          "forbidden_control": 5.0,
+          "overall": 3.25
+        },
+        "notes": "",
+        "hard_fail": false,
+        "hard_fail_reasons": []
+      },
+      {
+        "id": "INTP-027",
+        "category": "Call-center - signal",
+        "prompt": "Spoštovani, [Anonimizirano] Na stalnem naslovu nimam stabilnega mobilnega signala. Kako naj prijavim težavo? Hvala.",
+        "required_keywords": [
+          "mobilni signal",
+          "operater",
+          "prijava"
+        ],
+        "forbidden_keywords": [
+          "AKOS zagotovi signal na lokaciji"
+        ],
+        "expected_abstain": false,
+        "source_topic": "storitev-ne-deluje-ali-ni-ustrezna",
+        "source_url": "https://www.akos-rs.si/pogosta-vprasanja-in-odgovori/storitev-ne-deluje-ali-ni-ustrezna",
+        "answer": "Spoštovani,\n\nZa prijavo težave z mobilnim signalom obiščite portal AKOS:  \n**https://www.akos.si/portal/portal**  \nIzberite meni **„Pritožbe“** in izpolnite obrazec za pritožbo glede mobilnega signala.\n\nAlternativno lahko:\n\n* pokličete brezplačno številko **0800 100 100**,\n* pošljete e‑pošto na **info@akos.si**.\n\nČe potrebujete dodatne informacije, vas usmerjamo na uradne kanale AKOS.",
+        "latency_sec": 3.076,
+        "tokens": 1084,
+        "scores": {
+          "slovene_signal": 4.0,
+          "required_coverage": 0.0,
+          "fluency": 5.0,
+          "abstention": 5.0,
+          "forbidden_control": 5.0,
+          "overall": 3.25
+        },
+        "notes": "",
+        "hard_fail": false,
+        "hard_fail_reasons": []
+      },
+      {
+        "id": "INTP-030",
+        "category": "Inbox - administrativni stroški",
+        "prompt": "Na kratko: [Anonimizirano] Operater je dodal administrativni strošek, ki ga ni bilo v pogodbi. Ali ga moram plačati? Odgovori v 2 stavkih.",
+        "required_keywords": [
+          "pogodba",
+          "strošek",
+          "reklamacija"
+        ],
+        "forbidden_keywords": [
+          "vsi dodatni stroški so dovoljeni"
+        ],
+        "expected_abstain": false,
+        "source_topic": "neupravicen-racun",
+        "source_url": "https://www.akos-rs.si/pogosta-vprasanja-in-odgovori/neupravicen-racun",
+        "answer": "Če strošek ni naveden v vaši pogodbi, ga običajno ne plačujete, razen če je v pogodbi določeno drugače ali je bil sklenjen dopolnitev. Za natančno razlago se obrnite na uradne kanale AKOS.",
+        "latency_sec": 1.904,
+        "tokens": 279,
+        "scores": {
+          "slovene_signal": 4.5,
+          "required_coverage": 1.67,
+          "fluency": 5.0,
+          "abstention": 5.0,
+          "forbidden_control": 5.0,
+          "overall": 3.88
+        },
+        "notes": "",
+        "hard_fail": false,
+        "hard_fail_reasons": []
+      },
+      {
+        "id": "INTP-031",
+        "category": "Inbox - administrativni stroški",
+        "prompt": "Spoštovani, [Anonimizirano] Operater je dodal administrativni strošek, ki ga ni bilo v pogodbi. Ali ga moram plačati? Hvala.",
+        "required_keywords": [
+          "pogodba",
+          "strošek",
+          "reklamacija"
+        ],
+        "forbidden_keywords": [
+          "vsi dodatni stroški so dovoljeni"
+        ],
+        "expected_abstain": false,
+        "source_topic": "neupravicen-racun",
+        "source_url": "https://www.akos-rs.si/pogosta-vprasanja-in-odgovori/neupravicen-racun",
+        "answer": "Ne, če administrativni strošek ni naveden v vaši pogodbi, niste obvezni, da ga plačate. Preverite pogoje pogodbe in se najprej obrnite na operaterja, da pojasnite, zakaj je bil ta strošek dodan.  \n\nČe operater ne pojasni ali se ne strinja, lahko:\n\n* **Kontaktirate AKOS** –  \n  - Telefon: 02 123 45 67  \n  - E‑mail: info@akos.si  \n  - Spletna stran: www.akos.si  \n\n* **Oddate pritožbo** preko spletnega obrazca na AKOS‑u.  \n\nČe potrebujete dodatne informacije, se obrnite na zgoraj navedene uradne kanale.",
+        "latency_sec": 1.813,
+        "tokens": 437,
+        "scores": {
+          "slovene_signal": 5.0,
+          "required_coverage": 1.67,
+          "fluency": 5.0,
+          "abstention": 5.0,
+          "forbidden_control": 5.0,
+          "overall": 4.0
+        },
+        "notes": "",
+        "hard_fail": false,
+        "hard_fail_reasons": []
+      },
+      {
+        "id": "INTP-006",
+        "category": "Inbox - gostovanje",
+        "prompt": "Na kratko: [Anonimizirano] V EU gostovanju so mi zaračunali storitve kot izven EU. Kaj lahko storim? Odgovori v 2 stavkih.",
+        "required_keywords": [
+          "EU",
+          "gostovanje",
+          "reklamacija"
+        ],
+        "forbidden_keywords": [
+          "EU pravila ne veljajo"
+        ],
+        "expected_abstain": false,
+        "source_topic": "o-gostovanju",
+        "source_url": "https://www.akos-rs.si/pogosta-vprasanja-in-odgovori/o-gostovanju",
+        "answer": "Če menite, da je prišlo do napake pri obračunu, se obrnite na podporo AKOS z dokazili o zaračunani storitvi in zahtevajte popravilo računa. Za dodatne informacije in uradne postopke obiščite AKOSovo spletno stran ali kontaktirajte njihovo podporo.",
+        "latency_sec": 1.941,
+        "tokens": 401,
+        "scores": {
+          "slovene_signal": 5.0,
+          "required_coverage": 0.0,
+          "fluency": 5.0,
+          "abstention": 5.0,
+          "forbidden_control": 5.0,
+          "overall": 3.5
+        },
+        "notes": "",
+        "hard_fail": false,
+        "hard_fail_reasons": []
+      },
+      {
+        "id": "INTP-008",
+        "category": "Inbox - gostovanje",
+        "prompt": "[Stranka je nezadovoljna] [Anonimizirano] V EU gostovanju so mi zaračunali storitve kot izven EU. Kaj lahko storim? Prosim za konkreten korak.",
+        "required_keywords": [
+          "EU",
+          "gostovanje",
+          "reklamacija"
+        ],
+        "forbidden_keywords": [
+          "EU pravila ne veljajo"
+        ],
+        "expected_abstain": false,
+        "source_topic": "o-gostovanju",
+        "source_url": "https://www.akos-rs.si/pogosta-vprasanja-in-odgovori/o-gostovanju",
+        "answer": "Nimam podatkov o vašem računu. Prosimo, kontaktirajte uradne kanale AKOS:\n\n- e‑pošta: support@akos.si  \n- telefonska številka: +386 1 234 567  \n- ali obiščite njihovo spletno stran: www.akos.si  \n\nTam vam bodo lahko pomagali razjasniti zaračunane storitve in predlagali konkretne korake.",
+        "latency_sec": 2.584,
+        "tokens": 452,
+        "scores": {
+          "slovene_signal": 3.5,
+          "required_coverage": 0.0,
+          "fluency": 5.0,
+          "abstention": 5.0,
+          "forbidden_control": 5.0,
+          "overall": 3.12
+        },
+        "notes": "",
+        "hard_fail": false,
+        "hard_fail_reasons": []
+      },
+      {
+        "id": "INTP-011",
+        "category": "Inbox - menjava operaterja",
+        "prompt": "Spoštovani, [Anonimizirano] Pri prenosu številke je prišlo do zamude in dodatnih stroškov. Katere pravice imam? Hvala.",
+        "required_keywords": [
+          "prenos številke",
+          "zamuda",
+          "pravice"
+        ],
+        "forbidden_keywords": [
+          "uporabnik nima nobene pravice"
+        ],
+        "expected_abstain": false,
+        "source_topic": "o-menjavi-operaterja-ali-spremembi-paketa",
+        "source_url": "https://www.akos-rs.si/pogosta-vprasanja-in-odgovori/o-menjavi-operaterja-ali-spremembi-paketa",
+        "answer": "Spoštovani,\n\nPri prenosu mobilne številke imate po Zakonu o telekomunikacijah in EU-razpoložljivih pravilih pravice:\n\n1. **Brez dodatnih stroškov** – prenos je brezplačen; dodatne pristojbine so nezakonite.  \n2. **Zmanjšanje zamude** – prenos naj traja največ 24 h. Če je zamuda večja, lahko zahtevate povračilo morebitnih dodatnih stroškov.  \n3. **Pravica do preklica** – v primeru nezadovoljstva lahko prenos prekličete in zahtevate povračilo.  \n\nČe se ne morete dogovoriti z operaterjem, lahko:\n\n- **Obiščete AKOS** (Agencija za komunikacije in komunikacijske storitve) na www.akos.si.  \n- **Prijavite pritožbo** pri UOKD (Urad za varstvo konkurence in potrošnikov) na www.uokd.gov.si.  \n\nČe potrebujete dodatne informacije, se obrnite na zgoraj omenjene uradne kanale.",
+        "latency_sec": 1.938,
+        "tokens": 414,
+        "scores": {
+          "slovene_signal": 5.0,
+          "required_coverage": 3.33,
+          "fluency": 5.0,
+          "abstention": 5.0,
+          "forbidden_control": 5.0,
+          "overall": 4.5
+        },
+        "notes": "",
+        "hard_fail": false,
+        "hard_fail_reasons": []
+      },
+      {
+        "id": "INTP-010",
+        "category": "Inbox - menjava operaterja",
+        "prompt": "Na kratko: [Anonimizirano] Pri prenosu številke je prišlo do zamude in dodatnih stroškov. Katere pravice imam? Odgovori v 2 stavkih.",
+        "required_keywords": [
+          "prenos številke",
+          "zamuda",
+          "pravice"
+        ],
+        "forbidden_keywords": [
+          "uporabnik nima nobene pravice"
+        ],
+        "expected_abstain": false,
+        "source_topic": "o-menjavi-operaterja-ali-spremembi-paketa",
+        "source_url": "https://www.akos-rs.si/pogosta-vprasanja-in-odgovori/o-menjavi-operaterja-ali-spremembi-paketa",
+        "answer": "Imate pravico, da v roku 30 dni po zahtevi za prenos številke zahtevate preklic prenosa in povračilo vseh dodatnih stroškov. Prav tako lahko zahtevate odškodnino za morebitne škode, ki so nastale zaradi zamude, in to storite preko AKOS ali pri svojem operaterju.",
+        "latency_sec": 2.355,
+        "tokens": 428,
+        "scores": {
+          "slovene_signal": 4.5,
+          "required_coverage": 1.67,
+          "fluency": 5.0,
+          "abstention": 5.0,
+          "forbidden_control": 5.0,
+          "overall": 3.88
+        },
+        "notes": "",
+        "hard_fail": false,
+        "hard_fail_reasons": []
+      },
+      {
+        "id": "INTP-038",
+        "category": "Inbox - novinarsko",
+        "prompt": "Na kratko: [Anonimizirano - mediji] Kako AKOS javnost obvešča o spremembah regulacije? Odgovori v 2 stavkih.",
+        "required_keywords": [
+          "javna posvetovanja",
+          "AKOS",
+          "objava"
+        ],
+        "forbidden_keywords": [
+          "ne objavlja ničesar"
+        ],
+        "expected_abstain": false,
+        "source_topic": "novinarska-vprasanja-in-odgovori",
+        "source_url": "https://www.akos-rs.si/medijsko-sredisce/novinarska-vprasanja-in-odgovori",
+        "answer": "Nimam podatkov o tem, kako AKOS javnost obvešča o spremembah regulacije. Za natančne informacije se obrnite na uradne kanale AKOS, kot je njihova spletna stran ali kontaktni center.",
+        "latency_sec": 1.489,
+        "tokens": 238,
+        "scores": {
+          "slovene_signal": 4.5,
+          "required_coverage": 1.67,
+          "fluency": 5.0,
+          "abstention": 5.0,
+          "forbidden_control": 5.0,
+          "overall": 3.88
+        },
+        "notes": "",
+        "hard_fail": false,
+        "hard_fail_reasons": []
+      },
+      {
+        "id": "INTP-040",
+        "category": "Inbox - novinarsko",
+        "prompt": "[Stranka je nezadovoljna] [Anonimizirano - mediji] Kako AKOS javnost obvešča o spremembah regulacije? Prosim za konkreten korak.",
+        "required_keywords": [
+          "javna posvetovanja",
+          "AKOS",
+          "objava"
+        ],
+        "forbidden_keywords": [
+          "ne objavlja ničesar"
+        ],
+        "expected_abstain": false,
+        "source_topic": "novinarska-vprasanja-in-odgovori",
+        "source_url": "https://www.akos-rs.si/medijsko-sredisce/novinarska-vprasanja-in-odgovori",
+        "answer": "**Kako AKOS javnost obvešča o spremembah regulacije?**  \nNajboljši in najhitrejši korak je obisk uradne spletne strani AKOS in preverjanje sekcije **„Novice“** ali **„Obvestila“**. Tam se objavijo vse najnovejše regulativne spremembe, vključno z datumi, vsebino in morebitnimi dodatnimi navodili.\n\n1. **Obiščite**: <https://www.akos.si/novice>  \n2. **Preverite** najnovejše objave – običajno so označene z datumom in ključnimi besedami (npr. „regulacija“, „sprememba“, „zakon“).  \n3. **Prenesite** ali si zabeležite PDF‑obvestilo, če je na voljo.  \n\nČe informacije na spletu niso na voljo ali potrebujete dodatna pojasnila, se obrnite na **uradni stik za medije**:\n\n- **E‑pošta**: mediji@akos.si  \n- **Telefon**: +386 1 123 4567  \n\nTa korak zagotavlja, da dobite uradne in preverjene podatke brez domisik.",
+        "latency_sec": 1.878,
+        "tokens": 709,
+        "scores": {
+          "slovene_signal": 5.0,
+          "required_coverage": 1.67,
+          "fluency": 5.0,
+          "abstention": 5.0,
+          "forbidden_control": 5.0,
+          "overall": 4.0
+        },
+        "notes": "",
+        "hard_fail": false,
+        "hard_fail_reasons": []
+      },
+      {
+        "id": "INTP-021",
+        "category": "Inbox - pošta",
+        "prompt": "[Anonimizirano] Pošiljka ni bila dostavljena v običajnem roku. Kako lahko sprožim postopek?",
+        "required_keywords": [
+          "izvajalec poštnih storitev",
+          "reklamacija",
+          "AKOS"
+        ],
+        "forbidden_keywords": [
+          "AKOS neposredno dostavi pošiljko"
+        ],
+        "expected_abstain": false,
+        "source_topic": "spori-med-operaterji",
+        "source_url": "https://www.akos-rs.si/uporabniki-storitev/raziscite/spori-med-operaterji-oz-izvajalci-postnih-storitev-in-koncnimi-uporabniki",
+        "answer": "Pošiljka ni bila dostavljena v običajnem roku – lahko sprožite postopek za zamudo na naslednji način:\n\n1. **Prijavite se** v svoj račun na portal AKOS.  \n2. V meniju izberite **Pošiljke** → **Zgodovina pošiljk**.  \n3. Poiščite pošiljko, ki je zamujena, in kliknite **Prijava zamude** (ali **Sporočilo o zamudi**).  \n4. Izpolnite obrazec z osnovnimi podatki (številko pošiljke, datum, razlog) in pošljite.\n\nČe imate težave z portalom ali ne najdete obrazca, pokličite **AKOS podporo** na številko 0800 123 456 ali pošljite e‑mail na **podpora@akos.si**.  \n\nČe potrebujete dodatne informacije, vas prosimo, da se obrnete na uradne kanale AKOS.",
+        "latency_sec": 1.356,
+        "tokens": 397,
+        "scores": {
+          "slovene_signal": 5.0,
+          "required_coverage": 1.67,
+          "fluency": 5.0,
+          "abstention": 5.0,
+          "forbidden_control": 5.0,
+          "overall": 4.0
+        },
+        "notes": "",
+        "hard_fail": false,
+        "hard_fail_reasons": []
+      },
+      {
+        "id": "INTP-023",
+        "category": "Inbox - pošta",
+        "prompt": "Spoštovani, [Anonimizirano] Pošiljka ni bila dostavljena v običajnem roku. Kako lahko sprožim postopek? Hvala.",
+        "required_keywords": [
+          "izvajalec poštnih storitev",
+          "reklamacija",
+          "AKOS"
+        ],
+        "forbidden_keywords": [
+          "AKOS neposredno dostavi pošiljko"
+        ],
+        "expected_abstain": false,
+        "source_topic": "spori-med-operaterji",
+        "source_url": "https://www.akos-rs.si/uporabniki-storitev/raziscite/spori-med-operaterji-oz-izvajalci-postnih-storitev-in-koncnimi-uporabniki",
+        "answer": "Spoštovani,\n\nČe pošiljka ni bila dostavljena v običajnem roku, lahko sprožite postopek za iskanje ali zahtevko za izgubljeno pošiljko na naslednje načine:\n\n1. **Preverite sledenje** – vpišite številko sledenja na spletni strani AKOS (www.akos.si) in preverite status pošiljke.  \n2. **Kontaktirajte lokalno pošto** – pokličite številko 0800 123 456 (družinska številka) ali obiščite najbližjo poštno pisarno in predložite številko pošiljke.  \n3. **Oddajte zahtevek za izgubljeno pošiljko** – na spletni strani AKOS obstaja obrazec “Zahtevek za izgubljeno pošiljko”. Izpolnite ga in ga pošljite.  \n4. **Spletni chat** – na www.akos.si je na voljo chat, kjer lahko neposredno zastavite vprašanje.  \n\n**Uradni kontaktni podatki:**\n\n- Telefon: 0800 123 456 (družinska številka)  \n- E‑mail: info@akos.si  \n- Spletna stran: www.akos.si  \n- Socialni mediji: Facebook/Instagram @AKOS\n\nČe potrebujete dodatno pomoč, vas prosimo, da se obrnete na zgoraj navedene uradne kanale.",
+        "latency_sec": 1.503,
+        "tokens": 510,
+        "scores": {
+          "slovene_signal": 5.0,
+          "required_coverage": 1.67,
+          "fluency": 4.92,
+          "abstention": 5.0,
+          "forbidden_control": 5.0,
+          "overall": 3.98
+        },
+        "notes": "",
+        "hard_fail": false,
+        "hard_fail_reasons": []
+      },
+      {
+        "id": "INTP-003",
+        "category": "Inbox - račun",
+        "prompt": "Spoštovani, [Anonimizirano] Prejel sem nenavadno visok račun za mobilne storitve. Kako naj pravilno ukrepam? Hvala.",
+        "required_keywords": [
+          "reklamacija",
+          "razčlenjen račun",
+          "AKOS"
+        ],
+        "forbidden_keywords": [
+          "računa ni treba plačati nikoli"
+        ],
+        "expected_abstain": false,
+        "source_topic": "neupravicen-racun",
+        "source_url": "https://www.akos-rs.si/pogosta-vprasanja-in-odgovori/neupravicen-racun",
+        "answer": "Spoštovani,\n\n1. **Preverite račun** – primerjajte z vašim mesečnim povzetkom in storitvami, ki ste jih dejansko uporabljali.  \n2. **Stopite v stik z operaterjem** – zahtevajte podroben izpis uporabe in pojasnilo za neobičajno visoko znesek.  \n3. **Če se razlaga ne ujemata**, vložite pritožbo pri operaterju in po potrebi pri regulatorju (Urad za komunikacije).  \n4. **Za dodatno pomoč** se obrnite na AKOS:  \n   - splet: https://www.akos.si/  \n   - e‑pošta: info@akos.si  \n   - telefon: +386 1 123 4567 (preverite na uradni strani).  \n\nČe potrebujete specifične podatke, vas prosim, da se obrnete neposredno na AKOS, saj nimam dostopa do vaših računov.",
+        "latency_sec": 1.893,
+        "tokens": 781,
+        "scores": {
+          "slovene_signal": 5.0,
+          "required_coverage": 1.67,
+          "fluency": 5.0,
+          "abstention": 5.0,
+          "forbidden_control": 5.0,
+          "overall": 4.0
+        },
+        "notes": "",
+        "hard_fail": false,
+        "hard_fail_reasons": []
+      },
+      {
+        "id": "INTP-004",
+        "category": "Inbox - račun",
+        "prompt": "[Stranka je nezadovoljna] [Anonimizirano] Prejel sem nenavadno visok račun za mobilne storitve. Kako naj pravilno ukrepam? Prosim za konkreten korak.",
+        "required_keywords": [
+          "reklamacija",
+          "razčlenjen račun",
+          "AKOS"
+        ],
+        "forbidden_keywords": [
+          "računa ni treba plačati nikoli"
+        ],
+        "expected_abstain": false,
+        "source_topic": "neupravicen-racun",
+        "source_url": "https://www.akos-rs.si/pogosta-vprasanja-in-odgovori/neupravicen-racun",
+        "answer": "NAPAKA: 429 Client Error: Too Many Requests for url: https://api.groq.com/openai/v1/chat/completions",
+        "latency_sec": 0.0,
+        "tokens": null,
+        "scores": {
+          "slovene_signal": 0.0,
+          "required_coverage": 0.0,
+          "fluency": 0.0,
+          "abstention": 0.0,
+          "forbidden_control": 0.0,
+          "overall": 0.0
+        },
+        "notes": "",
+        "hard_fail": false,
+        "hard_fail_reasons": []
+      }
+    ]
+  }
+}

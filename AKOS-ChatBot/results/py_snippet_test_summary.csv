@@ -1,0 +1,2 @@
+model,status,avg_score,avg_latency_sec,tests,critical_failures,hard_fail_count
+llama3.2:3b,FAIL,0.0,0.0,1,1,0

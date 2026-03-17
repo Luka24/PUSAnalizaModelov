@@ -1,0 +1,3 @@
+model,status,avg_score,avg_latency_sec,tests,critical_failures,hard_fail_count
+qwen/qwen3-32b,FAIL,3.5465,2.1064,20,1,0
+openai/gpt-oss-20b,FAIL,3.106,1.7566,20,4,0
