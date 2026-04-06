@@ -207,11 +207,23 @@ Končna ocena = `1.25`.
 
 ## 10) Končni zaključek
 
-Če je cilj model blizu 30B:
-- najboljši kandidat iz testa je `qwen/qwen3-32b`.
+Razvrstitev modelov (po kakovosti in hitrosti):
 
-Če je cilj maksimalna kakovost ne glede na velikost:
-- najboljši je `llama-3.3-70b-versatile`.
+1. **Maksimalna kakovost (produkcija)**: `llama-3.3-70b-versatile`
+   - Povprečna ocena: 3.9946
+   - Povprečni čas: 1.7757s
+   - Napake: 0
+
+2. **Najboljši kompromis (manjši model, hitrejši)**: `llama-3.1-8b-instant`
+   - Povprečna ocena: 3.9502 (boljši od Qwen 32B)
+   - Povprečni čas: 1.2742s (hitrejši od Qwen 32B)
+   - Napake: 0
+   - Lokalka alternativa prek Ollama (brez interneta)
+
+3. **Tretja izbira**: `llama-4-scout-17b-16e-instruct`
+   - Povprečna ocena: 3.9731
+   - Povprečni čas: 1.3968s
+   - Napake: 1
 
 Za `gemma2:9b` in `mistral-nemo:12b` je moj predlog:
 - test naj se naredi na **Sling/HPC**, ker lokalno okolje ni dalo stabilnih rezultatov (timeouti),
